@@ -5,7 +5,9 @@ Consistent badge styles for papers, code, and related links across this repo.
 ## General rules
 
 - Place badges right below the paper title.
-- Order: Venue/Year (or arXiv) → Code → Stars (or combined) → Homepage/Project → Dataset → Video → Others.
+- Order: Project/Homepage → Venue/Year (or arXiv) → Stars → Dataset → Video → Others → Code.
+- Rule of thumb: "Project" always goes first; "Code" always goes last.
+- If using a combined Code+Stars badge, it counts as the Code badge and still goes last. If using separate Stars, place Stars immediately before Code.
 - Prefer official proceedings links (CVF OpenAccess/IEEE/ACM/Proceedings/OpenReview) with a Venue-Year badge; use arXiv when preprint-only.
 - Keep titles as “Title (Venue Year)”. It’s OK if the Venue-Year also appears in the badge for clarity.
 - Use short, stable provider names and brand colors where helpful.
@@ -44,6 +46,7 @@ Consistent badge styles for papers, code, and related links across this repo.
 - Combined Code+Stars (optional, one badge):
   - Social: `[![Code](https://img.shields.io/github/stars/<owner>/<repo>?style=social&label=Code&logo=github)](<repo_url>)`
   - Flat: `[![Code](https://img.shields.io/github/stars/<owner>/<repo>?label=Code&color=black&logo=github)](<repo_url>)`
+  - Placement: Treat as the Code badge; always place last.
 - Homepage / Project (Website):
   - Markdown: `[![Homepage](https://img.shields.io/badge/Homepage-Website-0a84ff?logo=safari)](<project_or_homepage_url>)`
   - Alternative label: use `Project-Website` for research pages.
@@ -77,7 +80,7 @@ Consistent badge styles for papers, code, and related links across this repo.
 
 Notes:
 
-- Use either the combined badge or the separate `Code` + `Stars` pair; avoid showing both.
+- Use either the combined badge or the separate `Code` + `Stars` pair; avoid showing both. When separate, put `Stars` right before the `Code` badge.
 - Use English labels for consistency across files; localized variants are optional if a section is fully Chinese.
 - Prefer not to use inline HTML in README; keep badges as Markdown for simplicity.
 - Provide concise alt text (the bracket text before the URL) describing the target.
@@ -87,10 +90,9 @@ Notes:
 ```markdown
 ### Title: Paper Name (Venue Year)
 
+[![Homepage](https://img.shields.io/badge/Homepage-Website-0a84ff?logo=safari)](<project_or_homepage_url>)
 [![CVPR](https://img.shields.io/badge/CVPR-YYYY-1E90FF)](<proceedings_or_pdf_url>)
 [![arXiv](https://img.shields.io/badge/arXiv-YYMM.NNNNN-b31b1b?logo=arxiv)](<arxiv_url>)
-[![Code](https://img.shields.io/github/stars/<owner>/<repo>?style=social&label=Code&logo=github)](<repo_url>)
-[![Homepage](https://img.shields.io/badge/Homepage-Website-0a84ff?logo=safari)](<project_or_homepage_url>)
 [![Zhihu](https://img.shields.io/badge/Zhihu-Explainer-informational?logo=zhihu)](<zhihu_article_url>)
 [![WeChat](https://img.shields.io/badge/WeChat-Explainer-07C160?logo=wechat)](<weixin_mp_article_url>)
 [![Model](https://img.shields.io/badge/Model-HuggingFace-ffcc4d?logo=huggingface)](<hf_model_url>)
@@ -100,6 +102,7 @@ Notes:
 [![Video](https://img.shields.io/badge/Video-YouTube-FF0000?logo=youtube)](<video_url>)
 [![License](https://img.shields.io/github/license/<owner>/<repo>?color=blue)](<repo_url>/blob/main/LICENSE)
 [![DOI](https://img.shields.io/badge/DOI-10.xxxx%2Fxxxx-4B8BBE)](<doi_url>)
+[![Code](https://img.shields.io/github/stars/<owner>/<repo>?style=social&label=Code&logo=github)](<repo_url>)
 
 Highlight: One-sentence takeaway of the main contribution.
 ```
@@ -109,6 +112,7 @@ Alternative (minimal):
 ```markdown
 ### Title: Paper Name (Venue Year)
 
+[![Homepage](https://img.shields.io/badge/Homepage-Website-0a84ff?logo=safari)](<project_or_homepage_url>)
 [![ECCV](https://img.shields.io/badge/ECCV-YYYY-0B84FE)](<proceedings_or_pdf_url>)
 [![Code](https://img.shields.io/github/stars/<owner>/<repo>?style=social&label=Code&logo=github)](<repo_url>)
 ```

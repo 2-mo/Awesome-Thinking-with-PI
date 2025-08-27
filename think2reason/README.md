@@ -16,10 +16,35 @@
 
 ## 📚 Contents
 
+- 📖 [Surveys](#surveys)
+- 📊 [Benchmarks and Datasets](#benchmarks-and-datasets)
 - 💭 [Thinking in Text](#thinking-in-text)
 - 🖼️ [Thinking with Image](#thinking-with-image)
 - 🤖 [Thinking as Action](#thinking-as-action)
+- 🛠️ [Tutorials and Tooling](#tutorials-and-tooling)
 
+---
+
+## 📖 Surveys
+
+### Related Awesome Lists
+
+[![Awesome_Think_With_Images](https://img.shields.io/badge/Awesome-Think_With_Images-black?logo=github)](https://github.com/zhaochen0110/Awesome_Think_With_Images) — Visual-only reasoning with images (papers + code).
+[![Awesome-Thinking-With-Images](https://img.shields.io/badge/Awesome-Thinking_With_Images-black?logo=github)](https://github.com/ligeng0197/Awesome-Thinking-With-Images) — Broad visual thinking and perception resources.
+
+---
+
+## 📊 Benchmarks and Datasets
+
+shanghaitech-anomaly-detection [[project](https://svip-lab.github.io/dataset/campus_dataset.html)] — Campus surveillance anomaly set; classic weakly supervised benchmark.
+
+[UCF-Crime](https://www.crcv.ucf.edu/research/real-world-anomaly-detection-in-surveillance-videos/) — Real-world surveillance anomaly dataset with long untrimmed videos.
+
+Multi-Scenario Anomaly Detection (MSAD) Dataset (NeurIPS 2024) [![Project](https://img.shields.io/badge/Project-blue?logo=safari)](https://msad-dataset.github.io/) [![arXiv](https://img.shields.io/badge/arXiv-2402.04857-b31b1b?logo=arxiv)](https://arxiv.org/pdf/2402.04857) — Large-scale, multi-scene anomaly benchmark.
+
+### Metrics & Evaluation
+
+- Coming soon: common tasks, metrics, and evaluation protocols.
 
 ---
 
@@ -110,13 +135,7 @@ Note: A small GitHub badge next to a model name links to its confirmed repositor
 
 ---
 
-### Tool Usage (Non-Visual)
-
-TOOLLLM: FACILITATING LARGE LANGUAGE MODELS TO MASTER 16000+ REAL-WORLD APIS <sup><kbd>ICLR 2024</kbd></sup> [![OpenReview](https://img.shields.io/badge/OpenReview-Link-green?logo=openreview)](https://openreview.net/forum?id=dHng2O0Jjr)
-
-REACT: SYNERGIZING REASONING AND ACTING IN LANGUAGE MODELS (ICLR 2023) [[arXiv](https://arxiv.org/pdf/2210.03629)]
-
----
+ 
 
 ## 🖼️ Thinking with Image
 
@@ -127,9 +146,6 @@ REACT: SYNERGIZING REASONING AND ACTING IN LANGUAGE MODELS (ICLR 2023) [[arXiv](
 [![Qwen-Agent](https://img.shields.io/badge/Industry-Qwen--Agent-blueviolet?logo=github)](https://github.com/QwenLM/Qwen-Agent/tree/main)
 
 ### Collections
-
-[![Awesome_Think_With_Images](https://img.shields.io/badge/Awesome-Think_With_Images-black?logo=github)](https://github.com/zhaochen0110/Awesome_Think_With_Images)
-[![Awesome-Thinking-With-Images](https://img.shields.io/badge/Awesome-Thinking_With_Images-black?logo=github)](https://github.com/ligeng0197/Awesome-Thinking-With-Images)
 
 
 [![PAPO](https://img.shields.io/badge/GRPO%20Improvement-PAPO-orange?logo=github)](https://github.com/MikeWangWZHL/PAPO)
@@ -192,15 +208,7 @@ Number it: Temporal Grounding Videos like Flipping Manga <sup><kbd>CVPR 2025</kb
 
 (Content omitted here. See the original think-with-image.md for details and add as needed.)
 
-### Datasets
-
-shanghaitech-anomaly-detection [[project](https://svip-lab.github.io/dataset/campus_dataset.html)]
-
-[UCF-Crime](https://www.crcv.ucf.edu/research/real-world-anomaly-detection-in-surveillance-videos/) Real-world Anomaly Detection in Surveillance Videos
-
-Multi-Scenario Anomaly Detection (MSAD) Dataset <sup><kbd>NeurIPS 2024</kbd></sup> [![Project](https://img.shields.io/badge/Project-blue?logo=safari)](https://msad-dataset.github.io/) [![arXiv](https://img.shields.io/badge/arXiv-2402.04857-b31b1b?logo=arxiv)](https://arxiv.org/pdf/2402.04857)
-
----
+ 
 
 ## 🤖 Thinking as Action
 
@@ -274,4 +282,11 @@ Multi-Scenario Anomaly Detection (MSAD) Dataset <sup><kbd>NeurIPS 2024</kbd></su
 ![AgentThink](assets/image-20250725211337583.png)
 
 ---
+
+## 🛠️ Tutorials and Tooling
+
+TOOLLLM: Facilitating Large Language Models to Master 16000+ Real-World APIs <sup><kbd>ICLR 2024</kbd></sup> [![OpenReview](https://img.shields.io/badge/OpenReview-Link-green?logo=openreview)](https://openreview.net/forum?id=dHng2O0Jjr)
+
+ReAct: Synergizing Reasoning and Acting in Language Models <sup><kbd>ICLR 2023</kbd></sup> [![arXiv](https://img.shields.io/badge/arXiv-2210.03629-b31b1b?logo=arxiv)](https://arxiv.org/pdf/2210.03629)
+
 
