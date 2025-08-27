@@ -139,6 +139,12 @@ Note: A small GitHub badge next to a model name links to its confirmed repositor
 
 ## 🖼️ Thinking with Image
 
+### 理论部分
+
+
+### 为什么要用工具
+
+
 [![Wiki](https://img.shields.io/badge/Wiki-Visual%20Thinking-blue?logo=wikipedia)](https://en.wikipedia.org/wiki/Visual_thinking)
 [![OpenAI](https://img.shields.io/badge/OpenAI-Thinking%20with%20Images-9cf?logo=openai)](https://openai.com/index/thinking-with-images/)
 
@@ -284,6 +290,13 @@ Number it: Temporal Grounding Videos like Flipping Manga <sup><kbd>CVPR 2025</kb
 ---
 
 ## 🛠️ Tutorials and Tooling
+
+强化学习算法改进
+
+实现
+swift agent-rl
+
+
 
 TOOLLLM: Facilitating Large Language Models to Master 16000+ Real-World APIs <sup><kbd>ICLR 2024</kbd></sup> [![OpenReview](https://img.shields.io/badge/OpenReview-Link-green?logo=openreview)](https://openreview.net/forum?id=dHng2O0Jjr)
 
