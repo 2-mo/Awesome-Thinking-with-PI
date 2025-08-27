@@ -2,6 +2,7 @@
 
 A curated list of papers and resources on Large Language Models for Video Anomaly Detection (VAD).
 
+
 ## Contents
 
 - [Overview](#overview)
@@ -17,6 +18,22 @@ A curated list of papers and resources on Large Language Models for Video Anomal
 This list collects representative works that leverage LLMs or vision-language models for video anomaly detection, explanation, and understanding. Entries are grouped by year with links to paper and code, plus a preview figure when available.
 
 ---
+
+## 📊 Benchmarks and Datasets
+
+shanghaitech-anomaly-detection [[project](https://svip-lab.github.io/dataset/campus_dataset.html)] — Campus surveillance anomaly set; classic weakly supervised benchmark.
+
+[UCF-Crime](https://www.crcv.ucf.edu/research/real-world-anomaly-detection-in-surveillance-videos/) — Real-world surveillance anomaly dataset with long untrimmed videos.
+
+Multi-Scenario Anomaly Detection (MSAD) Dataset (NeurIPS 2024) [![Project](https://img.shields.io/badge/Project-blue?logo=safari)](https://msad-dataset.github.io/) [![arXiv](https://img.shields.io/badge/arXiv-2402.04857-b31b1b?logo=arxiv)](https://arxiv.org/pdf/2402.04857) — Large-scale, multi-scene anomaly benchmark.
+
+### Metrics & Evaluation
+
+- Coming soon: common tasks, metrics, and evaluation protocols.
+
+---
+
+
 
 ## Papers (2025)
 

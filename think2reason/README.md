@@ -16,37 +16,24 @@
 
 ## 📚 Contents
 
-- 📖 [Surveys](#surveys)
-- 📊 [Benchmarks and Datasets](#benchmarks-and-datasets)
- - 💭 [Thinking with Language (Symbolic-level)](#thinking-with-language-symbolic-level)
- - 🖼️ [Thinking with Images (Perceptual-level)](#thinking-with-images-perceptual-level)
- - 🤖 [Thinking with Action (Embodied-level)](#thinking-with-action-embodied-level)
- - 🛠️ [Tutorials and Tooling](#tutorials-and-tooling)
+- 📖 [Surveys and Related Collections](#surveys-and-related-collections)
+- 💭 [Thinking with Language (Symbolic-level)](#thinking-with-language-symbolic-level)
+- 🖼️ [Thinking with Images (Perceptual-level)](#thinking-with-images-perceptual-level)
+- 🤖 [Thinking with Action (Embodied-level)](#thinking-with-action-embodied-level)
+- 🛠️ [Tutorials and Tooling](#tutorials-and-tooling)
 
 ---
 
-## 📖 Surveys
+## 📖 Surveys and Related Collections
 
-### Related Awesome Lists
+### Related Collections
 
 [![Awesome_Think_With_Images](https://img.shields.io/badge/Awesome-Think_With_Images-black?logo=github)](https://github.com/zhaochen0110/Awesome_Think_With_Images) — Visual-only reasoning with images (papers + code).
 [![Awesome-Thinking-With-Images](https://img.shields.io/badge/Awesome-Thinking_With_Images-black?logo=github)](https://github.com/ligeng0197/Awesome-Thinking-With-Images) — Broad visual thinking and perception resources.
 
 ---
 
-## 📊 Benchmarks and Datasets
 
-shanghaitech-anomaly-detection [[project](https://svip-lab.github.io/dataset/campus_dataset.html)] — Campus surveillance anomaly set; classic weakly supervised benchmark.
-
-[UCF-Crime](https://www.crcv.ucf.edu/research/real-world-anomaly-detection-in-surveillance-videos/) — Real-world surveillance anomaly dataset with long untrimmed videos.
-
-Multi-Scenario Anomaly Detection (MSAD) Dataset (NeurIPS 2024) [![Project](https://img.shields.io/badge/Project-blue?logo=safari)](https://msad-dataset.github.io/) [![arXiv](https://img.shields.io/badge/arXiv-2402.04857-b31b1b?logo=arxiv)](https://arxiv.org/pdf/2402.04857) — Large-scale, multi-scene anomaly benchmark.
-
-### Metrics & Evaluation
-
-- Coming soon: common tasks, metrics, and evaluation protocols.
-
----
 
 ## 💭 Thinking with Language (Symbolic-level)
 
@@ -300,3 +287,8 @@ TOOLLLM: Facilitating Large Language Models to Master 16000+ Real-World APIs <su
 ReAct: Synergizing Reasoning and Acting in Language Models <sup><kbd>ICLR 2023</kbd></sup> [![arXiv](https://img.shields.io/badge/arXiv-2210.03629-b31b1b?logo=arxiv)](https://arxiv.org/pdf/2210.03629)
 
 
+
+##### 观点文章
+
+为何GRPO大放异彩DPO销声匿迹？
+https://mp.weixin.qq.com/s/b4OkzqfRcpFhPzTocwJatw
