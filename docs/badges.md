@@ -5,16 +5,27 @@ Consistent badge styles for papers, code, and related links across this repo.
 ## General rules
 
 - Place badges right below the paper title.
-- Order: Paper → Code → Stars (or combined) → Homepage/Project → Dataset → Video → Others.
-- Prefer direct PDF for “Paper”; otherwise use arXiv/OpenReview.
-- Keep titles as “Title (Venue Year)”; avoid duplicating venue in badges.
+- Order: Venue/Year (or arXiv) → Code → Stars (or combined) → Homepage/Project → Dataset → Video → Others.
+- Prefer official proceedings links (CVF OpenAccess/IEEE/ACM/Proceedings/OpenReview) with a Venue-Year badge; use arXiv when preprint-only.
+- Keep titles as “Title (Venue Year)”. It’s OK if the Venue-Year also appears in the badge for clarity.
 - Use short, stable provider names and brand colors where helpful.
 
 ## Badge palette (shields.io)
 
-- Paper (PDF):
-  - Markdown: `[![Paper](https://img.shields.io/badge/Paper-PDF-b31b1b)](<pdf_url>)`
-  - Color: `b31b1b` (paper red); use for CVF/IEEE/ACM when linking direct PDF.
+- Venue-Year (preferred for published works):
+  - CVPR: `[![CVPR](https://img.shields.io/badge/CVPR-YYYY-1E90FF)](<cvf_or_proceedings_url>)`
+  - ICCV: `[![ICCV](https://img.shields.io/badge/ICCV-YYYY-1E90FF)](<cvf_or_proceedings_url>)`
+  - ECCV: `[![ECCV](https://img.shields.io/badge/ECCV-YYYY-0B84FE)](<ecva_or_proceedings_url>)`
+  - AAAI: `[![AAAI](https://img.shields.io/badge/AAAI-YYYY-1F77B4)](<aaai_or_ieee_url>)`
+  - NeurIPS: `[![NeurIPS](https://img.shields.io/badge/NeurIPS-YYYY-2DB55D)](<openreview_or_proceedings_url>)`
+  - ICLR: `[![ICLR](https://img.shields.io/badge/ICLR-YYYY-6f42c1)](<openreview_or_proceedings_url>)`
+  - Notes:
+    - Link target can be CVF OpenAccess, IEEE Xplore, ACM DL, conference proceedings page, or OpenReview.
+    - Use this instead of a generic “Paper-PDF” badge when the venue is known.
+
+- Paper (PDF) [fallback]:
+  - Markdown: `[![PDF](https://img.shields.io/badge/Paper-PDF-b31b1b)](<pdf_url>)`
+  - Color: `b31b1b` (paper red); use only when venue is unknown or to provide an extra direct PDF link.
 - arXiv (follow think2reason style):
   - Markdown: `[![arXiv](https://img.shields.io/badge/arXiv-YYMM.NNNNN-b31b1b?logo=arxiv)](<arxiv_abs_or_pdf_url>)`
   - Example: `2503.21776` → `https://arxiv.org/pdf/2503.21776` or `https://arxiv.org/abs/2503.21776`
@@ -76,7 +87,7 @@ Notes:
 ```markdown
 ### Title: Paper Name (Venue Year)
 
-[![Paper](https://img.shields.io/badge/Paper-PDF-b31b1b)](<pdf_url>)
+[![CVPR](https://img.shields.io/badge/CVPR-YYYY-1E90FF)](<proceedings_or_pdf_url>)
 [![arXiv](https://img.shields.io/badge/arXiv-YYMM.NNNNN-b31b1b?logo=arxiv)](<arxiv_url>)
 [![Code](https://img.shields.io/github/stars/<owner>/<repo>?style=social&label=Code&logo=github)](<repo_url>)
 [![Homepage](https://img.shields.io/badge/Homepage-Website-0a84ff?logo=safari)](<project_or_homepage_url>)
@@ -98,14 +109,14 @@ Alternative (minimal):
 ```markdown
 ### Title: Paper Name (Venue Year)
 
-[![Paper](https://img.shields.io/badge/Paper-PDF-b31b1b)](<pdf_url>)
+[![ECCV](https://img.shields.io/badge/ECCV-YYYY-0B84FE)](<proceedings_or_pdf_url>)
 [![Code](https://img.shields.io/github/stars/<owner>/<repo>?style=social&label=Code&logo=github)](<repo_url>)
 ```
 
 ## Notes
 
-- Use either Paper-PDF or arXiv (or both). If both available, list PDF first.
-- For CVPR OpenAccess (thecvf.com) PDF, still use `Paper-PDF` badge.
+- Use either Venue-Year or arXiv (or both). If both available, list Venue-Year first.
+- For CVF OpenAccess (thecvf.com) or official proceedings, prefer the Venue-Year badge over `Paper-PDF`.
 - For non-PDF paper pages (e.g., Springer/Elsevier landing pages), use:
   - `[![Paper](https://img.shields.io/badge/Paper-Page-6c757d)](<landing_page_url>)`
 - Keep badge text short; avoid long identifiers in labels.

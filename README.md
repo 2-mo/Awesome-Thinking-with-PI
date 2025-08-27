@@ -10,8 +10,8 @@ Visual reasoning, video understanding, embodied AI, robot actions, and perceptio
 
 ## Topics
 
-- 🧠 [Thinking with PI](think_with_pi/README.md) — Text, Image, and Action collections and notes.
-- 🎥 [VAD with LLM](vad_with_llm/README.md) — Video Anomaly Detection with LLMs/VLMs.
+- 🧠 [Thinking with PI](think2reason/README.md) — Text, Image, and Action collections and notes.
+- 🎥 [VAD with LLM](llm4vad/README.md) — Video Anomaly Detection with LLMs/VLMs.
 
 ---
 
