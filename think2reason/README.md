@@ -6,22 +6,24 @@
 
 <!-- Top badges -->
 <p align="center">
-  <a href="https://github.com/ligeng0197/Awesome-Thinking-With-Images/blob/main/LICENSE"><img src="https://img.shields.io/github/license/ligeng0197/Awesome-Thinking-With-Images?color=blueviolet"></a>
-  <a href="https://github.com/ligeng0197/Awesome-Thinking-With-Images/graphs/contributors"><img src="https://img.shields.io/github/contributors/ligeng0197/Awesome-Thinking-With-Images?color=ffaa00"></a>
+  <a href="https://github.com/2-mo/Awesome-Thinking-with-PI/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-blueviolet" alt="License: MIT"></a>
+  <a href="https://github.com/2-mo/Awesome-Thinking-with-PI/issues"><img src="https://img.shields.io/badge/Issues-Track-orange" alt="Issues"></a>
+  <a href="https://github.com/2-mo/Awesome-Thinking-with-PI/pulls"><img src="https://img.shields.io/badge/Pull%20Requests-Welcome-brightgreen" alt="Pull Requests"></a>
+  <a href="https://github.com/2-mo/Awesome-Thinking-with-PI/commits/main"><img src="https://img.shields.io/badge/Commits-Main-blue" alt="Commits: main"></a>
 </p>
 
 
 
 ## 📚 Contents
 
-- 💭 [Thinking with Text](#thinking-with-text)
+- 💭 [Thinking in Text](#thinking-in-text)
 - 🖼️ [Thinking with Image](#thinking-with-image)
-- 🤖 [Thinking with Action](#thinking-with-action)
-- 🤝 [Contributing](#contributing)
+- 🤖 [Thinking as Action](#thinking-as-action)
+
 
 ---
 
-## 💭 Thinking with Text
+## 💭 Thinking in Text
 
 ### R1-Style Reasoning Models Overview
 
@@ -200,7 +202,7 @@ Multi-Scenario Anomaly Detection (MSAD) Dataset <sup><kbd>NeurIPS 2024</kbd></su
 
 ---
 
-## 🤖 Thinking with Action
+## 🤖 Thinking as Action
 
 ### Embodied Intelligence
 
@@ -270,22 +272,6 @@ Multi-Scenario Anomaly Detection (MSAD) Dataset <sup><kbd>NeurIPS 2024</kbd></su
 [![arXiv](https://img.shields.io/badge/arXiv-2505.15298-b31b1b?logo=arxiv)](https://arxiv.org/pdf/2505.15298)
 
 ![AgentThink](assets/image-20250725211337583.png)
-
----
-
-## 🤝 Contributing
-
-Contributions are welcome! Please submit a pull request to add papers, code, or resources.
-
----
-
-<!-- Quick access buttons -->
-<p align="center">
-  <a href="https://github.com/ligeng0197/Awesome-Thinking-With-Images/issues"><img src="https://img.shields.io/badge/Issues-Track-orange"></a>
-  <a href="https://github.com/ligeng0197/Awesome-Thinking-With-Images/pulls"><img src="https://img.shields.io/badge/Pull%20Requests-Welcome-brightgreen"></a>
-  <a href="https://github.com/ligeng0197/Awesome-Thinking-With-Images/commits/main"><img src="https://img.shields.io/badge/Commits-Main-blue"></a>
-  <a href="https://github.com/ligeng0197/Awesome-Thinking-With-Images/graphs/contributors"><img src="https://img.shields.io/badge/Contributors-Graph-ffaa00"></a>
-</p>
 
 ---
 
