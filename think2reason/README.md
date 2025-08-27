@@ -25,6 +25,8 @@
 
 ### R1-Style Reasoning Models Overview
 
+<small>
+
 | Model | Foundational LLMs | Time | Institution | Task | Feature | Modality | Learning | Algorithm |
 |-------|------------------|------|-------------|------|---------|----------|----------|-----------|
 | Deepseek-R1-Zero [![GitHub stars](https://img.shields.io/github/stars/deepseek-ai/DeepSeek-R1?style=social&label=GitHub&logo=github)](https://github.com/deepseek-ai/DeepSeek-R1) | Deepseek-V3-671B | Jan 22, 2025 | DeepSeek-AI | Generic | - | T | SFT+RL | GRPO |
@@ -61,6 +63,8 @@ Note: A small GitHub badge next to a model name links to its confirmed repositor
 - **Modality**: T=Text, I=Image, V=Video, A=Audio
 - **Learning**: SFT=Supervised Fine-Tuning, RL=Reinforcement Learning
 - **Algorithm**: GRPO=Group Relative Policy Optimization, RLOO=Reinforce Leave-One-Out, PPO=Proximal Policy Optimization
+
+</small>
 
 ### Reasoning as &lt;think&gt;
 
