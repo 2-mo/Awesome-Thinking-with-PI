@@ -18,10 +18,10 @@
 
 - 📖 [Surveys](#surveys)
 - 📊 [Benchmarks and Datasets](#benchmarks-and-datasets)
-- 💭 [Thinking in Text](#thinking-in-text)
-- 🖼️ [Thinking with Image](#thinking-with-image)
-- 🤖 [Thinking as Action](#thinking-as-action)
-- 🛠️ [Tutorials and Tooling](#tutorials-and-tooling)
+ - 💭 [Thinking with Language (Symbolic-level)](#thinking-with-language-symbolic-level)
+ - 🖼️ [Thinking with Images (Perceptual-level)](#thinking-with-images-perceptual-level)
+ - 🤖 [Thinking with Action (Embodied-level)](#thinking-with-action-embodied-level)
+ - 🛠️ [Tutorials and Tooling](#tutorials-and-tooling)
 
 ---
 
@@ -48,11 +48,11 @@ Multi-Scenario Anomaly Detection (MSAD) Dataset (NeurIPS 2024) [![Project](https
 
 ---
 
-## 💭 Thinking in Text
+## 💭 Thinking with Language (Symbolic-level)
 
 ### R1-Style Reasoning Models Overview
 
-<small>
+<!-- table begins -->
 
 | Model | Foundational LLMs | Time | Institution | Task | Feature | Modality | Learning | Algorithm |
 |-------|------------------|------|-------------|------|---------|----------|----------|-----------|
@@ -91,7 +91,7 @@ Note: A small GitHub badge next to a model name links to its confirmed repositor
 - **Learning**: SFT=Supervised Fine-Tuning, RL=Reinforcement Learning
 - **Algorithm**: GRPO=Group Relative Policy Optimization, RLOO=Reinforce Leave-One-Out, PPO=Proximal Policy Optimization
 
-</small>
+<!-- table ends -->
 
 ### Reasoning as &lt;think&gt;
 
@@ -137,7 +137,7 @@ Note: A small GitHub badge next to a model name links to its confirmed repositor
 
  
 
-## 🖼️ Thinking with Image
+## 🖼️ Thinking with Images (Perceptual-level)
 
 ### 理论部分
 
@@ -216,7 +216,7 @@ Number it: Temporal Grounding Videos like Flipping Manga <sup><kbd>CVPR 2025</kb
 
  
 
-## 🤖 Thinking as Action
+## 🤖 Thinking with Action (Embodied-level)
 
 ### Embodied Intelligence
 
