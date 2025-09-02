@@ -60,19 +60,12 @@ o3
 
 #### MCTS
 
-```mermaid
-%%{init: {'theme': 'neutral'}}%%
-timeline
-  title o1-style releases
-  2023-10-09 : O1-Journey (SJTU)
-  2024-09-12 : OpenAI o1 (OpenAI)
-  2024-11-04 : LLaMA-O1 (Shanghai AI Lab)
-  2024-11-15 : LLaVA-CoT (PKU)
-  2024-11-16 : K0-math (Moonshot)
-  2024-11-20 : DeepSeek-R1 (DeepSeek)
-  2024-11-25 : InternThinker (Shanghai AI Lab)
-  2024-11-28 : QwQ (Alibaba)
-```
+Timeline of o1-style releases (horizontal)
+
+|              | 2023-10-09 | 2024-09-12 | 2024-11-04 | 2024-11-15 | 2024-11-16 | 2024-11-20 | 2024-11-25 | 2024-11-28 |
+|--------------|------------|------------|------------|------------|------------|------------|------------|------------|
+| Release      | O1-Journey | OpenAI o1  | LLaMA-O1   | LLaVA-CoT  | K0-math    | DeepSeek-R1| InternThinker | OwO      |
+| Organization | SJTU       | OpenAI     | Shanghai AI Lab | PKU     | Moonshot AI | DeepSeek  | Shanghai AI Lab | Alibaba Group |
 
 [A] Xu Guowei et al., LLaVA-CoT: Let Vision Language Models Reason Step-by-Step, in arXiv, 2024.
 
@@ -319,7 +312,11 @@ Embodied-R1: Reinforced Embodied Reasoning for General Robotic Manipulation
 
 ## 🛠️ Tutorials and Tooling
 
-强化学习算法改进
+### 强化学习算法改进
+
+Agentic Reinforced Policy Optimization
+
+
 
 实现
 swift agent-rl
