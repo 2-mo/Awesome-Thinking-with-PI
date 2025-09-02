@@ -34,21 +34,51 @@
 
 ## 🤔 Why We Need Thinking?
 
-模型回答不同难度的问题都是一样的处理时间，这和人类在面对难题时思考是不同的，人类是好奇心驱动的。
+无论在人类视觉还是多模态模型里，感知给出的观测往往不完全、含噪且多解，可靠决策必须依赖跨时整合与假设检验——这就是“思考”。
 
-仅有快速感知（System 1）不足以应对不确定、长时序和高风险场景；我们需要缓慢、可分解、可验证的思考（System 2）来保证正确性、稳健性与可迁移性。
+### 人类视觉的启示
+
+- 输入不完整：瞬时感知零碎，二维到三维存在天然歧义，仅靠直接感知容易被错觉与遮挡误导。
+- 预测—校正循环：视觉依赖自上而下与自下而上的互动，通过假设生成、误差修正来抵御歧义。
+- 跨时与主动控制：稳健行为依赖跨时因果追踪、速度–准确性权衡，以及目标驱动的注意与资源分配。
+
+### 对应到多模态大模型
+
+- 多模态输入同样不全：图像可能遮挡，语音含噪，文本歧义，模态间还可能互相冲突。
+- 单次反应易偏差：只依赖“快感知”容易被局部或错误线索牵引。
+- 思考才能稳健：跨模态/跨时间整合，假设比较与检验，风险下自适应调控，才能将嘈杂不全的感知转化为可靠决策。
+
+### 对应到视频异常检测
+
+参见专题整理：[LLM4VAD · Video Anomaly Detection](../llm4vad/README.md)
+
+上下文依赖（复杂性）：异常往往是长时序事件（打斗、事故），需要结合前后因果与场景关系才能正确判定。
+
+歧义混淆（模糊性）：局部行为或场景容易与异常混淆（奔跑 vs 逃跑、聚集 vs 暴乱），必须通过更长时序和多模态线索来消解。
+
+长尾分布（稀疏性）：异常在视频流中出现频率极低、时机不可控，单次观测易漏检，必须跨时累积证据与假设检验。
 
 
-[![Wiki](https://img.shields.io/badge/Wiki-Thinking%2C%20Fast%20and%20Slow-blue?logo=wikipedia)](https://en.wikipedia.org/wiki/Thinking,_Fast_and_Slow)
 
-Takeaways for PI (Perception & Interaction) with System 2:
+#### 其实“思考”并不是只在异常场景里才需要，而是在异常问题上，它的必要性被放大：
 
-- 以“可验证过程”建立信任：输出中间证据（思维链、框/轨迹、工具结果）并自检/互评。
-- 在低置信度/高风险/长时序时触发 System 2：分解→计划→验证→回溯，而非一拍即合的直觉。
-- 用覆盖性评测与压力测试（多场景、多分布）获取“经验上的可靠性”，而不仅是事后解释。
+常态模式容易靠感知解决：正常行为/场景占据绝大多数，规律性强、数据量大，单靠感知模式匹配就能达到不错的效果。
+
+异常本质上是“不确定”：异常往往稀疏、少样本，缺乏先验统计支撑。仅靠快速感知会出现偏差，需要跨时整合和假设检验来弥补。
+
+异常涉及更大风险：一旦误判，可能带来严重后果（漏报安全事件、误报干扰系统），因此必须引入更慢、更稳健的决策机制。
+
+异常往往打破常规：它们可能表现为复杂的上下文依赖、模糊的语义混淆、长尾的稀疏分布——这些都恰好是“思考”擅长处理的。
+
+
+我们需要的是推理，而不仅是事后解释。
 
 
 
+[![Wiki](https://img.shields.io/badge/Wiki-Thinking%2C%20Fast%20and%20Slow-blue?logo=wikipedia)](https://en.wikipedia.org/wiki/Thinking,_Fast,_and_Slow)
+
+
+注：可信并非仅来自“可解释性”，而是来自长期训练与真实世界的稳定表现（参见一次演讲中的比喻：我们信任陌生司机，多因可靠经验而非完全可解释的大脑机理）。
 
 Why Would You Trust the Human Driver?
 
@@ -57,6 +87,15 @@ Why Would You Trust the Human Driver?
 
 
 ### 基本概念
+
+Similar to how a human may think for a long time before responding to a difficult question, o1 uses a chain of thought when attempting to solve a problem. Through reinforcement learning, o1 learns to hone its chain of thought and refine the strategies it uses. It learns to recognize and correct its mistakes. It learns to break down tricky steps into simpler ones. It learns to try a different approach when the current one isn’t working. This process dramatically improves the model’s ability to reason.
+与人类在回答难题之前可能会思考很长时间类似，o1 在尝试解决问题时也会使用思维链。通过强化学习，o1 可以学会磨练自己的思维链，并完善自己使用的策略。它学会识别和纠正错误。它学会把棘手的步骤分解成更简单的步骤。它学会在当前方法无效时尝试不同的方法。这一过程极大地提高了模型的推理能力。
+
+利用 LLM 學習推理 — [OpenAI: Learning to Reason with LLMs](https://openai.com/zh-Hant/index/learning-to-reason-with-llms/)
+
+Thinking with Images — [OpenAI](https://openai.com/index/thinking-with-images/)
+
+
 
 [![OpenAI o1](https://img.shields.io/badge/OpenAI-ChatGPT--o1-9cf?logo=openai)](https://openai.com/o1/)
 [![DeepSeek-R1](https://img.shields.io/github/stars/deepseek-ai/DeepSeek-R1?style=social&label=DeepSeek-R1&logo=github)](https://github.com/deepseek-ai/DeepSeek-R1)
@@ -99,7 +138,7 @@ Let’s Verify Step by Step (process supervision/PRM): [arXiv:2305.20050](https:
 - Self-Refine/Reflexion：自我反馈与反思改进 — Self-Refine [arXiv:2303.17651](https://arxiv.org/abs/2303.17651)；Reflexion [arXiv:2303.11366](https://arxiv.org/abs/2303.11366)
 - LLM-as-a-Judge：用模型评审模型输出，支撑自监督与对比优化（DPO） — LLM-as-a-Judge [arXiv:2306.05685](https://arxiv.org/abs/2306.05685)；DPO [arXiv:2305.18290](https://arxiv.org/abs/2305.18290)
 
-_注：Tree/Graph of Thoughts、MCTS、ReAct 交互式搜索。_
+*注：Tree/Graph of Thoughts、MCTS、ReAct 交互式搜索。*
 
 2024：面向“过程质量”的训练与验证
 
