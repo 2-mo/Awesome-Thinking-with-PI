@@ -1,46 +1,45 @@
 <h1 align="center">Awesome Thinking with PI (<u>P</u>erception & <u>I</u>nteraction)</h1>
 
+<p align="center">
+  <b>A curated list of resources on visual reasoning, video understanding, embodied AI, robot action, and perception-driven interaction.</b>
+</p>
 
-A curated list of resources on visual reasoning, video understanding, embodied AI, robot action, and perception-driven interaction.
-
-[![License: MIT](https://img.shields.io/badge/License-MIT-blueviolet)](https://github.com/2-mo/Awesome-Thinking-with-PI/blob/main/LICENSE)
-[![Issues](https://img.shields.io/badge/Issues-Track-orange)](https://github.com/2-mo/Awesome-Thinking-with-PI/issues)
-[![Pull Requests](https://img.shields.io/badge/Pull%20Requests-Welcome-brightgreen)](https://github.com/2-mo/Awesome-Thinking-with-PI/pulls)
-[![Commits: main](https://img.shields.io/badge/Commits-Main-blue)](https://github.com/2-mo/Awesome-Thinking-with-PI/commits/main)
+<!-- Top badges -->
+<p align="center">
+  <a href="https://github.com/2-mo/Awesome-Thinking-with-PI/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-blueviolet" alt="License: MIT"></a>
+  <a href="https://github.com/2-mo/Awesome-Thinking-with-PI/issues"><img src="https://img.shields.io/badge/Issues-Track-orange" alt="Issues"></a>
+  <a href="https://github.com/2-mo/Awesome-Thinking-with-PI/pulls"><img src="https://img.shields.io/badge/Pull%20Requests-Welcome-brightgreen" alt="Pull Requests"></a>
+  <a href="https://github.com/2-mo/Awesome-Thinking-with-PI/commits/main"><img src="https://img.shields.io/badge/Commits-Main-blue" alt="Commits: main"></a>
+</p>
 
 
 
 ## 📚 Contents
 
-- ❓ [Why We Need Thinking?](#why-we-need-thinking)
-- 💭 [Thinking with Language (Symbolic-level)](#thinking-with-language-symbolic-level)
+- 🤔 [Why We Need Thinking?](#why-we-need-thinking)
+- 💭 [Thinking with Language](#thinking-with-language-symbolic-level)
   - CoT / ToT / GoT
   - r1-like reasoning models
-- 🔀 [Thinking across Modalities (Multimodal-level)](#thinking-across-modalities-multimodal-level)
+- 🌉 [Thinking across Modalities](#thinking-across-modalities-multimodal-level)
   - PPO / DPO / GRPO
   - RLHF for multimodal reasoning
-- 🖱️ [Thinking with Visual Operations (Interactive-level)](#thinking-with-visual-operations-interactive-level)
-  - GUI interaction / screen control / visual grounding 
-- 🤖 [Thinking in the Physical World (Embodied-level)](#thinking-in-the-physical-world-embodied-level)
+- 🔍 [Thinking with Visual Operations](#thinking-with-visual-operations-interactive-level)
+  - GUI interaction / screen control / visual grounding
+- 🌍 [Thinking in the Physical World](#thinking-in-the-physical-world-embodied-level)
   - Robotics / embodied navigation / manipulation
 - 🛠️ [Tutorials and Tooling](#tutorials-and-tooling)
 - 📖 [Related Collections](#related-collections)
 
 ---
 
-## ❓ Why We Need Thinking?
+## 🤔 Why We Need Thinking?
 
+模型回答不同难度的问题都是一样的处理时间，这和人类在面对难题时思考是不同的，人类是好奇心驱动的。
 
 仅有快速感知（System 1）不足以应对不确定、长时序和高风险场景；我们需要缓慢、可分解、可验证的思考（System 2）来保证正确性、稳健性与可迁移性。
 
 
-Dual‑process theory (overview, System 1/2): [Wikipedia](https://en.wikipedia.org/wiki/Dual-process_theory)
-Kahneman, Thinking, Fast and Slow (book overview): [Wikipedia](https://en.wikipedia.org/wiki/Thinking,_Fast_and_Slow)
-
-
-- Why Would You Trust the Human Driver? [YouTube](https://www.youtube.com/watch?v=NA6EH8r-IT0)
-
-> Paraphrase from the talk: In response to a question about interpretability, Kaiming He asks—why do you trust a taxi driver you don't know? Not because the brain is fully interpretable, but because extensive real‑world training and testing make performance reliable; just like airplanes are trusted after millions of flights. Interpretability matters, yet reliability is ultimately earned through empirical evidence. [[Video]](https://www.youtube.com/watch?v=NA6EH8r-IT0)
+[![Wiki](https://img.shields.io/badge/Wiki-Thinking%2C%20Fast%20and%20Slow-blue?logo=wikipedia)](https://en.wikipedia.org/wiki/Thinking,_Fast_and_Slow)
 
 Takeaways for PI (Perception & Interaction) with System 2:
 
@@ -50,10 +49,17 @@ Takeaways for PI (Perception & Interaction) with System 2:
 
 
 
+
+Why Would You Trust the Human Driver?
+
+> Paraphrase from the [[talk]](https://www.youtube.com/watch?v=NA6EH8r-IT0): In response to a question about interpretability, Kaiming He asks—why do you trust a taxi driver you don't know? Not because the brain is fully interpretable, but because extensive real‑world training and testing make performance reliable; just like airplanes are trusted after millions of flights. Interpretability matters, yet reliability is ultimately earned through empirical evidence.
+
+
+
 ### 基本概念
 
-- OpenAI o1: ChatGPT-o1 [OpenAI o1 overview](https://openai.com/o1/)
-- DeepSeek-R1 [GitHub](https://github.com/deepseek-ai/DeepSeek-R1)
+[![OpenAI o1](https://img.shields.io/badge/OpenAI-ChatGPT--o1-9cf?logo=openai)](https://openai.com/o1/)
+[![DeepSeek-R1](https://img.shields.io/github/stars/deepseek-ai/DeepSeek-R1?style=social&label=DeepSeek-R1&logo=github)](https://github.com/deepseek-ai/DeepSeek-R1)
 
 ### 参考与理论支撑
 
