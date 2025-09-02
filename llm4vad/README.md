@@ -21,6 +21,13 @@ This list collects representative works that leverage LLMs or vision-language mo
 
 ## 📊 Benchmarks and Datasets
 
+
+NWPU-Campus
+Ubnormal
+TAD
+X-Man
+XD-Violence
+
 shanghaitech-anomaly-detection [[project](https://svip-lab.github.io/dataset/campus_dataset.html)] — Campus surveillance anomaly set; classic weakly supervised benchmark.
 
 [UCF-Crime](https://www.crcv.ucf.edu/research/real-world-anomaly-detection-in-surveillance-videos/) — Real-world surveillance anomaly dataset with long untrimmed videos.

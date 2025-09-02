@@ -31,14 +31,55 @@
 [![Awesome_Think_With_Images](https://img.shields.io/badge/Awesome-Think_With_Images-black?logo=github)](https://github.com/zhaochen0110/Awesome_Think_With_Images) — Visual-only reasoning with images (papers + code).
 [![Awesome-Thinking-With-Images](https://img.shields.io/badge/Awesome-Thinking_With_Images-black?logo=github)](https://github.com/ligeng0197/Awesome-Thinking-With-Images) — Broad visual thinking and perception resources.
 
----
 
+### 概念介绍
+
+ChatGPT-o1 https://openai.com/o1/
+
+r1
+o3
+
+
+### 理论支撑
+
+[A] Wang Yifei et al., A Theoretical Understanding of Self-Correction through In-context Alignment, in NeurIPS, 2024.
+
+
+[A] Zhang Zhuosheng et al., Automatic Chain of Thought Prompting in Large Language Models, in ICLR, 2023.
+[B] Zhao Andrew et al., ExpeL: LLM Agents Are Experiential Learners, in AAAI, 2024.
+
+
+
+
+
+---
 
 
 ## 💭 Thinking with Language (Symbolic-level)
 
+#### MCTS
+
+```mermaid
+%%{init: {'theme': 'neutral'}}%%
+timeline
+  title o1-style releases
+  2023-10-09 : O1-Journey (SJTU)
+  2024-09-12 : OpenAI o1 (OpenAI)
+  2024-11-04 : LLaMA-O1 (Shanghai AI Lab)
+  2024-11-15 : LLaVA-CoT (PKU)
+  2024-11-16 : K0-math (Moonshot)
+  2024-11-20 : DeepSeek-R1 (DeepSeek)
+  2024-11-25 : InternThinker (Shanghai AI Lab)
+  2024-11-28 : QwQ (Alibaba)
+```
+
+[A] Xu Guowei et al., LLaVA-CoT: Let Vision Language Models Reason Step-by-Step, in arXiv, 2024.
+
+
+
 ### R1-Style Reasoning Models Overview
 
+<small>
 <!-- table begins -->
 
 | Model | Foundational LLMs | Time | Institution | Task | Feature |
@@ -73,7 +114,7 @@
 Note: A small GitHub badge next to a model name links to its confirmed repository. If no badge is shown, the official repo is pending or unverified.
 
 <!-- Legend removed as Modality column was dropped -->
-
+<\small>
 
 <!-- table ends -->
 
@@ -203,6 +244,8 @@ Number it: Temporal Grounding Videos like Flipping Manga <sup><kbd>CVPR 2025</kb
 ## 🤖 Thinking with Action (Embodied-level)
 
 ### Embodied Intelligence
+
+Embodied-R1: Reinforced Embodied Reasoning for General Robotic Manipulation
 
 #### Embodied-Reasoner: Synergizing Visual Search, Reasoning, and Action for Embodied Interactive Tasks
 
