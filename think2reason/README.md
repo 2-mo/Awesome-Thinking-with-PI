@@ -62,10 +62,15 @@ o3
 
 Timeline of o1-style releases (horizontal)
 
-|              | 2023-10-09 | 2024-09-12 | 2024-11-04 | 2024-11-15 | 2024-11-16 | 2024-11-20 | 2024-11-25 | 2024-11-28 |
+|              | Sep 12 | Oct 09 | Nov 04 | Nov 15 | Nov 16 | Nov 20 | Nov 25 | Nov 28 |
 |--------------|------------|------------|------------|------------|------------|------------|------------|------------|
-| Release      | O1-Journey | OpenAI o1  | LLaMA-O1   | LLaVA-CoT  | K0-math    | DeepSeek-R1| InternThinker | OwO      |
-| Organization | SJTU       | OpenAI     | Shanghai AI Lab | PKU     | Moonshot AI | DeepSeek  | Shanghai AI Lab | Alibaba Group |
+| Release      | OpenAI o1  | O1-Journey | LLaMA-O1   | LLaVA-CoT  | K0-math    | DeepSeek-R1| InternThinker | QwQ      |
+| Organization | OpenAI     | SJTU       | Shanghai AI Lab | PKU     | Moonshot AI | DeepSeek  | Shanghai AI Lab | Alibaba Group |
+
+
+
+
+
 
 [A] Xu Guowei et al., LLaVA-CoT: Let Vision Language Models Reason Step-by-Step, in arXiv, 2024.
 
