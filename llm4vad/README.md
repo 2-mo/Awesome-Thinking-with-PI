@@ -230,3 +230,14 @@ Highlight: Pursues open-world anomaly understanding with scalable concept covera
 #### Related Awesome Lists
 
 [![Awesome-Anomaly-Detection-Foundation-Models](https://img.shields.io/badge/Awesome-Anomaly_Detection_Foundation_Models-black?logo=github)](https://github.com/mala-lab/Awesome-Anomaly-Detection-Foundation-Models/tree/main?tab=readme-ov-file)
+
+
+
+参考文章
+Hyperbolic Safety-Aware Vision-Language Models (CVPR 2025) [![GitHub stars](https://img.shields.io/github/stars/aimagelab/HySAC?style=social&label=GitHub&logo=github)](https://github.com/aimagelab/HySAC) [![Project](https://img.shields.io/badge/Project-blue?logo=safari)](https://aimagelab.github.io/HySAC/)
+
+![HySAC method](assets/hysac-method.png)
+
+[![HyperCLIP](https://img.shields.io/badge/To--Sort-HyperCLIP-lightgrey?logo=github)](https://github.com/SJTU-DeepVisionLab/HyperCLIP)
+[![TreeVGR](https://img.shields.io/badge/To--Sort-TreeVGR-lightgrey?logo=github)](https://github.com/Haochen-Wang409/TreeVGR)
+[![HyperVD](https://img.shields.io/badge/To--Sort-HyperVD-lightgrey?logo=github)](https://github.com/xiaogangpeng/HyperVD)
