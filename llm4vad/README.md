@@ -17,12 +17,33 @@ A curated list of papers and resources on Large Language Models for Video Anomal
 
 This list collects representative works that leverage LLMs or vision-language models for video anomaly detection, explanation, and understanding. Entries are grouped by year with links to paper and code, plus a preview figure when available.
 
+上下文依赖（复杂性）：异常往往是长时序事件（打斗、事故），需要结合前后因果与场景关系才能正确判定。
+
+歧义混淆（模糊性）：局部行为或场景容易与异常混淆（奔跑 vs 逃跑、聚集 vs 暴乱），必须通过更长时序和多模态线索来消解。
+
+长尾分布（稀疏性）：异常在视频流中出现频率极低、时机不可控，单次观测易漏检，必须跨时累积证据与假设检验。
+
+
+
+#### 其实“思考”并不是只在异常场景里才需要，而是在异常问题上，它的必要性被放大：
+
+常态模式容易靠感知解决：正常行为/场景占据绝大多数，规律性强、数据量大，单靠感知模式匹配就能达到不错的效果。
+
+异常本质上是“不确定”：异常往往稀疏、少样本，缺乏先验统计支撑。仅靠快速感知会出现偏差，需要跨时整合和假设检验来弥补。
+
+异常涉及更大风险：一旦误判，可能带来严重后果（漏报安全事件、误报干扰系统），因此必须引入更慢、更稳健的决策机制。
+
+异常往往打破常规：它们可能表现为复杂的上下文依赖、模糊的语义混淆、长尾的稀疏分布——这些都恰好是“思考”擅长处理的。
+
+
+我们需要的是推理，而不仅是事后解释。
+
 ---
 
 ## 📊 Benchmarks and Datasets
 
 
-<https://github.com/okankop/Driver-Anomaly-Detection>
+
 
 数据集：Driving Anomaly Detection Honda Research Institute
 <https://usa.honda-ri.com/hdd#Videos>
@@ -39,6 +60,13 @@ shanghaitech-anomaly-detection [[project](https://svip-lab.github.io/dataset/cam
 
 Multi-Scenario Anomaly Detection (MSAD) Dataset (NeurIPS 2024) [![Project](https://img.shields.io/badge/Project-blue?logo=safari)](https://msad-dataset.github.io/) [![arXiv](https://img.shields.io/badge/arXiv-2402.04857-b31b1b?logo=arxiv)](https://arxiv.org/pdf/2402.04857) — Large-scale, multi-scene anomaly benchmark.
 
+
+<https://github.com/okankop/Driver-Anomaly-Detection>
+
+https://www.cs.cmu.edu/~roadwork/ (ICCV 2025)
+
+
+
 ### Metrics & Evaluation
 
 - Coming soon: common tasks, metrics, and evaluation protocols.
@@ -48,6 +76,76 @@ Multi-Scenario Anomaly Detection (MSAD) Dataset (NeurIPS 2024) [![Project](https
 
 
 ## Papers (2025)
+
+
+ICCV 2025
+
+FE-CLIP: Frequency Enhanced CLIP Model for Zero-Shot Anomaly Detection and Segmentation
+
+Wave-MambaAD: Wavelet-driven State Space Model for Multi-class Unsupervised Anomaly Detection
+
+MultiADS: Defect-aware Supervision for Multi-type Anomaly Detection and Segmentation in Zero-Shot Learning
+
+ReMP-AD: Retrieval-enhanced Multi-modal Prompt Fusion for Few-Shot Industrial Visual Anomaly Detection
+
+Aligning Effective Tokens with Video Anomaly in Large Language Models
+
+Toward Long-Tailed Online Anomaly Detection through Class-Agnostic Concepts
+
+Towards Real Unsupervised Anomaly Detection Via Confident Meta-Learning
+
+Anomaly Detection of Integrated Circuits Package Substrates Using the Large Vision Model SAIC: Dataset Construction, Methodology, and Application
+
+Beyond Walking: A Large-Scale Image-Text Benchmark for Text-based Person Anomaly Search
+
+Mixture of Experts Guided by Gaussian Splatters Matters: A new Approach to Weakly-Supervised Video Anomaly Detection
+
+Triad: Empowering LMM-based Anomaly Detection with Expert-guided Region-of-Interest Tokenizer and Manufacturing Process
+
+Normal and Abnormal Pathology Knowledge-Augmented Vision-Language Model for Anomaly Detection in Pathology Images
+
+HumanSAM: Classifying Human-centric Forgery Videos in Human Spatial, Appearance, and Motion Anomaly
+
+
+SALAD -- Semantics-Aware Logical Anomaly Detection
+
+Fine-grained Abnormality Prompt Learning for Zero-shot Anomaly Detection
+
+FIND: Few-Shot Anomaly Inspection with Normal-Only Multi-Modal Data
+
+
+Autoregressive Denoising Score Matching is a Good Video Anomaly Detector
+
+
+DictAS: A Framework for Class-Generalizable Few-Shot Anomaly Segmentation via Dictionary Lookup
+
+DecAD: Decoupling Anomalies in Latent Space for Multi-Class Unsupervised Anomaly Detection
+
+
+Sequential keypoint density estimator: an overlooked baseline of skeleton-based video anomaly detection
+
+
+RareCLIP: Rarity-aware Online Zero-shot Industrial Anomaly Detection
+
+
+Debiasing Trace Guidance: Top-down Trace Distillation and Bottom-up Velocity Alignment for Unsupervised Anomaly Detection
+
+
+
+
+
+分布外检测：
+Beyond Pixel Uncertainty: Bounding the OoD Objects in Road Scenes
+
+Equipping Vision Foundation Model with Mixture of Experts for Out-of-Distribution Detection
+
+Adaptive Prompt Learning via Gaussian Outlier Synthesis for Out-of-distribution Detection
+
+FA: Forced Prompt Learning of Vision-Language Models for Out-of-Distribution Detection
+
+
+
+
 
 ### VERA: Explainable Video Anomaly Detection via Verbalized Learning of Vision-Language Models (CVPR 2025)
 

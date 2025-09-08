@@ -12,13 +12,15 @@
   <a href="https://github.com/2-mo/Awesome-Thinking-with-PI/commits/main"><img src="https://img.shields.io/badge/Commits-Main-blue" alt="Commits: main"></a>
 </p>
 
+<!-- [![repo](https://img.shields.io/badge/GitHub-2--mo%2FAwesome--Thinking--with--PI-black?logo=github)](https://github.com/2-mo/Awesome-Thinking-with-PI) -->
+
 
 
 ## 📚 Contents
 
 - 🤔 [Why We Need Thinking?](#why-we-need-thinking)
 - 💭 [Thinking with Language](#thinking-with-language-symbolic-level)
-  - CoT / ToT / GoT
+  - CoT / ToT / GoT / MCTS
   - r1-like reasoning models
 - 🌉 [Thinking across Modalities](#thinking-across-modalities-multimodal-level)
   - PPO / DPO / GRPO
@@ -36,51 +38,26 @@
 
 无论在人类视觉还是多模态模型里，感知给出的观测往往不完全、含噪且多解，可靠决策必须依赖跨时整合与假设检验——这就是“思考”。
 
-### 人类视觉的启示
-
-- 输入不完整：瞬时感知零碎，二维到三维存在天然歧义，仅靠直接感知容易被错觉与遮挡误导。
-- 预测—校正循环：视觉依赖自上而下与自下而上的互动，通过假设生成、误差修正来抵御歧义。
-- 跨时与主动控制：稳健行为依赖跨时因果追踪、速度–准确性权衡，以及目标驱动的注意与资源分配。
-
-### 对应到多模态大模型
-
-- 多模态输入同样不全：图像可能遮挡，语音含噪，文本歧义，模态间还可能互相冲突。
-- 单次反应易偏差：只依赖“快感知”容易被局部或错误线索牵引。
-- 思考才能稳健：跨模态/跨时间整合，假设比较与检验，风险下自适应调控，才能将嘈杂不全的感知转化为可靠决策。
-
-### 对应到视频异常检测
-
-参见专题整理：[LLM4VAD · Video Anomaly Detection](../llm4vad/README.md)
-
-上下文依赖（复杂性）：异常往往是长时序事件（打斗、事故），需要结合前后因果与场景关系才能正确判定。
-
-歧义混淆（模糊性）：局部行为或场景容易与异常混淆（奔跑 vs 逃跑、聚集 vs 暴乱），必须通过更长时序和多模态线索来消解。
-
-长尾分布（稀疏性）：异常在视频流中出现频率极低、时机不可控，单次观测易漏检，必须跨时累积证据与假设检验。
-
-
-
-#### 其实“思考”并不是只在异常场景里才需要，而是在异常问题上，它的必要性被放大：
-
-常态模式容易靠感知解决：正常行为/场景占据绝大多数，规律性强、数据量大，单靠感知模式匹配就能达到不错的效果。
-
-异常本质上是“不确定”：异常往往稀疏、少样本，缺乏先验统计支撑。仅靠快速感知会出现偏差，需要跨时整合和假设检验来弥补。
-
-异常涉及更大风险：一旦误判，可能带来严重后果（漏报安全事件、误报干扰系统），因此必须引入更慢、更稳健的决策机制。
-
-异常往往打破常规：它们可能表现为复杂的上下文依赖、模糊的语义混淆、长尾的稀疏分布——这些都恰好是“思考”擅长处理的。
-
-
-我们需要的是推理，而不仅是事后解释。
-
-
-
 [![Wiki](https://img.shields.io/badge/Wiki-Thinking%2C%20Fast%20and%20Slow-blue?logo=wikipedia)](https://en.wikipedia.org/wiki/Thinking,_Fast,_and_Slow)
 
+**人类视觉的启示**
 
-注：可信并非仅来自“可解释性”，而是来自长期训练与真实世界的稳定表现（参见一次演讲中的比喻：我们信任陌生司机，多因可靠经验而非完全可解释的大脑机理）。
+- **输入不完整**：瞬时感知零碎，二维到三维存在天然歧义，仅靠直接感知容易被错觉与遮挡误导。
+- **预测—校正循环**：视觉依赖自上而下与自下而上的互动，通过假设生成、误差修正来抵御歧义。
+- **跨时与主动控制**：稳健行为依赖跨时因果追踪、速度–准确性权衡，以及目标驱动的注意与资源分配。
 
-Why Would You Trust the Human Driver?
+**对应到多模态大模型**
+
+- **多模态输入同样不全**：图像可能遮挡，语音含噪，文本歧义，模态间还可能互相冲突。
+- **单次反应易偏差**：只依赖“快感知”容易被局部或错误线索牵引。
+- **思考才能稳健**：跨模态/跨时间整合，假设比较与检验，风险下自适应调控，才能将嘈杂不全的感知转化为可靠决策。
+
+**对应到视频异常检测:**
+> [[LLM4VAD · Video Anomaly Detection]](../llm4vad/README.md)
+
+
+
+可信并非仅来自“可解释性”，而是来自长期训练与真实世界的稳定表现（参见一次演讲中的比喻：我们信任陌生司机，多因可靠经验而非完全可解释的大脑机理）。
 
 > Paraphrase from the [[talk]](https://www.youtube.com/watch?v=NA6EH8r-IT0): In response to a question about interpretability, Kaiming He asks—why do you trust a taxi driver you don't know? Not because the brain is fully interpretable, but because extensive real‑world training and testing make performance reliable; just like airplanes are trusted after millions of flights. Interpretability matters, yet reliability is ultimately earned through empirical evidence.
 
@@ -96,6 +73,7 @@ Similar to how a human may think for a long time before responding to a difficul
 Thinking with Images — [OpenAI](https://openai.com/index/thinking-with-images/)
 
 
+#### 代表性工作
 
 [![OpenAI o1](https://img.shields.io/badge/OpenAI-ChatGPT--o1-9cf?logo=openai)](https://openai.com/o1/)
 [![DeepSeek-R1](https://img.shields.io/github/stars/deepseek-ai/DeepSeek-R1?style=social&label=DeepSeek-R1&logo=github)](https://github.com/deepseek-ai/DeepSeek-R1)
@@ -111,55 +89,105 @@ Thinking with Images — [OpenAI](https://openai.com/index/thinking-with-images/
 ---
 
 
-## 💭 Thinking with Language (Symbolic-level)
+## 💭 Thinking with Language
 
-一句话概览：以“语言”为显式中间层，把复杂任务拆成步骤→在思维空间搜索→调用工具校验→用评审与过程监督持续改进。
+以“语言”为显式中间层，把复杂任务拆成步骤→在思维空间搜索→调用工具校验→用评审与过程监督持续改进。
 
 > Quick recipe: CoT → Self-Consistency/ToT → ReAct+Tools → Judge/Refine → PRM/DPO.
 
+### CoT (Chain of Thought, 思维链)
 
-2022：语言成为“可见思维”
+**语言成为“可见思维”(2022)**
 
-Let’s Verify Step by Step (process supervision/PRM): [arXiv:2305.20050](https://arxiv.org/abs/2305.20050)
+Chain-of-Thought Prompting Elicits Reasoning in Large Language Models [![arXiv](https://img.shields.io/badge/arXiv-2201.11903-b31b1b?logo=arxiv)](https://arxiv.org/abs/2201.11903)
 
-- Chain-of-Thought（CoT）：示例引导逐步推理 — Chain-of-Thought Prompting Elicits Reasoning in Large Language Models [arXiv:2201.11903](https://arxiv.org/abs/2201.11903)
-- Self-Consistency：多样化思路投票 — Self-Consistency Improves Chain of Thought Reasoning in Language Models [arXiv:2203.11171](https://arxiv.org/abs/2203.11171)
-- STaR：用模型生成的推理链反蒸馏训练 — STaR: Bootstrapping Reasoning with Reasoning [arXiv:2203.14465](https://arxiv.org/abs/2203.14465)
-- Least-to-Most：先分解再求解 — Least-to-Most Prompting Enables Complex Reasoning in Large Language Models [arXiv:2210.00720](https://arxiv.org/abs/2210.00720)
-- Program-of-Thought：把思维转为可执行程序 — Program of Thoughts Prompting: Disentangling Computation from Reasoning for Numerical Reasoning Tasks [arXiv:2211.12588](https://arxiv.org/abs/2211.12588)
+Tree of Thoughts [![arXiv](https://img.shields.io/badge/arXiv-2305.10601-b31b1b?logo=arxiv)](https://arxiv.org/abs/2305.10601)
+
+Graph of Thoughts [![arXiv](https://img.shields.io/badge/arXiv-2308.09687-b31b1b?logo=arxiv)](https://arxiv.org/abs/2308.09687)
 
 
-2023：从“写出思路”到“搜索与执行”
+#### 中间过程
 
-- ReAct：思维+行动的交替（检索/工具使用） — ReAct: Synergizing Reasoning and Acting in Language Models [arXiv:2210.03629](https://arxiv.org/abs/2210.03629)
-- Toolformer/Function Calling：自动学习何时用工具 — Toolformer: Language Models Can Teach Themselves to Use Tools [arXiv:2302.04761](https://arxiv.org/abs/2302.04761)
-- PAL/PoT：将思维转为可执行程序/代码求解 — PAL: Program-aided Language Models [arXiv:2211.10435](https://arxiv.org/abs/2211.10435)；Program of Thoughts Prompting [arXiv:2211.12588](https://arxiv.org/abs/2211.12588)
-- Tree/Graph of Thoughts：在思维空间进行树/图搜索与评估 — Tree of Thoughts [arXiv:2305.10601](https://arxiv.org/abs/2305.10601)；Graph of Thoughts [arXiv:2308.09687](https://arxiv.org/abs/2308.09687)
-- Self-Refine/Reflexion：自我反馈与反思改进 — Self-Refine [arXiv:2303.17651](https://arxiv.org/abs/2303.17651)；Reflexion [arXiv:2303.11366](https://arxiv.org/abs/2303.11366)
-- LLM-as-a-Judge：用模型评审模型输出，支撑自监督与对比优化（DPO） — LLM-as-a-Judge [arXiv:2306.05685](https://arxiv.org/abs/2306.05685)；DPO [arXiv:2305.18290](https://arxiv.org/abs/2305.18290)
+Let’s Verify Step by Step (process supervision/PRM): [![arXiv](https://img.shields.io/badge/arXiv-2305.20050-b31b1b?logo=arxiv)](https://arxiv.org/abs/2305.20050)
 
-*注：Tree/Graph of Thoughts、MCTS、ReAct 交互式搜索。*
+Self-Consistency：多样化思路投票 — Self-Consistency Improves Chain of Thought Reasoning in Language Models [![arXiv](https://img.shields.io/badge/arXiv-2203.11171-b31b1b?logo=arxiv)](https://arxiv.org/abs/2203.11171)
 
-2024：面向“过程质量”的训练与验证
+STaR：用模型生成的推理链反蒸馏训练 — STaR: Bootstrapping Reasoning with Reasoning [![arXiv](https://img.shields.io/badge/arXiv-2203.14465-b31b1b?logo=arxiv)](https://arxiv.org/abs/2203.14465)
 
-- 过程监督与PRM（Process Reward Model）：奖励“思路过程”的正确性 — 代表作：Let’s Verify Step by Step [arXiv:2305.20050](https://arxiv.org/abs/2305.20050)
-- RLAIF/合成反馈：用AI或规则提供对齐信号 — Constitutional AI: Harmlessness from AI Feedback [arXiv:2212.08073](https://arxiv.org/abs/2212.08073)
+Least-to-Most：先分解再求解 — Least-to-Most Prompting Enables Complex Reasoning in Large Language Models [![arXiv](https://img.shields.io/badge/arXiv-2210.00720-b31b1b?logo=arxiv)](https://arxiv.org/abs/2210.00720)
+
+
+**思维+行动的交替（检索/工具使用）(2023)**
+
+
+ReAct: Synergizing Reasoning and Acting in Language Models 
+<sup><kbd>ICLR 2023</kbd></sup> [![arXiv](https://img.shields.io/badge/arXiv-2210.03629-b31b1b?logo=arxiv)](https://arxiv.org/pdf/2210.03629)
+
+
+Toolformer/Function Calling：自动学习何时用工具 — Toolformer: Language Models Can Teach Themselves to Use Tools [![arXiv](https://img.shields.io/badge/arXiv-2302.04761-b31b1b?logo=arxiv)](https://arxiv.org/abs/2302.04761)
+
+TOOLLLM: Facilitating Large Language Models to Master 16000+ Real-World APIs 
+<sup><kbd>ICLR 2024</kbd></sup> [![OpenReview](https://img.shields.io/badge/OpenReview-Link-green?logo=openreview)](https://openreview.net/forum?id=dHng2O0Jjr)
+
+DSPy/可编排思维：声明式地组合推理模块与检索/工具 — [GitHub: stanfordnlp/dspy](https://github.com/stanfordnlp/dspy)
+
+
+**将思维转为可执行程序/代码求解**
+
+PAL: Program-aided Language Models [![arXiv](https://img.shields.io/badge/arXiv-2211.10435-b31b1b?logo=arxiv)](https://arxiv.org/abs/2211.10435)；
+Program of Thoughts Prompting [![arXiv](https://img.shields.io/badge/arXiv-2211.12588-b31b1b?logo=arxiv)](https://arxiv.org/abs/2211.12588)
+
+
+**自我反馈与反思改进**
+
+Self-Refine/Reflexion：自我反馈与反思改进 — Self-Refine [![arXiv](https://img.shields.io/badge/arXiv-2303.17651-b31b1b?logo=arxiv)](https://arxiv.org/abs/2303.17651)；Reflexion [![arXiv](https://img.shields.io/badge/arXiv-2303.11366-b31b1b?logo=arxiv)](https://arxiv.org/abs/2303.11366)
+
+
+**用模型评审模型输出**
+LLM-as-a-Judge [![arXiv](https://img.shields.io/badge/arXiv-2306.05685-b31b1b?logo=arxiv)](https://arxiv.org/abs/2306.05685)；
+
+RLAIF/合成反馈：用AI或规则提供对齐信号 — Constitutional AI: Harmlessness from AI Feedback [![arXiv](https://img.shields.io/badge/arXiv-2212.08073-b31b1b?logo=arxiv)](https://arxiv.org/abs/2212.08073)
+
+
+**面向“过程质量”的训练与验证**
+
+
+- 过程监督与PRM（Process Reward Model）：奖励“思路过程”的正确性 — 代表作：Let’s Verify Step by Step [![arXiv](https://img.shields.io/badge/arXiv-2305.20050-b31b1b?logo=arxiv)](https://arxiv.org/abs/2305.20050)
+
+- 
+
 - 强化“思维—搜索—验证”闭环：把CoT与MCTS/工具调用/校验器结合
-- DSPy/可编排思维：声明式地组合推理模块与检索/工具 — [GitHub: stanfordnlp/dspy](https://github.com/stanfordnlp/dspy)
+- 
 
 
-2025：
+**2025：从“过程监督”到“思维—搜索—验证闭环”**
 
 - Supervision（监督/训练）：从答案监督走向过程监督（STaR、DPO、PRM、RLAIF、过程奖励）
+
 - Simulation（工具/程序）：语言驱动外部工具与程序运行（Toolformer、Function Calling、PAL、代码/求解器）
+
 - Society（社会化协作）：多智能体/辩论/评审（Debate、LLM-as-a-Judge、Self-Refine/Reflexion）
 
+参考（优先列出2025代表作）：
+
+- Supervision：Reason-RFT [![arXiv](https://img.shields.io/badge/arXiv-2503.20752-b31b1b?logo=arxiv)](https://arxiv.org/abs/2503.20752) [![GitHub stars](https://img.shields.io/github/stars/tanhuajie/Reason-RFT?style=social&label=GitHub&logo=github)](https://github.com/tanhuajie/Reason-RFT) · Visual-RFT [![arXiv](https://img.shields.io/badge/arXiv-2503.01785-b31b1b?logo=arxiv)](https://arxiv.org/pdf/2503.01785) [![GitHub stars](https://img.shields.io/github/stars/Liuziyu77/Visual-RFT?style=social&label=GitHub&logo=github)](https://github.com/Liuziyu77/Visual-RFT) · R1-VL [![GitHub stars](https://img.shields.io/github/stars/jingyi0000/R1-VL?style=social&label=GitHub&logo=github)](https://github.com/jingyi0000/R1-VL)
+- Simulation：AgentThink（工具增强CoT） [![arXiv](https://img.shields.io/badge/arXiv-2505.15298-b31b1b?logo=arxiv)](https://arxiv.org/pdf/2505.15298) · PAL [![arXiv](https://img.shields.io/badge/arXiv-2211.10435-b31b1b?logo=arxiv)](https://arxiv.org/abs/2211.10435) · Toolformer [![arXiv](https://img.shields.io/badge/arXiv-2302.04761-b31b1b?logo=arxiv)](https://arxiv.org/abs/2302.04761)
+- Society：LLM-as-a-Judge [![arXiv](https://img.shields.io/badge/arXiv-2306.05685-b31b1b?logo=arxiv)](https://arxiv.org/abs/2306.05685) · Self-Refine [![arXiv](https://img.shields.io/badge/arXiv-2303.17651-b31b1b?logo=arxiv)](https://arxiv.org/abs/2303.17651) · Reflexion [![arXiv](https://img.shields.io/badge/arXiv-2303.11366-b31b1b?logo=arxiv)](https://arxiv.org/abs/2303.11366)
 
 
-### MCTS
+
+### MCTS (Monte Carlo Tree Search, 蒙特卡洛树搜索)
+
+这个是一个过渡，o1刚出的时候没有技术报告，社区猜测的实现方式，在deepseek-r1之后，大家都是grpo了～
+
+社区早期常将 o1 的“长思考”理解为 ToT/MCTS 风格搜索；在 DeepSeek‑R1 之后，主流实现更多结合 GRPO/RFT 等强化学习方法以提升过程质量与稳定性。
 
 
 ![llava-cot](./assets/llava_cot.png)
+
+- LLaVA-CoT — 逐步思维链用于多模态过程监督 [arXiv](https://arxiv.org/abs/2410.21922)
+
+
 
 Timeline of o1-style releases (horizontal)
 
@@ -173,7 +201,7 @@ Timeline of o1-style releases (horizontal)
 [A] Xu Guowei et al., LLaVA-CoT: Let Vision Language Models Reason Step-by-Step, in arXiv, 2024.
 
 
-### R1-Style Reasoning Models Overview
+### R1-Style Reasoning Models Overview (As of March)
 
 Note: The following table compiles notable r1-style models and resources.
 <!-- table begins -->
@@ -192,7 +220,7 @@ Note: The following table compiles notable r1-style models and resources.
 | Seg-Zero [![GitHub stars](https://img.shields.io/github/stars/dvlab-research/Seg-Zero?style=social&label=GitHub&logo=github)](https://github.com/dvlab-research/Seg-Zero) | Qwen2.5-VL-3B + SAM2 | Mar 9, 2025 | CUHK | Segmentation | - |
 | Vision-R1 [![GitHub stars](https://img.shields.io/github/stars/Osilly/Vision-R1?style=social&label=GitHub&logo=github)](https://github.com/Osilly/Vision-R1) | Qwen-2.5-VL-72B | Mar 9, 2025 | Zhejiang University | Math | - |
 | MM-Eureka | InternVL2.5-Instruct-8B | Mar 10, 2025 | Shanghai AI Laboratory | Math | Leave-One-Out, RLOO |
-| LMM-R1 | Qwen2.5-VL-Instruct-3B | Mar 10, 2025 | Southeast University | Math, ScienceQA, ChartQA | Game Planning, PPO |
+| [LMM-R1](https://github.com/thu-SLT-Lab/LMM-R1)   | Qwen2.5-VL-Instruct-3B | Mar 10, 2025 | Southeast University | Math, ScienceQA, ChartQA | Game Planning, PPO |
 | Curr-ReFT | Qwen2.5-VL-3B | Mar 10, 2025 | USTC | Detection/Classification/Math | - |
 | AlphaDrive | Qwen2VL-2B | Mar 10, 2025 | HUST | Autonomous driving | - |
 | DriveLMM-o1 [![GitHub stars](https://img.shields.io/github/stars/mbzuai-oryx/DriveLMM-o1?style=social&label=GitHub&logo=github)](https://github.com/mbzuai-oryx/DriveLMM-o1) | InternVL2.5-8B | Mar 13, 2025 | MBZUAI | Autonomous driving | - |
@@ -213,19 +241,45 @@ Note: A small GitHub badge next to a model name links to its confirmed repositor
 
 <!-- table ends -->
 
-### Reasoning as &lt;think&gt;
+
+
+
+## 🔀 Thinking across Modalities
+
+这里单独列出来主要考虑视觉感知，虽然前面也有
+
+让“思维链”跨越文本与视觉（图像/视频/图表等），通过GRPO/DPO/RLHF与过程监督，提升跨模态理解与推理。
+
+### 评估基准
+
+- MM-Eureka / MM-Eureka-Zero — 留一法与RLOO强化样式 [示例](https://github.com/ShanghaiAILab/MM-Eureka)
+
+
+### 视觉语言理解
+
+- Multimodal-Open-R1 — 通用多模态R1 [项目](https://github.com/EvolvingLMMs-Lab/open-r1-multimodal)
+
+ - R1-VL — 视觉-语言逐步奖励 [项目](https://github.com/jingyi0000/R1-VL)
+
+
+### 目标检测/分割
+
+
+
+
+
+### 视频理解 
+
 
 #### Open R1 Video
-
+开源视频R1范式 
 [![Project](https://img.shields.io/badge/Project-blue?logo=safari)](https://github.com/Wang-Xiaodong1899/Open-R1-Video)
  [![GitHub stars](https://img.shields.io/github/stars/Wang-Xiaodong1899/Open-R1-Video?style=social&label=GitHub&logo=github)](https://github.com/Wang-Xiaodong1899/Open-R1-Video)
 
 ![Open R1 Video](assets/image-20250620102641966.png)
 
----
-
 #### Video-R1: Reinforcing Video Reasoning in MLLMs
-
+强化视频时空推理 
 [![arXiv](https://img.shields.io/badge/arXiv-2503.21776-b31b1b?logo=arxiv)](https://arxiv.org/pdf/2503.21776)
 [![Zhihu](https://img.shields.io/badge/Zhihu-Review-informational?logo=zhihu)](https://zhuanlan.zhihu.com/p/1889342435928282728)
 [![Project](https://img.shields.io/badge/Project-blue?logo=safari)](https://github.com/tulerfeng/Video-R1)
@@ -233,48 +287,33 @@ Note: A small GitHub badge next to a model name links to its confirmed repositor
 
 ![Video-R1](assets/image-20250620102641966.png)
 
----
-
 #### VideoChat-R1: Enhancing Spatio-Temporal Perception via Reinforcement Fine-Tuning
-
+时空感知强化微调
 [![arXiv](https://img.shields.io/badge/arXiv-2504.06958-b31b1b?logo=arxiv)](https://arxiv.org/pdf/2504.06958)
 [![Project](https://img.shields.io/badge/Project-blue?logo=safari)](https://github.com/OpenGVLab/VideoChat-R1)
  [![GitHub stars](https://img.shields.io/github/stars/OpenGVLab/VideoChat-R1?style=social&label=GitHub&logo=github)](https://github.com/OpenGVLab/VideoChat-R1)
 
 ![VideoChat-R1](assets/image-20250620144735572.png)
 
----
-
 #### TinyLLaVA-Video-R1: Towards Smaller LMMs for Video Reasoning
-
+小参数视频推理
 [![arXiv](https://img.shields.io/badge/arXiv-2504.09641-b31b1b?logo=arxiv)](https://arxiv.org/pdf/2504.09641)
 [![Project](https://img.shields.io/badge/Project-blue?logo=safari)](https://github.com/ZhangXJ199/TinyLLaVA-Video-R1)
  [![GitHub stars](https://img.shields.io/github/stars/ZhangXJ199/TinyLLaVA-Video-R1?style=social&label=GitHub&logo=github)](https://github.com/ZhangXJ199/TinyLLaVA-Video-R1)
 
 ![TinyLLaVA-Video-R1](assets/image-20250620103826723.png)
 
----
 
- 
+### 其他模态（事件相机,3D,红外）
 
-## 🔀 Thinking across Modalities (Multimodal-level)
 
-一句话概览：让“思维链”跨越文本与视觉（图像/视频/图表等），通过GRPO/DPO/RLHF与过程监督，提升跨模态理解与推理。
 
-### r1-like 多模态推理
+### 底层视觉（图像生成）
 
-- Video-R1 — 强化视频时空推理 [项目](https://github.com/tulerfeng/Video-R1) · [arXiv](https://arxiv.org/pdf/2503.21776)
-- VideoChat-R1 — 时空感知强化微调 [项目](https://github.com/OpenGVLab/VideoChat-R1) · [arXiv](https://arxiv.org/pdf/2504.06958)
-- TinyLLaVA-Video-R1 — 小参数视频推理 [项目](https://github.com/ZhangXJ199/TinyLLaVA-Video-R1) · [arXiv](https://arxiv.org/pdf/2504.09641)
-- R1-VL — 视觉-语言逐步奖励 [项目](https://github.com/jingyi0000/R1-VL)
-- Open-R1-Video — 开源视频R1范式 [项目](https://github.com/Wang-Xiaodong1899/Open-R1-Video)
-- Multimodal-Open-R1 — 通用多模态R1 [项目](https://github.com/EvolvingLMMs-Lab/open-r1-multimodal)
 
-### 训练策略与过程质量
 
-- LLaVA-CoT — 逐步思维链用于多模态过程监督 [arXiv](https://arxiv.org/abs/2410.21922)
-- MM-Eureka / MM-Eureka-Zero — 留一法与RLOO强化样式 [示例](https://github.com/ShanghaiAILab/MM-Eureka)
-- LMM-R1 / Easy-R1 — 经济高效的R1训练 [LMM-R1](https://github.com/thu-SLT-Lab/LMM-R1) · [Easy-R1](https://github.com/thu-sigma-lab/Easy-R1)
+### 可信安全
+
 - Safe RLHF-V — 多模态安全对齐 [项目](https://github.com/PKU-Alignment/Safe-RLHF-V)
 
 > 小结：多模态“思维—搜索—验证”闭环正在标准化，核心在于过程监督（PRM）、行为奖励与环境校验相结合。
@@ -283,6 +322,7 @@ Note: A small GitHub badge next to a model name links to its confirmed repositor
 ## 🖼️ Thinking with Images (Perceptual-level)
 
 ### 理论部分
+
 
 
 ### 为什么要用工具
@@ -451,24 +491,28 @@ Embodied-R1: Reinforced Embodied Reasoning for General Robotic Manipulation
 
 ![AgentThink](assets/image-20250725211337583.png)
 
+
+
+
 ---
 
 ## 🛠️ Tutorials and Tooling
 
-### 强化学习算法改进
+### 强化学习算法
+
+DPO [![arXiv](https://img.shields.io/badge/arXiv-2305.18290-b31b1b?logo=arxiv)](https://arxiv.org/abs/2305.18290)
 
 Agentic Reinforced Policy Optimization
 
 
-
+### 操作实现
 实现
 swift agent-rl
 
+[Easy-R1](https://github.com/hiyouga/EasyR1)
 
 
-TOOLLLM: Facilitating Large Language Models to Master 16000+ Real-World APIs <sup><kbd>ICLR 2024</kbd></sup> [![OpenReview](https://img.shields.io/badge/OpenReview-Link-green?logo=openreview)](https://openreview.net/forum?id=dHng2O0Jjr)
 
-ReAct: Synergizing Reasoning and Acting in Language Models <sup><kbd>ICLR 2023</kbd></sup> [![arXiv](https://img.shields.io/badge/arXiv-2210.03629-b31b1b?logo=arxiv)](https://arxiv.org/pdf/2210.03629)
 
 
 
@@ -479,6 +523,8 @@ ReAct: Synergizing Reasoning and Acting in Language Models <sup><kbd>ICLR 2023</
 
 
 ## 📖 Related Collections
+
+From Language to Action: A Review of Large Language Models as Autonomous Agents and Tool Users
 
 [![Awesome_Think_With_Images](https://img.shields.io/badge/Awesome-Think_With_Images-black?logo=github)](https://github.com/zhaochen0110/Awesome_Think_With_Images) — Visual-only reasoning with images (papers + code).
 
