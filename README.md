@@ -51,7 +51,7 @@
 - **思考才能稳健**：跨模态/跨时间整合，假设比较与检验，风险下自适应调控，才能将嘈杂不全的感知转化为可靠决策。
 
 **对应到视频异常检测:**
-> [[LLM4VAD · Video Anomaly Detection]](../llm4vad/README.md)
+> 参见 [[LLM4VAD · Video Anomaly Detection]](./llm4vad/README.md)
 
 
 
@@ -70,7 +70,7 @@ Curiosity-driven Exploration by Self-supervised Prediction (ICML 2017 (PMLR v70)
 Computational mechanisms of curiosity and goal-directed exploration (Neuroscience 2019) [[paper](https://elifesciences.org/articles/41703)]
 
 
-### 基本概念
+#### 基本概念
 
 Similar to how a human may think for a long time before responding to a difficult question, o1 uses a chain of thought when attempting to solve a problem. Through reinforcement learning, o1 learns to hone its chain of thought and refine the strategies it uses. It learns to recognize and correct its mistakes. It learns to break down tricky steps into simpler ones. It learns to try a different approach when the current one isn’t working. This process dramatically improves the model’s ability to reason.
 与人类在回答难题之前可能会思考很长时间类似，o1 在尝试解决问题时也会使用思维链。通过强化学习，o1 可以学会磨练自己的思维链，并完善自己使用的策略。它学会识别和纠正错误。它学会把棘手的步骤分解成更简单的步骤。它学会在当前方法无效时尝试不同的方法。这一过程极大地提高了模型的推理能力。
@@ -80,7 +80,7 @@ Similar to how a human may think for a long time before responding to a difficul
 Thinking with Images — [OpenAI](https://openai.com/index/thinking-with-images/)
 
 
-#### 代表性工作
+##### 代表性工作
 
 [![OpenAI o1](https://img.shields.io/badge/OpenAI-ChatGPT--o1-9cf?logo=openai)](https://openai.com/o1/)
 [![DeepSeek-R1](https://img.shields.io/github/stars/deepseek-ai/DeepSeek-R1?style=social&label=DeepSeek-R1&logo=github)](https://github.com/deepseek-ai/DeepSeek-R1)
@@ -124,11 +124,11 @@ Wang Yifei et al., A Theoretical Understanding of Self-Correction through In-con
 
 ![llava-cot](./assets/llava_cot.png)
 
-- LLaVA-CoT — 逐步思维链用于多模态过程监督 [arXiv](https://arxiv.org/abs/2410.21922)
+LLaVA-CoT — 逐步思维链用于多模态过程监督 [![arXiv](https://img.shields.io/badge/arXiv-2410.21922-b31b1b?logo=arxiv)](https://arxiv.org/abs/2410.21922)
 
 
 
-Timeline of o1-style releases (horizontal)
+**Timeline of o1-style releases**
 
 |              | Sep 12 | Oct 09 | Nov 04 | Nov 15 | Nov 16 | Nov 20 | Nov 25 | Nov 28 |
 |--------------|------------|------------|------------|------------|------------|------------|------------|------------|
@@ -386,7 +386,7 @@ Highlight: 将 R1 式逐步推理/奖励思路引入文本到图像生成。
 
 
 
-## 🤖 Thinking in the Physical World (Embodied-level)
+## 🤖 Thinking in the Physical World
 
 
 Embodied-R1: Reinforced Embodied Reasoning for General Robotic Manipulation
