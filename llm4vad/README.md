@@ -61,6 +61,10 @@ shanghaitech-anomaly-detection [[project](https://svip-lab.github.io/dataset/cam
 Multi-Scenario Anomaly Detection (MSAD) Dataset (NeurIPS 2024) [![Project](https://img.shields.io/badge/Project-blue?logo=safari)](https://msad-dataset.github.io/) [![arXiv](https://img.shields.io/badge/arXiv-2402.04857-b31b1b?logo=arxiv)](https://arxiv.org/pdf/2402.04857) — Large-scale, multi-scene anomaly benchmark.
 
 
+https://video-holmes.github.io/Page.github.io/
+
+
+
 <https://github.com/okankop/Driver-Anomaly-Detection>
 
 https://www.cs.cmu.edu/~roadwork/ (ICCV 2025)

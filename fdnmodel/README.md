@@ -7,3 +7,7 @@ Hyperbolic Safety-Aware Vision-Language Models (CVPR 2025) [![GitHub stars](http
 
 [![HyperCLIP](https://img.shields.io/badge/To--Sort-HyperCLIP-lightgrey?logo=github)](https://github.com/SJTU-DeepVisionLab/HyperCLIP)
 [![TreeVGR](https://img.shields.io/badge/To--Sort-TreeVGR-lightgrey?logo=github)](https://github.com/Haochen-Wang409/TreeVGR)
+
+
+
+EntitySeg Toolbox（开放世界分割） [代码](https://github.com/qqlu/Entity)

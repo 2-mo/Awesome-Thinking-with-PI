@@ -26,7 +26,7 @@
   - multimodal reasoning 
 - 🔍 [Thinking with Images](#thinking-with-images)
   - GUI interaction / screen control / visual grounding
-- 🌍 [Thinking in the Physical World](#thinking-in-the-physical-world)
+- 🤖 [Thinking with Embodiment](#thinking-with-embodiment)
   - Robotics / embodied navigation / manipulation
 - 🛠️ [Tutorials and Tooling](#tutorials-and-tooling)
 - 📖 [Related Collections](#related-collections)
@@ -82,16 +82,42 @@ Similar to how a human may think for a long time before responding to a difficul
 Thinking with Images — [OpenAI](https://openai.com/index/thinking-with-images/)
 
 
-##### 代表性工作
+### 代表性工作
 
 [![OpenAI o1](https://img.shields.io/badge/OpenAI-ChatGPT--o1-9cf?logo=openai)](https://openai.com/o1/)
 [![DeepSeek-R1](https://img.shields.io/github/stars/deepseek-ai/DeepSeek-R1?style=social&label=DeepSeek-R1&logo=github)](https://github.com/deepseek-ai/DeepSeek-R1)
+<!-- TODO removed to streamline headings -->
 
+---
 
-##### 观点文章
+### 观点文章
 
 为何GRPO大放异彩DPO销声匿迹？
 [WeChat article](https://mp.weixin.qq.com/s/b4OkzqfRcpFhPzTocwJatw)
+
+
+
+### 理论部分
+从语言空间到像素空间
+
+
+思考的有效性
+
+[A] Wang Yifei et al., A Theoretical Understanding of Self-Correction through In-context Alignment, in NeurIPS, 2024.
+
+![Self-Correction In-Context Alignment](./assets/self-correction-incontext-alignment.png)
+
+Zhao Andrew et al., ExpeL: LLM Agents Are Experiential Learners, AAAI 2024.
+
+
+
+
+### 为什么要用工具
+
+[![Wiki](https://img.shields.io/badge/Wiki-Visual%20Thinking-blue?logo=wikipedia)](https://en.wikipedia.org/wiki/Visual_thinking)
+[![OpenAI](https://img.shields.io/badge/OpenAI-Thinking%20with%20Images-9cf?logo=openai)](https://openai.com/index/thinking-with-images/)
+
+
 
 ---
 
@@ -117,7 +143,7 @@ Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena (NeurIPS 2023 Datasets an
 
 Wang Yifei et al., A Theoretical Understanding of Self-Correction through In-context Alignment, NeurIPS 2024.
 
-### MCTS (Monte Carlo Tree Search, 蒙特卡洛树搜索)
+### MCTS（Monte Carlo Tree Search，蒙特卡洛树搜索）
 
 这个是一个过渡，o1刚出的时候没有技术报告，社区猜测的实现方式，在deepseek-r1之后，大家都是grpo了～
 
@@ -142,7 +168,7 @@ LLaVA-CoT — 逐步思维链用于多模态过程监督 [![arXiv](https://img.s
 [A] Xu Guowei et al., LLaVA-CoT: Let Vision Language Models Reason Step-by-Step, in arXiv, 2024.
 
 
-### R1-Style Reasoning Models Overview (As of March)
+### R1-Style Models Overview（截至 3 月）
 
 Note: The following table compiles notable r1-style models and resources.
 这里只列三月份的，基本都是相对领域的首次工作，后续的比较多，代表性工作以卡片形式呈现。
@@ -186,12 +212,11 @@ Note: A small GitHub badge next to a model name links to its confirmed repositor
 
 
 
-### Thinking across Modalities
+### Text-Space Multimodal Reasoning
 
-这里单独列出来主要考虑视觉感知，虽然前面也有,
+定义：r1‑like 的跨模态设定，推理链（CoT）主要在文本空间进行；多模态信号（图像/视频/音频/图表等）作为条件、奖励或评估信号参与训练与生成，输出可为多模态，但中间不产生视觉类中间表征。
 
-
-让“思维链”跨越文本与视觉（图像/视频/图表等），通过GRPO/DPO/RLHF与过程监督，提升跨模态理解与推理。
+关注：在检测/分割/视频/医学等任务中，使用 GRPO/DPO/RLHF 与过程监督改进文本空间推理的稳健性与对齐效果。
 
 #### 评估基准
 
@@ -199,13 +224,12 @@ Note: A small GitHub badge next to a model name links to its confirmed repositor
 
 
 
-### 目标检测/分割
+#### 目标检测/分割
 
 https://github.com/om-ai-lab/VLM-R1
 
 
-
-#### Visual-RFT: Visual Reinforcement Fine-Tuning (ICCV 2025)
+**Visual-RFT: Visual Reinforcement Fine-Tuning (ICCV 2025)**
 
 [![arXiv](https://img.shields.io/badge/arXiv-2503.01785-b31b1b?logo=arxiv)](https://arxiv.org/pdf/2503.01785)
 [![GitHub stars](https://img.shields.io/github/stars/Liuziyu77/Visual-RFT?style=social&label=GitHub&logo=github)](https://github.com/Liuziyu77/Visual-RFT)
@@ -213,7 +237,22 @@ https://github.com/om-ai-lab/VLM-R1
 ![Visual-RFT](assets/visual-rft-architecture.png)
 
 
-#### SAM-R1: Leveraging SAM for Reward Feedback in Multimodal Segmentation via RL
+**MedVLM-R1: Incentivizing Medical Reasoning Capability of Vision-Language Models via RL (arXiv 2025)**
+
+[![arXiv](https://img.shields.io/badge/arXiv-2502.19634-b31b1b?logo=arxiv)](https://arxiv.org/abs/2502.19634)
+
+Highlight: 通过强化学习激励机制提升医学多模态推理覆盖度与可靠性。
+
+Med-R1: Reinforcement Learning for Generalizable Medical Reasoning in Vision-Language Models (arXiv 2025)
+
+[![arXiv](https://img.shields.io/badge/arXiv-2503.13939-b31b1b?logo=arxiv)](https://arxiv.org/abs/2503.13939) [![Code](https://img.shields.io/github/stars/Yuxiang-Lai117/Med-R1?style=social&label=Code&logo=github)](https://github.com/Yuxiang-Lai117/Med-R1)
+
+Highlight: 关注跨任务泛化的医学推理 RL 对齐范式，改进鲁棒性与数据效用。
+
+<img src="https://github.com/Yuxiang-Lai117/Med-R1/raw/main/Images/fig_data_distribution.png" alt="Med-R1 dataset distribution" width="55%" />
+
+
+SAM-R1: Leveraging SAM for Reward Feedback in Multimodal Segmentation via RL
 
 [![arXiv](https://img.shields.io/badge/arXiv-2505.22596-b31b1b?logo=arxiv)](https://arxiv.org/pdf/2505.22596)
 
@@ -221,10 +260,9 @@ https://github.com/om-ai-lab/VLM-R1
 
 ---
 
-### 视频理解 
+#### 视频理解 
 
-
-#### Video-R1: Reinforcing Video Reasoning in MLLMs
+Video-R1: Reinforcing Video Reasoning in MLLMs
 强化视频时空推理 
 [![arXiv](https://img.shields.io/badge/arXiv-2503.21776-b31b1b?logo=arxiv)](https://arxiv.org/pdf/2503.21776)
 [![Zhihu](https://img.shields.io/badge/Zhihu-Review-informational?logo=zhihu)](https://zhuanlan.zhihu.com/p/1889342435928282728)
@@ -233,15 +271,16 @@ https://github.com/om-ai-lab/VLM-R1
 
 ![Video-R1](assets/video-r1-overview.png)
 
-#### VideoChat-R1: Enhancing Spatio-Temporal Perception via Reinforcement Fine-Tuning
-时空感知强化微调
+VideoChat-R1: Enhancing Spatio-Temporal Perception via Reinforcement Fine-Tuning
 [![arXiv](https://img.shields.io/badge/arXiv-2504.06958-b31b1b?logo=arxiv)](https://arxiv.org/pdf/2504.06958)
 [![Project](https://img.shields.io/badge/Project-blue?logo=safari)](https://github.com/OpenGVLab/VideoChat-R1)
- [![GitHub stars](https://img.shields.io/github/stars/OpenGVLab/VideoChat-R1?style=social&label=GitHub&logo=github)](https://github.com/OpenGVLab/VideoChat-R1)
+[![GitHub stars](https://img.shields.io/github/stars/OpenGVLab/VideoChat-R1?style=social&label=GitHub&logo=github)](https://github.com/OpenGVLab/VideoChat-R1)
+
+时空感知强化微调
 
 ![VideoChat-R1](assets/videochat-r1-overview.png)
 
-#### TinyLLaVA-Video-R1: Towards Smaller LMMs for Video Reasoning
+TinyLLaVA-Video-R1: Towards Smaller LMMs for Video Reasoning
 小参数视频推理
 [![arXiv](https://img.shields.io/badge/arXiv-2504.09641-b31b1b?logo=arxiv)](https://arxiv.org/pdf/2504.09641)
 [![Project](https://img.shields.io/badge/Project-blue?logo=safari)](https://github.com/ZhangXJ199/TinyLLaVA-Video-R1)
@@ -250,36 +289,20 @@ https://github.com/om-ai-lab/VLM-R1
 ![TinyLLaVA-Video-R1](assets/tinyllava-video-r1-overview.png)
 
 
-### 其他模态（事件相机,3D,红外）
+#### 其他模态（事件相机,3D,红外）
 
 
 
 
-### 可信安全
+#### 可信安全
 
 - Safe RLHF-V — 多模态安全对齐 [项目](https://github.com/PKU-Alignment/Safe-RLHF-V)
 
 > 小结：多模态“思维—搜索—验证”闭环正在标准化，核心在于过程监督（PRM）、行为奖励与环境校验相结合。
 
 
-## 🖼️ Thinking with Images 
+### Tool-Augmented Reasoning（工具增强推理）
 
-
-
-### 理论部分
-
-从语言空间到像素空间
-
-
-### 为什么要用工具
-
-
-[![Wiki](https://img.shields.io/badge/Wiki-Visual%20Thinking-blue?logo=wikipedia)](https://en.wikipedia.org/wiki/Visual_thinking)
-[![OpenAI](https://img.shields.io/badge/OpenAI-Thinking%20with%20Images-9cf?logo=openai)](https://openai.com/index/thinking-with-images/)
-
-
-
-### 早期工作
 **思维+行动的交替（检索/工具使用）(2023)**
 
 ReAct: Synergizing Reasoning and Acting in Language Models 
@@ -296,16 +319,19 @@ TOOLLLM: Facilitating Large Language Models to Master 16000+ Real-World APIs
 DSPy/可编排思维：声明式地组合推理模块与检索/工具 — [![GitHub stars](https://img.shields.io/github/stars/stanfordnlp/dspy?style=social&label=GitHub&logo=github)](https://github.com/stanfordnlp/dspy)
 
 
-Zhao Andrew et al., ExpeL: LLM Agents Are Experiential Learners, AAAI 2024.
-
-- Number it: Temporal Grounding Videos like Flipping Manga [arXiv](https://arxiv.org/pdf/2411.10332)
+START: Self-taught Reasoner with Tools
 
 
 
 
 
+## 🖼️ Thinking with Images 
 
-### region-focus (non-RLHF)
+本节指图文交错的多模态推理：在推理过程中显式产生并使用视觉中间表征（如裁剪/放大、框选/标注、草图/中间可视化等）与文本思维链交替推进，类似 o3/Visual Planning 的“用图像思考”。不同于“Thinking across Modalities”（r1‑like，推理链主要在文本空间），这里强调视觉表征本身就是推理过程的一部分。
+
+
+
+### Region-Focus (Non-RLHF)
 
 LSNet: See Large, Focus Small [![arXiv](https://img.shields.io/badge/arXiv-2503.23135-b31b1b?logo=arxiv)](https://arxiv.org/abs/2503.23135) [![GitHub stars](https://img.shields.io/github/stars/THU-MIG/lsnet?style=social&label=GitHub&logo=github)](https://github.com/THU-MIG/lsnet)
 
@@ -318,6 +344,9 @@ Boltzmann Attention Sampling for Image Analysis with Small Objects (CVPR 2025) [
 
 
 ### Image Manipulation
+
+Number it: Temporal Grounding Videos like Flipping Manga [arXiv](https://arxiv.org/pdf/2411.10332)
+
 
 **Instruction-Guided Visual Masking** [[paper](https://arxiv.org/pdf/2405.19783)] [[code](https://github.com/2toinf/IVM)]
 
@@ -345,38 +374,38 @@ Number it: Temporal Grounding Videos like Flipping Manga (CVPR 2025) [![arXiv](h
 ---
 ### 图像生成
 
-#### Visual Planning: Let's Think Only with Images
+Visual Planning: Let's Think Only with Images
 
 [![arXiv](https://img.shields.io/badge/arXiv-2505.11409-b31b1b?logo=arxiv)](https://arxiv.org/pdf/2505.11409)   [![GitHub stars](https://img.shields.io/github/stars/yix8/VisualPlanning?style=social&label=GitHub&logo=github)](https://github.com/yix8/VisualPlanning)
 
 ![Visual Planning](assets/visual-planning-teaser.png)
 
-#### GRIT: Teaching MLLMs to Think with Images
+GRIT: Teaching MLLMs to Think with Images
 
 [![WeChat](https://img.shields.io/badge/WeChat-Explainer-07C160?logo=wechat)](https://mp.weixin.qq.com/s/I3bk4FGOwrj-tKl_IYRfKw)
 
 Highlight: 以视觉为中介的“图像思考”范式解读与科普。
 
-#### d1: Scaling Reasoning in Diffusion Large Language Models via Reinforcement Learning (arXiv 2025)
+d1: Scaling Reasoning in Diffusion Large Language Models via Reinforcement Learning (arXiv 2025)
 
 [![arXiv](https://img.shields.io/badge/arXiv-2504.12216-b31b1b?logo=arxiv)](https://arxiv.org/pdf/2504.12216)
 
 Highlight: 将强化学习用于扩散式大模型，提升复杂推理能力。
 
-#### DanceGRPO (Text-to-Image)
 
+
+**DanceGRPO (Text-to-Image)**
 [![Code](https://img.shields.io/github/stars/XueZeyue/DanceGRPO?style=social&label=Code&logo=github)](https://github.com/XueZeyue/DanceGRPO)
 
 Highlight: 面向文生图的 GRPO 训练与策略实现。
 
-#### Flow-GRPO (Text-to-Image)
+Flow-GRPO (Text-to-Image)
 
 [![Code](https://img.shields.io/github/stars/yifan123/flow_grpo?style=social&label=Code&logo=github)](https://github.com/yifan123/flow_grpo)
 
 Highlight: 基于 Flow/扩散流程的 GRPO 训练范式与实践。
 
-#### T2I-R1 (Text-to-Image)
-
+T2I-R1 (Text-to-Image)
 [![Code](https://img.shields.io/github/stars/CaraJ7/T2I-R1?style=social&label=Code&logo=github)](https://github.com/CaraJ7/T2I-R1)
 
 Highlight: 将 R1 式逐步推理/奖励思路引入文本到图像生成。
@@ -386,11 +415,12 @@ Highlight: 将 R1 式逐步推理/奖励思路引入文本到图像生成。
 - UI-R1 — 图形界面智能体动作预测 [项目](https://github.com/vivo-ai-lab/UI-R1)
 - Qwen-Agent — 工具增强与GUI自动化生态 [项目](https://github.com/QwenLM/Qwen-Agent/tree/main)
 
-### 视觉操作（Zoom/Locate/Segment）
-- CogCoM（Chain-of-Manipulations） [arXiv](https://arxiv.org/pdf/2402.04236) · [代码](https://github.com/THUDM/CogCoM)
-- Instruction-Guided Visual Masking [arXiv](https://arxiv.org/pdf/2405.19783) · [代码](https://github.com/2toinf/IVM)
-- EntitySeg Toolbox（开放世界分割） [代码](https://github.com/qqlu/Entity)
 
+Mobile-Agent-v3: Fundamental Agents for GUI Automation
+https://arxiv.org/pdf/2508.15144
+https://github.com/X-PLUG/MobileAgent
+
+![mobileagentv3_framework](./assets/mobileagentv3_framework.png)
 
 
 ### 视觉操作
@@ -399,15 +429,12 @@ VisualToolAgent (VisTA): A Reinforcement Learning Framework for Visual Tool Sele
 ![VisTA overview](./assets/vista-overview.png)
 
 
-## 🤖 Thinking in the Physical World
+## 🤖 Thinking with Embodiment
+
+**Embodied-R1: Reinforced Embodied Reasoning for General Robotic Manipulation**
 
 
-Embodied-R1: Reinforced Embodied Reasoning for General Robotic Manipulation
-
-
-
-
-#### Embodied-Reasoner: Synergizing Visual Search, Reasoning, and Action for Embodied Interactive Tasks
+Embodied-Reasoner: Synergizing Visual Search, Reasoning, and Action for Embodied Interactive Tasks
 
 [![arXiv](https://img.shields.io/badge/arXiv-2503.21696-b31b1b?logo=arxiv)](https://arxiv.org/pdf/2503.21696v1)
 [![Project](https://img.shields.io/badge/Project-blue?logo=safari)](https://embodied-reasoner.github.io/)
@@ -417,7 +444,7 @@ Embodied-R1: Reinforced Embodied Reasoning for General Robotic Manipulation
 
 ---
 
-#### Reason-RFT: Reinforcement Fine-Tuning for Visual Reasoning
+Reason-RFT: Reinforcement Fine-Tuning for Visual Reasoning
 
 [![arXiv](https://img.shields.io/badge/arXiv-2503.20752-b31b1b?logo=arxiv)](https://arxiv.org/abs/2503.20752)
 [![Project](https://img.shields.io/badge/Project-blue?logo=safari)](https://tanhuajie.github.io/ReasonRFT/)
@@ -427,7 +454,7 @@ Embodied-R1: Reinforced Embodied Reasoning for General Robotic Manipulation
 
 ---
 
-#### Think Small, Act Big: Primitive Prompt Learning for Lifelong Robot Manipulation
+Think Small, Act Big: Primitive Prompt Learning for Lifelong Robot Manipulation
 
 [![CVPR 2025](https://img.shields.io/badge/CVPR-2025-blue)](https://openaccess.thecvf.com/content/CVPR2025/papers/Yao_Think_Small_Act_Big_Primitive_Prompt_Learning_for_Lifelong_Robot_CVPR_2025_paper.pdf)
 
@@ -435,7 +462,8 @@ Embodied-R1: Reinforced Embodied Reasoning for General Robotic Manipulation
 
 ---
 
-#### OpenFly: A Versatile Toolchain and Large-scale Benchmark for Aerial Vision-Language Navigation
+### 具身导航（无人机）
+OpenFly: A Versatile Toolchain and Large-scale Benchmark for Aerial Vision-Language Navigation
 
 [![Project](https://img.shields.io/badge/Project-blue?logo=safari)](https://shailab-ipec.github.io/openfly/)
 
@@ -445,15 +473,12 @@ Embodied-R1: Reinforced Embodied Reasoning for General Robotic Manipulation
 
 
 
-
-
-
-#### AgentThink: A Unified Framework for Tool-Augmented Chain-of-Thought Reasoning in Vision-Language Models for Autonomous Driving
+AgentThink: A Unified Framework for Tool-Augmented Chain-of-Thought Reasoning in Vision-Language Models for Autonomous Driving
 
 [![arXiv](https://img.shields.io/badge/arXiv-2505.15298-b31b1b?logo=arxiv)](https://arxiv.org/pdf/2505.15298)
 
 ![AgentThink](assets/agentthink-overview.png)
-
+小米团队
 
 
 
@@ -461,35 +486,41 @@ Embodied-R1: Reinforced Embodied Reasoning for General Robotic Manipulation
 
 ## 🛠️ Tutorials and Tooling
 
+
+### 强化学习框架
+
+微软研究院提出的零代码强化学习（RL）优化 AI Agent 的工业级方案。
+https://github.com/microsoft/agent-lightning
+
 ### 强化学习算法
 卡片化汇总主流/新近的对齐与策略优化方法，统一展示 arXiv / 官方链接 / 代码。
 
-#### DPO: Direct Preference Optimization (arXiv 2023)
+DPO: Direct Preference Optimization (arXiv 2023)
 [![arXiv](https://img.shields.io/badge/arXiv-2305.18290-b31b1b?logo=arxiv)](https://arxiv.org/abs/2305.18290)
 
 Highlight: 直接在偏好数据上拟合概率偏序，避免显式奖励建模。
 
-#### Agentic Reinforced Policy Optimization (ARPO, arXiv 2025)
+Agentic Reinforced Policy Optimization (ARPO, arXiv 2025)
 [![arXiv](https://img.shields.io/badge/arXiv-2507.19849-b31b1b?logo=arxiv)](https://arxiv.org/abs/2507.19849)
 
 Highlight: 面向智能体交互的强化对齐策略优化，聚焦多阶段推理质量。
 
-#### GAPO: Learning Preferential Prompt through Generative Adversarial Policy Optimization (ACL 2025)
+GAPO: Learning Preferential Prompt through Generative Adversarial Policy Optimization (ACL 2025)
 [![ACL](https://img.shields.io/badge/ACL-2025-1877F2)](https://aclanthology.org/2025.acl-long.13/) [![Code](https://img.shields.io/github/stars/MikeGu721/GAPO?style=social&label=Code&logo=github)](https://github.com/MikeGu721/GAPO)
 
 Highlight: 生成式对抗 + 偏好信号联合，提升提示学习与策略稳定性。
 
-#### PAPO: Perception-Aware Policy Optimization for Multimodal Reasoning
+PAPO: Perception-Aware Policy Optimization for Multimodal Reasoning
 [![Code](https://img.shields.io/github/stars/MikeWangWZHL/PAPO?style=social&label=Code&logo=github)](https://github.com/MikeWangWZHL/PAPO)
 
 Highlight: 针对 GRPO 的改进方法（稳定性 / 收敛效率）。
 
-#### TreePO: Bridging Policy Optimization and Inference Efficiency (arXiv 2025)
+TreePO: Bridging Policy Optimization and Inference Efficiency (arXiv 2025)
 [![arXiv](https://img.shields.io/badge/arXiv-2508.17445-b31b1b?logo=arxiv)](https://arxiv.org/abs/2508.17445)
 
 Highlight: 引入树式启发结构，兼顾对齐效果与推理效率。
 
-#### RuleReasoner: Reinforced Rule-based Reasoning via Domain-aware Dynamic Sampling (arXiv 2025)
+RuleReasoner: Reinforced Rule-based Reasoning via Domain-aware Dynamic Sampling (arXiv 2025)
 [![arXiv](https://img.shields.io/badge/arXiv-2509.06461v1-b31b1b?logo=arxiv)](https://arxiv.org/abs/2509.06461v1) [![Code](https://img.shields.io/github/stars/bigai-nlco/RuleReasoner?style=social&label=Code&logo=github)](https://github.com/bigai-nlco/RuleReasoner)
 
 Highlight: 结合领域规则动态采样与强化优化，提高结构化推理质量与可控性。
@@ -529,3 +560,23 @@ Highlight: 结合领域规则动态采样与强化优化，提高结构化推理
 
 [![Thinking-with-Generated-Images](https://img.shields.io/github/stars/GAIR-NLP/thinking-with-generated-images?style=flat&color=black&label=thinking-with-generated-images&logo=github&logoColor=white)](https://github.com/GAIR-NLP/thinking-with-generated-images) — Reasoning with generated intermediate images (papers + code).
 
+
+[![Awesome-Self-Evolving-Agents](https://img.shields.io/github/stars/EvoAgentX/Awesome-Self-Evolving-Agents?style=flat&color=black&label=Awesome-Self-Evolving-Agents&logo=github&logoColor=white)](https://github.com/EvoAgentX/Awesome-Self-Evolving-Agents) — Self‑evolving agents (auto‑improvement, reflection, curricula).
+
+
+### 综述文章
+
+Agent AI: Surveying the Horizons of Multimodal Interaction
+李飞飞团队
+
+AI agent（AI 智能体）定义：一个具体的系统或程序，它能够在某个环境中感知、决策并采取行动以完成任务。
+Agent AI 定义：一类以智能体为核心范式的人工智能技术或系统框架，关注多模态交互、动态适应能力以及通用智能的实现。
+AI agent 是实现，Agent AI 是框架和研究方向
+
+
+
+The Landscape of Agentic Reinforcement Learning for LLMs: A Survey 
+[![arXiv](https://img.shields.io/badge/arXiv-2509.02547-b31b1b?logo=arxiv)](https://arxiv.org/abs/2509.02547) 
+[![Awesome-AgenticLLM-RL-Papers](https://img.shields.io/github/stars/xhyumiracle/Awesome-AgenticLLM-RL-Papers?style=flat&color=black&label=Awesome-AgenticLLM-RL-Papers&logo=github&logoColor=white)](https://github.com/xhyumiracle/Awesome-AgenticLLM-RL-Papers) 
+
+The Landscape of Agentic Reinforcement Learning for LLMs: A Survey.
