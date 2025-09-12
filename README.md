@@ -322,7 +322,7 @@ DSPy/可编排思维：声明式地组合推理模块与检索/工具 — [![Git
 START: Self-taught Reasoner with Tools
 
 
-
+AgenTracer: Who Is Inducing Failure in the LLM Agentic Systems? 颜水成老师团队
 
 
 ## 🖼️ Thinking with Images 
@@ -429,9 +429,23 @@ VisualToolAgent (VisTA): A Reinforcement Learning Framework for Visual Tool Sele
 ![VisTA overview](./assets/vista-overview.png)
 
 
+VideoChat-A1: Thinking with Long Videos by
+Chain-of-Shot Reasoning
+https://arxiv.org/abs/2506.06097
+王利民老师团队，乔宇老师
+
+![alt text](./assets/VideoChat-A1.png)
+
+
 ## 🤖 Thinking with Embodiment
 
 **Embodied-R1: Reinforced Embodied Reasoning for General Robotic Manipulation**
+
+[![Project](https://img.shields.io/badge/Project-blue?logo=safari)](https://embodied-r1.github.io/)
+[![GitHub stars](https://img.shields.io/github/stars/pickxiguapi/Embodied-R1?style=social&label=GitHub&logo=github)](https://github.com/pickxiguapi/Embodied-R1)
+[![Datasets](https://img.shields.io/badge/Datasets-HuggingFace-orange?logo=huggingface)](https://huggingface.co/IffYuan)
+[![Email](https://img.shields.io/badge/Contact-yuanyf%40tju.edu.cn-informational?logo=gmail)](mailto:yuanyf@tju.edu.cn)
+
 
 
 Embodied-Reasoner: Synergizing Visual Search, Reasoning, and Action for Embodied Interactive Tasks
