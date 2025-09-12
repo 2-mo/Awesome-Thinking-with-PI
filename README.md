@@ -443,7 +443,7 @@ https://arxiv.org/abs/2506.06097
 RoboPoint: AVision-Language Model for Spatial Affordance Prediction for Robotics
 
 [![Project](https://img.shields.io/badge/Project-blue?logo=safari)](https://robo-point.github.io/)
-[![GitHub stars](https://img.shields.io/github/stars/pickxiguapi/Embodied-R1?style=social&label=GitHub&logo=github)](https://github.com/wentaoyuan/RoboPoint)
+[![GitHub stars](https://img.shields.io/github/stars/wentaoyuan/RoboPoint?style=social&label=GitHub&logo=github)](https://github.com/wentaoyuan/RoboPoint)
 [![Datasets](https://img.shields.io/badge/Datasets-HuggingFace-orange?logo=huggingface)](https://huggingface.co/datasets/wentao-yuan/robopoint-data)
 
 ![Embodied-Reasoner](assets/robopoint.png)
@@ -451,7 +451,7 @@ RoboPoint: AVision-Language Model for Spatial Affordance Prediction for Robotics
 From Seeing to Doing: Bridging Reasoning and Decision for Robotic Manipulation
 
 [![Project](https://img.shields.io/badge/Project-blue?logo=safari)](https://embodied-fsd.github.io/)
-[![GitHub stars](https://img.shields.io/github/stars/pickxiguapi/Embodied-R1?style=social&label=GitHub&logo=github)](https://github.com/pickxiguapi/Embodied-FSD)
+[![GitHub stars](https://img.shields.io/github/stars/pickxiguapi/Embodied-FSD?style=social&label=GitHub&logo=github)](https://github.com/pickxiguapi/Embodied-FSD)
 [![Datasets](https://img.shields.io/badge/Datasets-HuggingFace-orange?logo=huggingface)](https://huggingface.co/IffYuan)
 [![Email](https://img.shields.io/badge/Contact-yuanyf%40tju.edu.cn-informational?logo=gmail)](mailto:yuanyf@tju.edu.cn)
 
