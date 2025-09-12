@@ -62,15 +62,6 @@
 > Paraphrase from the [[talk]](https://www.youtube.com/watch?v=NA6EH8r-IT0): In response to a question about interpretability, Kaiming He asks—why do you trust a taxi driver you don't know? Not because the brain is fully interpretable, but because extensive real‑world training and testing make performance reliable; just like airplanes are trusted after millions of flights. Interpretability matters, yet reliability is ultimately earned through empirical evidence.
 
 
-### Curiosity-driven Learning
-
-Humans monitor learning progress in curiosity-driven exploration (Nature Communications 2021) [[paper](https://www.nature.com/articles/s41467-021-26196-w)]
-发现人类在探索中会“盯着学习进度”本身：更偏好能带来更大知识增益/误差下降率的选择。行为与模型支持“以学习进步为回报”的好奇心机制
-
-Curiosity-driven Exploration by Self-supervised Prediction (ICML 2017 (PMLR v70)) [[paper](https://proceedings.mlr.press/v70/pathak17a/pathak17a.pdf)]
-
-Computational mechanisms of curiosity and goal-directed exploration (Neuroscience 2019) [[paper](https://elifesciences.org/articles/41703)]
-
 
 #### 基本概念
 
@@ -292,6 +283,11 @@ TinyLLaVA-Video-R1: Towards Smaller LMMs for Video Reasoning
 #### 其他模态（事件相机,3D,红外）
 
 
+#### 评测
+LLaVA-Critic-R1: Your Critic Model is Secretly a Strong Policy Model
+- **arXiv**：[arXiv:2509.00676](https://arxiv.org/abs/2509.00676)
+- **主要内容**：分析生成式奖励模型在视觉-语言任务中的表现，提出LLaVA-Critic-R1。
+
 
 
 #### 可信安全
@@ -423,6 +419,12 @@ https://github.com/X-PLUG/MobileAgent
 ![mobileagentv3_framework](./assets/mobileagentv3_framework.png)
 
 
+Learning Active Perception via Self-Evolving Preference Optimization for GUI Grounding
+- **作者**：Wanfu Wang, Qipeng Huang, Guangquan Xue, 等
+- **主要内容**：提出LASER框架，提升VLM在GUI理解任务中的主动感知与多步推理能力。
+- **链接**：[https://github.com/wwfnb/Laser](https://github.com/wwfnb/Laser)
+
+
 ### 视觉操作
 VisualToolAgent (VisTA): A Reinforcement Learning Framework for Visual Tool Selection
 
@@ -435,6 +437,28 @@ https://arxiv.org/abs/2506.06097
 王利民老师团队，乔宇老师
 
 ![alt text](./assets/VideoChat-A1.png)
+
+
+REVPT: Reinforced Visual Perception with Tools
+- **作者**：Zetong Zhou, Dongping Chen, Zixian Ma, 等
+- **主要内容**：提出REVPT方法，通过RL训练多模态大模型使用视觉工具，提升感知-推理能力。
+- **链接**：[https://github.com/Is-kelvin/REVPT](https://github.com/Is-kelvin/REVPT)
+- **arXiv**：[arXiv:2509.01656](https://arxiv.org/abs/2509.01656)
+
+
+VLM-R3: Region Recognition, Reasoning, and Refinement for Enhanced Multimodal Chain-of-Thought
+- **作者**：Chaoya Jiang, Yongrui Heng, Wei Ye, 等
+- **主要内容**：提出VLM-R3框架，强化MLLM在视觉区域识别与推理能力，提升多模态链式推理表现。
+- **arXiv**：[arXiv:2505.16192](https://arxiv.org/abs/2505.16192)
+
+
+Ego-R1: Chain-of-Tool-Thought for Ultra-Long Egocentric Video Reasoning
+- **作者**：Shulin Tian, Ruigi Wang, Hongming Guo, 等
+- **主要内容**：提出Ego-R1智能体，采用Chain-of-Tool-Thought方法，支持超长自中心视频推理。
+- **链接**：无明显链接
+
+
+
 
 
 ## 🤖 Thinking with Embodiment
@@ -539,6 +563,13 @@ RuleReasoner: Reinforced Rule-based Reasoning via Domain-aware Dynamic Sampling 
 
 Highlight: 结合领域规则动态采样与强化优化，提高结构化推理质量与可控性。
 
+
+PREF-GRPO: Pairwise Preference Reward-Based GRPO for Stable Text-to-Image Reinforcement Learning
+- **作者**：Yibin Wang, Zhimin Li, Yuhang Zang, 等
+- **主要内容**：提出首个基于成对偏好奖励的GRPO方法，提升文本生成图像的稳定性，缓解reward hacking问题。
+- **链接**：[codegoat24.github.io/UnifiedReward/Pref-GRPO](https://codegoat24.github.io/UnifiedReward/Pref-GRPO)
+- **arXiv**：[arxiv.org/pdf/2508.20751](https://arxiv.org/pdf/2508.20751)
+
 ---
 ### 操作实现
 
@@ -588,9 +619,23 @@ Agent AI 定义：一类以智能体为核心范式的人工智能技术或系�
 AI agent 是实现，Agent AI 是框架和研究方向
 
 
+Explain Before You Answer: A Survey on Compositional Visual Reasoning
+- **作者**：Fucai Ke, Joy Hsu, Zhixi Cai, 等
+- **主要内容**：综述2023-2025年组合式视觉推理（CVR）相关文献，系统梳理260+论文。
+- **arXiv**：[arXiv:2508.17298](https://arxiv.org/abs/2508.17298)
 
-The Landscape of Agentic Reinforcement Learning for LLMs: A Survey 
+
+
+**The Landscape of Agentic Reinforcement Learning for LLMs: A Survey**
 [![arXiv](https://img.shields.io/badge/arXiv-2509.02547-b31b1b?logo=arxiv)](https://arxiv.org/abs/2509.02547) 
 [![Awesome-AgenticLLM-RL-Papers](https://img.shields.io/github/stars/xhyumiracle/Awesome-AgenticLLM-RL-Papers?style=flat&color=black&label=Awesome-AgenticLLM-RL-Papers&logo=github&logoColor=white)](https://github.com/xhyumiracle/Awesome-AgenticLLM-RL-Papers) 
 
-The Landscape of Agentic Reinforcement Learning for LLMs: A Survey.
+
+
+**The Landscape of Agentic Reinforcement Learning for LLMs: A Survey.**
+
+
+论文：A Survey of Reinforcement Learning for Large Reasoning Models
+地址：https://arxiv.org/pdf/2509.08827
+
+![aaa](./assets/survey_rl4lrm.png)

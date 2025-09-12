@@ -38,6 +38,18 @@ This list collects representative works that leverage LLMs or vision-language mo
 
 我们需要的是推理，而不仅是事后解释。
 
+
+### Curiosity-driven Learning
+
+Humans monitor learning progress in curiosity-driven exploration (Nature Communications 2021) [[paper](https://www.nature.com/articles/s41467-021-26196-w)]
+发现人类在探索中会“盯着学习进度”本身：更偏好能带来更大知识增益/误差下降率的选择。行为与模型支持“以学习进步为回报”的好奇心机制
+
+Curiosity-driven Exploration by Self-supervised Prediction (ICML 2017 (PMLR v70)) [[paper](https://proceedings.mlr.press/v70/pathak17a/pathak17a.pdf)]
+
+Computational mechanisms of curiosity and goal-directed exploration (Neuroscience 2019) [[paper](https://elifesciences.org/articles/41703)]
+
+
+
 ---
 
 ## 📊 Benchmarks and Datasets
@@ -240,3 +252,15 @@ Highlight: Pursues open-world anomaly understanding with scalable concept covera
 参考文章
 
 [![HyperVD](https://img.shields.io/badge/To--Sort-HyperVD-lightgrey?logo=github)](https://github.com/xiaogangpeng/HyperVD)
+
+
+ROADWork: A Dataset and Benchmark for Learning to Recognize, Observe, Analyze and Drive Through Work Zones
+- **作者**：Anurag Ghosh, Shen Zheng, Robert Tamburo, 等
+- **主要内容**：提出ROADWork数据集，专注于自动驾驶场景下的施工区域识别与导航，提升模型在长尾场景下的表现。
+- **链接**：[https://www.cs.cmu.edu/~roadwork/](https://www.cs.cmu.edu/~roadwork/)
+
+
+Passing the Driving Knowledge Test
+- **作者**：Maolin Wei, Wanzhou Liu, Eshed Ohn-Bar
+- **主要内容**：提出DriveQA数据集，评测LLM/MLLM在交通规则理解与推理能力。
+- **链接**：[https://driveqaiccv.github.io](https://driveqaiccv.github.io)
