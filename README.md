@@ -439,14 +439,32 @@ https://arxiv.org/abs/2506.06097
 
 ## 🤖 Thinking with Embodiment
 
-**Embodied-R1: Reinforced Embodied Reasoning for General Robotic Manipulation**
+
+RoboPoint: AVision-Language Model for Spatial Affordance Prediction for Robotics
+
+[![Project](https://img.shields.io/badge/Project-blue?logo=safari)](https://robo-point.github.io/)
+[![GitHub stars](https://img.shields.io/github/stars/pickxiguapi/Embodied-R1?style=social&label=GitHub&logo=github)](https://github.com/wentaoyuan/RoboPoint)
+[![Datasets](https://img.shields.io/badge/Datasets-HuggingFace-orange?logo=huggingface)](https://huggingface.co/datasets/wentao-yuan/robopoint-data)
+
+![Embodied-Reasoner](assets/robopoint.png)
+
+From Seeing to Doing: Bridging Reasoning and Decision for Robotic Manipulation
+
+[![Project](https://img.shields.io/badge/Project-blue?logo=safari)](https://embodied-fsd.github.io/)
+[![GitHub stars](https://img.shields.io/github/stars/pickxiguapi/Embodied-R1?style=social&label=GitHub&logo=github)](https://github.com/pickxiguapi/Embodied-FSD)
+[![Datasets](https://img.shields.io/badge/Datasets-HuggingFace-orange?logo=huggingface)](https://huggingface.co/IffYuan)
+[![Email](https://img.shields.io/badge/Contact-yuanyf%40tju.edu.cn-informational?logo=gmail)](mailto:yuanyf@tju.edu.cn)
+
+![Embodied-Reasoner](assets/fsd.png)
+
+Embodied-R1: Reinforced Embodied Reasoning for General Robotic Manipulation
 
 [![Project](https://img.shields.io/badge/Project-blue?logo=safari)](https://embodied-r1.github.io/)
 [![GitHub stars](https://img.shields.io/github/stars/pickxiguapi/Embodied-R1?style=social&label=GitHub&logo=github)](https://github.com/pickxiguapi/Embodied-R1)
 [![Datasets](https://img.shields.io/badge/Datasets-HuggingFace-orange?logo=huggingface)](https://huggingface.co/IffYuan)
 [![Email](https://img.shields.io/badge/Contact-yuanyf%40tju.edu.cn-informational?logo=gmail)](mailto:yuanyf@tju.edu.cn)
 
-
+![Embodied-Reasoner](assets/embodied-r1.png)
 
 Embodied-Reasoner: Synergizing Visual Search, Reasoning, and Action for Embodied Interactive Tasks
 
