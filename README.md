@@ -298,6 +298,7 @@ Video-R1: Reinforcing Video Reasoning in MLLMs
 [![GitHub stars](https://img.shields.io/github/stars/OpenGVLab/VideoChat-R1?style=social&label=GitHub&logo=github)](https://github.com/OpenGVLab/VideoChat-R1)
 
 > 时空感知强化微调
+
 ![VideoChat-R1](assets/videochat-r1-overview.png)
 
 TinyLLaVA-Video-R1: Towards Smaller LMMs for Video Reasoning
