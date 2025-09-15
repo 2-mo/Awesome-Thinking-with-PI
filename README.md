@@ -497,7 +497,7 @@ https://zhuanlan.zhihu.com/p/1949143503058760011
 
 王利民老师团队，乔宇老师
 
-![VideoChat-A1](./assets/videochat-a1.png)
+![VideoChat-A1](./assets/videochat-a1-overview.png)
 
 **RynnEC: Bringing MLLMs into Embodied World**
 [![GitHub stars](https://img.shields.io/github/stars/alibaba-damo-academy/RynnEC?style=social&label=GitHub&logo=github)](https://github.com/alibaba-damo-academy/RynnEC)
