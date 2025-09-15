@@ -11,9 +11,7 @@
   <a href="htt北大等提出的多模态检索增强生成框架，采用RL优化多模态输入输出，提升推理能力和效率。
 
 
-**VLM-FO1: A New Object Detection Method for Vision-Language Models**
-
-介绍VLM-FO1模型，通过"画框"方式提升视觉语言模型的目标检测精度。hub.com/2-mo/Awesome-Thinking-with-PI/issues"><img src="https://img.shields.io/badge/Issues-Track-orange" alt="Issues"></a>
+<img src="https://img.shields.io/badge/Issues-Track-orange" alt="Issues"></a>
   <a href="https://github.com/2-mo/Awesome-Thinking-with-PI/pulls"><img src="https://img.shields.io/badge/Pull%20Requests-Welcome-brightgreen" alt="Pull Requests"></a>
   <a href="https://github.com/2-mo/Awesome-Thinking-with-PI/commits/main"><img src="https://img.shields.io/badge/Commits-Main-blue" alt="Commits: main"></a>
 </p>
@@ -285,7 +283,7 @@ SAM-R1: Leveraging SAM for Reward Feedback in Multimodal Segmentation via RL
 
 Video-R1: Reinforcing Video Reasoning in MLLMs
 强化视频时空推理 
-[![arXiv](https://img.shields.io/badge/arXiv-2503.21776-b31      ?logo=arxiv)](https://arxiv.org/pdf/2503.21776)
+[![arXiv](https://img.shields.io/badge/arXiv-2503.21776-b31?logo=arxiv)](https://arxiv.org/pdf/2503.21776)
 [![Zhihu](https://img.shields.io/badge/Zhihu-Review-informational?logo=zhihu)](https://zhuanlan.zhihu.com/p/1889342435928282728)
 [![Project](https://img.shields.io/badge/Project-blue?logo=safari)](https://github.com/tulerfeng/Video-R1)
 [![GitHub stars](https://img.shields.io/github/stars/tulerfeng/Video-R1?style=social&label=GitHub&logo=github)](https://github.com/tulerfeng/Video-R1)
@@ -489,7 +487,8 @@ https://zhuanlan.zhihu.com/p/1949143503058760011
 **论文/项目标题**: VLM-FO1: 视觉语言模型目标检测新方法
 **Title**: VLM-FO1: A New Object Detection Method for Vision-Language Models
 **主要内容**: 介绍VLM-FO1模型，通过“画框”方式提升视觉语言模型的目标检测精度。
-**链接**: 无
+
+
 
 #### 视频理解
 
@@ -515,75 +514,66 @@ https://zhuanlan.zhihu.com/p/1949143503058760011
 
 
 > Thinking with Images for Multimodal Reasoning: Foundations, Methods, and Future Frontiers
-> - Stage1: Tool-Driven Visual ExplorationStage2: Programmatic Visual Manipulation
-Stage3: Intrinsic Visual Imagination
 
+<details>
+<summary>Stage1: Tool-Driven Visual Exploration
+-> Stage2: Programmatic Visual Manipulation
+-> Stage3: Intrinsic Visual Imagination</summary>
 
-Visual Planning: Let's Think Only with Images
-
+**Visual Planning: Let's Think Only with Images**
 [![arXiv](https://img.shields.io/badge/arXiv-2505.11409-b31b1b?logo=arxiv)](https://arxiv.org/pdf/2505.11409)   [![GitHub stars](https://img.shields.io/github/stars/yix8/VisualPlanning?style=social&label=GitHub&logo=github)](https://github.com/yix8/VisualPlanning)
 
-![Visual Planning](assets/visual-planning-teaser.png)
+> ![Visual Planning](assets/visual-planning-teaser.png)
 
 
-T2I-R1: Reinforcing Image Generation with Collaborative Semantic-level and Token-level CoT
+**T2I-R1: Reinforcing Image Generation with Collaborative Semantic-level and Token-level CoT**
+[![arXiv](https://img.shields.io/badge/arXiv-2505.00703-b31b1b?logo=arxiv)](https://arxiv.org/abs/2505.00703)
 [![Code](https://img.shields.io/github/stars/CaraJ7/T2I-R1?style=social&label=Code&logo=github)](https://github.com/CaraJ7/T2I-R1)
-https://arxiv.org/abs/2505.00703
 
-Highlight: 将 R1 式逐步推理/奖励思路引入文本到图像生成。
+> Highlight: 将 R1 式逐步推理/奖励思路引入文本到图像生成。
+> 
+> ![alt text](./assets/t2i-r1.png)
 
-
-![alt text](./assets/t2i-r1.png)
-
-GRIT: Teaching MLLMs to Think with Images
-
+**GRIT: Teaching MLLMs to Think with Images**
 [![WeChat](https://img.shields.io/badge/WeChat-Explainer-07C160?logo=wechat)](https://mp.weixin.qq.com/s/I3bk4FGOwrj-tKl_IYRfKw)
 
-Highlight: 以视觉为中介的“图像思考”范式解读与科普。
+> Highlight: 以视觉为中介的“图像思考”范式解读与科普。
 
-d1: Scaling Reasoning in Diffusion Large Language Models via Reinforcement Learning (arXiv 2025)
+**d1: Scaling Reasoning in Diffusion Large Language Models via Reinforcement Learning (arXiv 2025)**
 
 [![arXiv](https://img.shields.io/badge/arXiv-2504.12216-b31b1b?logo=arxiv)](https://arxiv.org/pdf/2504.12216)
 
-Highlight: 将强化学习用于扩散式大模型，提升复杂推理能力。
-
+> Highlight: 将强化学习用于扩散式大模型，提升复杂推理能力。
 
 **DanceGRPO (Text-to-Image)**
 [![Code](https://img.shields.io/github/stars/XueZeyue/DanceGRPO?style=social&label=Code&logo=github)](https://github.com/XueZeyue/DanceGRPO)
 
-Highlight: 面向文生图的 GRPO 训练与策略实现。
+> Highlight: 面向文生图的 GRPO 训练与策略实现。
 
-Flow-GRPO (Text-to-Image)
-
+**Flow-GRPO: Training Flow Matching Models via Online RL**
 [![Code](https://img.shields.io/github/stars/yifan123/flow_grpo?style=social&label=Code&logo=github)](https://github.com/yifan123/flow_grpo)
 
-Highlight: 基于 Flow/扩散流程的 GRPO 训练范式与实践。
+> Highlight: 基于 Flow/扩散流程的 GRPO 训练范式与实践。
 
-
-
-Interleaving Reasoning for Better Text-to-Image Generation (IRG)
-
+**Interleaving Reasoning for Better Text-to-Image Generation (IRG)**
 [![Code](https://img.shields.io/github/stars/Osilly/Interleaving-Reasoning-Generation?style=social&label=Code&logo=github)](https://github.com/Osilly/Interleaving-Reasoning-Generation)
 
-Highlight: 交错式推理提升文本生成图像的细节与一致性；提供可复现实验与开源代码。
+> Highlight: 交错式推理提升文本生成图像的细节与一致性；提供可复现实验与开源代码。
 
 
-Draw-In-Mind: Learning Precise Image Editing via Chain-of-Thought Imagination (DIM)
-
+**Draw-In-Mind: Learning Precise Image Editing via Chain-of-Thought Imagination (DIM)**
 [![Code](https://img.shields.io/github/stars/showlab/DIM?style=social&label=Code&logo=github)](https://github.com/showlab/DIM)
 
-Highlight: 链式思维驱动的精确图像编辑与专用数据集，显著提升复杂指令下的编辑精度。
+> Highlight: 链式思维驱动的精确图像编辑与专用数据集，显著提升复杂指令下的编辑精度。
 
-
-
-PromptEnhancer: 思维链重写 Prompt 提升文生图
-
+**PromptEnhancer: A Simple Approach to Enhance Text-to-Image Models via Chain-of-Thought Prompt Rewriting**
 [![arXiv](https://img.shields.io/badge/arXiv-2509.04545-b31b1b?logo=arxiv)](https://arxiv.org/abs/2509.04545)
 [![Code](https://img.shields.io/github/stars/Hunyuan-PromptEnhancer/PromptEnhancer?style=social&label=Code&logo=github)](https://github.com/Hunyuan-PromptEnhancer/PromptEnhancer)
 [![Project](https://img.shields.io/badge/Project-Website-0a84ff?logo=safari)](https://hunyuan-promptenhancer.github.io/)
 
-Highlight: 利用思维链对提示语进行重写，改善文本到图像的生成质量与对齐程度。
+> Highlight: 利用思维链对提示语进行重写，改善文本到图像的生成质量与对齐程度。
 
+</details>
 
 ### GUI 代理与屏幕操作
 
@@ -610,6 +600,17 @@ Learning Active Perception via Self-Evolving Preference Optimization for GUI Gro
 ## 🤖 Thinking with Embodiment
 
 ### VLA is All You Need ！
+
+**Magma: A Foundation Model for Multimodal AI Agents (CVPR 2025)**
+[![arXiv](https://img.shields.io/badge/arXiv-2502.13130-b31b1b?logo=arxiv)](https://www.arxiv.org/pdf/2502.13130)
+[![Project](https://img.shields.io/badge/Project-blue?logo=safari)](https://microsoft.github.io/Magma/)
+[![GitHub stars](https://img.shields.io/github/stars/microsoft/Magma?style=social&label=GitHub&logo=github)](https://github.com/microsoft/Magma)
+
+
+Microsoft Research 高剑峰团队
+
+![alt text](./assets/magma-overview.png)
+
 
 F1: A Vision-Language-Action Model Bridging Understanding and Generation to Actions
 
