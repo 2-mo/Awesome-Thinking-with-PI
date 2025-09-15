@@ -440,9 +440,9 @@ https://zhuanlan.zhihu.com/p/1949143503058760011
 介绍通义团队提出的点金OCR-R1，及其与主流视觉语言模型在复杂文档解析任务中的对比表现。
 
 
-> **Vision-G1: Towards General Vision Language Reasoning with Multi-Domain Data Curation**
-UCSD等提出多领域数据整理和多轮强化学习训练管道，提升视觉语言模型的广泛推理能力。
-链接: arXiv:2508.12680
+**Vision-G1: Towards General Vision Language Reasoning with Multi-Domain Data Curation**
+> UCSD等提出多领域数据整理和多轮强化学习训练管道，提升视觉语言模型的广泛推理能力。
+> 链接: arXiv:2508.12680
 
 
 > **PyVision: Enabling Fast, Interactive Visual Programming with AI**
@@ -498,7 +498,7 @@ UCSD等提出多领域数据整理和多轮强化学习训练管道，提升视�
 
 王利民老师团队，乔宇老师
 
-![alt text](./assets/videochat-a1.png)
+![VideoChat-A1](./assets/videochat-a1.png)
 
 > **RynnEC: Bringing MLLMs into Embodied World**
 [![GitHub stars](https://img.shields.io/github/stars/alibaba-damo-academy/RynnEC?style=social&label=GitHub&logo=github)](https://github.com/alibaba-damo-academy/RynnEC)
