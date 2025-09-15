@@ -243,7 +243,7 @@ Highlight: Pursues open-world anomaly understanding with scalable concept covera
 
 ---
 
-#### Related Awesome Lists
+## Related Awesome Lists
 
 [![Awesome-Anomaly-Detection-Foundation-Models](https://img.shields.io/badge/Awesome-Anomaly_Detection_Foundation_Models-black?logo=github)](https://github.com/mala-lab/Awesome-Anomaly-Detection-Foundation-Models/tree/main?tab=readme-ov-file)
 

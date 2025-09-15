@@ -8,7 +8,12 @@
 <!-- Top badges -->
 <p align="center">
   <a href="https://github.com/2-mo/Awesome-Thinking-with-PI/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-blueviolet" alt="License: MIT"></a>
-  <a href="https://github.com/2-mo/Awesome-Thinking-with-PI/issues"><img src="https://img.shields.io/badge/Issues-Track-orange" alt="Issues"></a>
+  <a href="htt北大等提出的多模态检索增强生成框架，采用RL优化多模态输入输出，提升推理能力和效率。
+
+
+> **VLM-FO1: A New Object Detection Method for Vision-Language Models**
+
+介绍VLM-FO1模型，通过"画框"方式提升视觉语言模型的目标检测精度。hub.com/2-mo/Awesome-Thinking-with-PI/issues"><img src="https://img.shields.io/badge/Issues-Track-orange" alt="Issues"></a>
   <a href="https://github.com/2-mo/Awesome-Thinking-with-PI/pulls"><img src="https://img.shields.io/badge/Pull%20Requests-Welcome-brightgreen" alt="Pull Requests"></a>
   <a href="https://github.com/2-mo/Awesome-Thinking-with-PI/commits/main"><img src="https://img.shields.io/badge/Commits-Main-blue" alt="Commits: main"></a>
 </p>
@@ -55,7 +60,7 @@
 > 参见 [[LLM4VAD · Video Anomaly Detection]](./llm4vad/README.md)
 
 
-#### OpenAi 观点文章
+#### OpenAI 观点文章
 AI之所以会产生幻觉，是因为我们训练它的方式，从一开始，就在系统性地奖励这种瞎蒙的行为。
 https://openai.com/zh-Hans-CN/index/why-language-models-hallucinate/
 
@@ -129,22 +134,24 @@ Zhao Andrew et al., ExpeL: LLM Agents Are Experiential Learners, AAAI 2024.
 
 ### 语言作为显式思维
 
-Let’s Verify Step by Step (process supervision/PRM, OpenAI): [![arXiv](https://img.shields.io/badge/arXiv-2305.20050-b31b1b?logo=arxiv)](https://arxiv.org/abs/2305.20050)
+> **Let’s Verify Step by Step** (process supervision/PRM, OpenAI): [![arXiv](https://img.shields.io/badge/arXiv-2305.20050-b31b1b?logo=arxiv)](https://arxiv.org/abs/2305.20050)
 过程奖励
 
 
-Chain-of-Thought Prompting Elicits Reasoning in Large Language Models [![arXiv](https://img.shields.io/badge/arXiv-2201.11903-b31b1b?logo=arxiv)](https://arxiv.org/abs/2201.11903)
+> **Chain-of-Thought Prompting Elicits Reasoning in Large Language Models** [![arXiv](https://img.shields.io/badge/arXiv-2201.11903-b31b1b?logo=arxiv)](https://arxiv.org/abs/2201.11903)
 
-Tree of Thoughts: Deliberate Problem Solving with Large Language Models [![arXiv](https://img.shields.io/badge/arXiv-2305.10601-b31b1b?logo=arxiv)](https://arxiv.org/abs/2305.10601)
+> **Tree of Thoughts: Deliberate Problem Solving with Large Language Models** [![arXiv](https://img.shields.io/badge/arXiv-2305.10601-b31b1b?logo=arxiv)](https://arxiv.org/abs/2305.10601)
 
-Graph of Thoughts: Solving Elaborate Problems with Large Language Models [![arXiv](https://img.shields.io/badge/arXiv-2308.09687-b31b1b?logo=arxiv)](https://arxiv.org/abs/2308.09687)
+> **Graph of Thoughts: Solving Elaborate Problems with Large Language Models** [![arXiv](https://img.shields.io/badge/arXiv-2308.09687-b31b1b?logo=arxiv)](https://arxiv.org/abs/2308.09687)
 
-Automatic Chain of Thought Prompting in Large Language Models (ICLR 2023) [![arXiv](https://img.shields.io/badge/arXiv-2210.03493-b31b1b?logo=arxiv)](https://arxiv.org/abs/2210.03493)
+> **Automatic Chain of Thought Prompting in Large Language Models (ICLR 2023)** [![arXiv](https://img.shields.io/badge/arXiv-2210.03493-b31b1b?logo=arxiv)](https://arxiv.org/abs/2210.03493)
 
-Self-Consistency Improves Chain of Thought Reasoning in Language Models (ICLR 2023) [![arXiv](https://img.shields.io/badge/arXiv-2203.11171-b31b1b?logo=arxiv)](https://arxiv.org/abs/2203.11171)
+> **Self-Consistency Improves Chain of Thought Reasoning in Language Models (ICLR 2023)** 
+[![arXiv](https://img.shields.io/badge/arXiv-2203.11171-b31b1b?logo=arxiv)](https://arxiv.org/abs/2203.11171)
 多样化思路投票
 
-Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena (NeurIPS 2023 Datasets and Benchmarks Track) [![arXiv](https://img.shields.io/badge/arXiv-2306.05685-b31b1b?logo=arxiv)](https://arxiv.org/abs/2306.05685)
+> **Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena (NeurIPS 2023 Datasets and Benchmarks Track)** 
+[![arXiv](https://img.shields.io/badge/arXiv-2306.05685-b31b1b?logo=arxiv)](https://arxiv.org/abs/2306.05685)
 
 Wang Yifei et al., A Theoretical Understanding of Self-Correction through In-context Alignment, NeurIPS 2024.
 
@@ -194,7 +201,7 @@ Note: The following table compiles notable r1-style models and resources.
 | Seg-Zero [![GitHub stars](https://img.shields.io/github/stars/dvlab-research/Seg-Zero?style=social&label=GitHub&logo=github)](https://github.com/dvlab-research/Seg-Zero) | Qwen2.5-VL-3B + SAM2 | Mar 9, 2025 | CUHK | Segmentation | - |
 | Vision-R1 [![GitHub stars](https://img.shields.io/github/stars/Osilly/Vision-R1?style=social&label=GitHub&logo=github)](https://github.com/Osilly/Vision-R1) | Qwen-2.5-VL-72B | Mar 9, 2025 | Zhejiang University | Math | - |
 | MM-Eureka | InternVL2.5-Instruct-8B | Mar 10, 2025 | Shanghai AI Laboratory | Math | Leave-One-Out, RLOO |
-| [LMM-R1](https://github.com/thu-SLT-Lab/LMM-R1)   | Qwen2.5-VL-Instruct-3B | Mar 10, 2025 | Southeast University | Math, ScienceQA, ChartQA | Game Planning, PPO |
+| LMM-R1 [![GitHub stars](https://img.shields.io/github/stars/thu-SLT-Lab/LMM-R1?style=social&label=GitHub&logo=github)](https://github.com/thu-SLT-Lab/LMM-R1) | Qwen2.5-VL-Instruct-3B | Mar 10, 2025 | Southeast University | Math, ScienceQA, ChartQA | Game Planning, PPO |
 | Curr-ReFT | Qwen2.5-VL-3B | Mar 10, 2025 | USTC | Detection/Classification/Math | - |
 | AlphaDrive | Qwen2VL-2B | Mar 10, 2025 | HUST | Autonomous driving | - |
 | DriveLMM-o1 [![GitHub stars](https://img.shields.io/github/stars/mbzuai-oryx/DriveLMM-o1?style=social&label=GitHub&logo=github)](https://github.com/mbzuai-oryx/DriveLMM-o1) | InternVL2.5-8B | Mar 13, 2025 | MBZUAI | Autonomous driving | - |
@@ -225,19 +232,18 @@ Note: A small GitHub badge next to a model name links to its confirmed repositor
 
 #### 评估基准/基于评价的
 
-- MM-Eureka / MM-Eureka-Zero — 留一法与RLOO强化样式 [示例](https://github.com/ShanghaiAILab/MM-Eureka)
+MM-Eureka / MM-Eureka-Zero — 留一法与RLOO强化样式 [示例](https://github.com/ShanghaiAILab/MM-Eureka)
 
 
-Vision-SR1: 通过推理分解的自我奖励视觉语言模型
-**论文/项目标题**: Vision-SR1: 通过推理分解的自我奖励视觉语言模型
-**Title**: Vision-SR1: Self-Rewarded Vision-Language Model via Reasoning Decomposition
-**主要内容**: 腾讯AI Lab等提出自我奖励方法，分阶段提升VLM推理能力，代码已开源。
-**链接**: 无
+
+> **Vision-SR1: Self-Rewarded Vision-Language Model via Reasoning Decomposition**
+腾讯AI Lab等提出自我奖励方法，分阶段提升VLM推理能力，代码已开源。
 
 
-LLaVA-Critic-R1: Your Critic Model is Secretly a Strong Policy Model
-- **arXiv**：[arXiv:2509.00676](https://arxiv.org/abs/2509.00676)
-- **主要内容**：分析生成式奖励模型在视觉-语言任务中的表现，提出LLaVA-Critic-R1。
+
+> **LLaVA-Critic-R1: Your Critic Model is Secretly a Strong Policy Model**
+**arXiv**：[arXiv:2509.00676](https://arxiv.org/abs/2509.00676)
+**主要内容**：分析生成式奖励模型在视觉-语言任务中的表现，提出LLaVA-Critic-R1。
 
 
 
@@ -375,7 +381,8 @@ Boltzmann Attention Sampling for Image Analysis with Small Objects (CVPR 2025) [
 
 ### Image Manipulation
 
-Number it: Temporal Grounding Videos like Flipping Manga [arXiv](https://arxiv.org/pdf/2411.10332)
+> **Number it: Temporal Grounding Videos like Flipping Manga**
+[![arXiv](https://img.shields.io/badge/arXiv-2411.10332-b31b1b?logo=arxiv)](https://arxiv.org/abs/2411.10332)
 
 
 **Instruction-Guided Visual Masking** [[paper](https://arxiv.org/pdf/2405.19783)] [[code](https://github.com/2toinf/IVM)]
@@ -400,82 +407,82 @@ Number it: Temporal Grounding Videos like Flipping Manga (CVPR 2025) [![arXiv](h
 
 ### 基于图像交互的理解/推理
 
-Simple o3: Towards Interleaved Vision-Language Reasoning
-**论文/项目标题**: Simple o3: 迈向交错式视觉-语言推理
-**Title**: Simple o3: Towards Interleaved Vision-Language Reasoning
-**主要内容**: 复旦大学等提出的多模态大模型推理框架，提升视觉-语言交织场景下的长链推理能力。
-**链接**: 无
+> **Simple o3: Towards Interleaved Vision-Language Reasoning**
+[![arXiv](https://img.shields.io/badge/arXiv-2508.12109-b31b1b?logo=arxiv)](https://arxiv.org/abs/2508.12109)
+
+Interleaved Reasoning, Tool-Use, Visual Planning
+
+亮点：面向“图文交错推理”的端到端方法，结合可执行视觉操作（裁剪/放大/复用图像）与语言推理，强化长链多模态推理与细粒度理解。
 
 
-Mini-o3: Scaling Up Reasoning Patterns and Interaction for Visual Search
-**论文/项目标题**: Mini-o3: 多步视觉搜索新突破
-**Title**: Mini-o3: Scaling Up Reasoning Patterns and Interaction for Visual Search
-**主要内容**: 字节跳动等提出Mini-o3系统，通过多步交互和深度推理提升视觉搜索任务表现。
-**链接**: https://github.com/Mini-03/Mini-o3
+> **Mini-o3: Scaling Up Reasoning Patterns and Interaction for Visual Search**
+
+字节跳动等提出Mini-o3系统，通过多步交互和深度推理提升视觉搜索任务表现。
+
+https://mini-o3.github.io/
+
+https://arxiv.org/abs/2509.07969
+
+[![GitHub stars](https://img.shields.io/github/stars/Mini-03/Mini-o3?style=social&label=GitHub&logo=github)](https://github.com/Mini-o3/Mini-o3)
+
+https://zhuanlan.zhihu.com/p/1949143503058760011
 
 
-
-**论文/项目标题**: Thyme: 超越图像的思考范式
-**Title**: Thyme: Think Beyond Images
-**主要内容**: 开源多模态大模型Thyme，支持主动调用工具进行复杂图像处理和数学计算，具备高度自主性。
-
-
-
-**论文/项目标题**: 点金OCR-R1与视觉语言模型OCR能力对比
-**Title**: OCR Comparison: Expert Models vs. Vision-Language Models
-**主要内容**: 介绍通义团队提出的点金OCR-R1，及其与主流视觉语言模型在复杂文档解析任务中的对比表现。
-**链接**: 无
+![alt text](./assets/mini-o3.png)
 
 
 
-**论文/项目标题**: Vision-G1: 多领域数据整理增强视觉推理
-**Title**: Vision-G1: Towards General Vision Language Reasoning with Multi-Domain Data Curation
-**主要内容**: UCSD等提出多领域数据整理和多轮强化学习训练管道，提升视觉语言模型的广泛推理能力。
-**链接**: arXiv:2508.12680
+> **Thyme: Think Beyond Images**
+开源多模态大模型Thyme，支持主动调用工具进行复杂图像处理和数学计算，具备高度自主性。
 
 
+> **OCR Comparison: Expert Models vs. Vision-Language Models**
+介绍通义团队提出的点金OCR-R1，及其与主流视觉语言模型在复杂文档解析任务中的对比表现。
 
 
+> **Vision-G1: Towards General Vision Language Reasoning with Multi-Domain Data Curation**
+UCSD等提出多领域数据整理和多轮强化学习训练管道，提升视觉语言模型的广泛推理能力。
+链接: arXiv:2508.12680
+
+
+> **PyVision: Enabling Fast, Interactive Visual Programming with AI**
 [![PyVision arXiv](https://img.shields.io/badge/PyVision-arXiv-ff69b4?logo=arxiv)](https://arxiv.org/pdf/2507.07998) [![PyVision Project](https://img.shields.io/badge/Project-blue?logo=safari)](https://agent-x.space/pyvision/)
 
 ![PyVision overview](./assets/pyvision-overview.png)
 
 
+> **DeepEyes: Incentivizing "Thinking with Images" via Reinforcement Learning**
+[![arXiv](https://img.shields.io/badge/arXiv-2505.14362-b31b1b?logo=arxiv)](https://arxiv.org/abs/2505.14362)
 
-DeepEyes: Incentivizing "Thinking with Images" via Reinforcement Learning
-https://arxiv.org/abs/2505.14362
 ![deepeyes-overview](./assets/deepeyes-overview.png)
 
 
-
-VisualToolAgent (VisTA): A Reinforcement Learning Framework for Visual Tool Selection
+> **VisualToolAgent (VisTA): A Reinforcement Learning Framework for Visual Tool Selection**
 
 ![VisTA overview](./assets/vista-overview.png)
 
 
+> **REVPT: Reinforced Visual Perception with Tools**
+[![GitHub stars](https://img.shields.io/github/stars/Is-kelvin/REVPT?style=social&label=GitHub&logo=github)](https://github.com/Is-kelvin/REVPT) [![arXiv](https://img.shields.io/badge/arXiv-2509.01656-b31b1b?logo=arxiv)](https://arxiv.org/abs/2509.01656)
 
-REVPT: Reinforced Visual Perception with Tools
-- **作者**：Zetong Zhou, Dongping Chen, Zixian Ma, 等
-- **主要内容**：提出REVPT方法，通过RL训练多模态大模型使用视觉工具，提升感知-推理能力。
-- **链接**：[https://github.com/Is-kelvin/REVPT](https://github.com/Is-kelvin/REVPT)
-- **arXiv**：[arXiv:2509.01656](https://arxiv.org/abs/2509.01656)
+提出REVPT方法，通过RL训练多模态大模型使用视觉工具，提升感知-推理能力。
 
 
-VLM-R3: Region Recognition, Reasoning, and Refinement for Enhanced Multimodal Chain-of-Thought
-- **作者**：Chaoya Jiang, Yongrui Heng, Wei Ye, 等
-- **主要内容**：提出VLM-R3框架，强化MLLM在视觉区域识别与推理能力，提升多模态链式推理表现。
-- **arXiv**：[arXiv:2505.16192](https://arxiv.org/abs/2505.16192)
+> **VLM-R3: Region Recognition, Reasoning, and Refinement for Enhanced Multimodal Chain-of-Thought**
+[![arXiv](https://img.shields.io/badge/arXiv-2505.16192-b31b1b?logo=arxiv)](https://arxiv.org/abs/2505.16192)
+
+提出VLM-R3框架，强化MLLM在视觉区域识别与推理能力，提升多模态链式推理表现。
 
 
-Ego-R1: Chain-of-Tool-Thought for Ultra-Long Egocentric Video Reasoning
-- **作者**：Shulin Tian, Ruigi Wang, Hongming Guo, 等
-- **主要内容**：提出Ego-R1智能体，采用Chain-of-Tool-Thought方法，支持超长自中心视频推理。
-- **链接**：无明显链接
+> **Ego-R1: Chain-of-Tool-Thought for Ultra-Long Egocentric Video Reasoning**
+
+提出Ego-R1智能体，采用Chain-of-Tool-Thought方法，支持超长自中心视频推理。
 
 
-**论文/项目标题**: M2IO-R1: An Efficient RL-Enhanced Reasoning Framework for Multimodal Retrieval Augmented Multimodal Generation
-**Title**: M2IO-R1: An Efficient RL-Enhanced Reasoning Framework for Multimodal Retrieval Augmented Multimodal Generation
-**主要内容**: 北大等提出的多模态检索增强生成框架，采用RL优化多模态输入输出，提升推理能力和效率。
+> **M2IO-R1: An Efficient RL-Enhanced Reasoning Framework for Multimodal Retrieval Augmented Multimodal Generation**
+[![arXiv](https://img.shields.io/badge/arXiv-2508.06328-b31b1b?logo=arxiv)](https://arxiv.org/abs/2508.06328)
+
+北大等提出的多模态检索增强生成框架，采用RL优化多模态输入输出，提升推理能力和效率。
 **链接**: arXiv:2508.06328
 
 
@@ -486,32 +493,30 @@ Ego-R1: Chain-of-Tool-Thought for Ultra-Long Egocentric Video Reasoning
 
 #### 视频理解
 
-VideoChat-A1: Thinking with Long Videos by
-Chain-of-Shot Reasoning
-https://arxiv.org/abs/2506.06097
+> **VideoChat-A1: Thinking with Long Videos by Chain-of-Shot Reasoning**
+[![arXiv](https://img.shields.io/badge/arXiv-2506.06097-b31b1b?logo=arxiv)](https://arxiv.org/abs/2506.06097)
+
 王利民老师团队，乔宇老师
 
 ![alt text](./assets/videochat-a1.png)
 
-RynnEC: Bringing MLLMs into Embodied World
-**论文/项目标题**: RynnEC: 将MLLM带入具身世界
-**Title**: RynnEC: Bringing MLLMs into Embodied World
-**主要内容**: 阿里达摩院提出RynnEC视频多模态大模型，支持区域级视频交互，提升具身智能任务表现。
-**链接**: https://github.com/alibaba-damo-academy/RynnEC
+> **RynnEC: Bringing MLLMs into Embodied World**
+[![GitHub stars](https://img.shields.io/github/stars/alibaba-damo-academy/RynnEC?style=social&label=GitHub&logo=github)](https://github.com/alibaba-damo-academy/RynnEC)
+
+阿里达摩院提出RynnEC视频多模态大模型，支持区域级视频交互，提升具身智能任务表现。
 
 
-ReasonAct: Progressive Training for Fine-Grained Video Reasoning in Small Models
-**论文/项目标题**: ReasonAct: 小模型视频渐进推理
-**Title**: ReasonAct: Progressive Training for Fine-Grained Video Reasoning in Small Models
-**主要内容**: 提出三阶段渐进式训练范式，提升小型多模态模型在复杂视频推理任务上的表现。
+> **ReasonAct: Progressive Training for Fine-Grained Video Reasoning in Small Models**
+
+提出三阶段渐进式训练范式，提升小型多模态模型在复杂视频推理任务上的表现。
 
 
-## 图像生成
+### 图像生成
 
-Stage1: Tool-Driven Visual Exploration
-Stage2: Programmatic Visual Manipulation
-Stage3: Intrinsic Visual Imagination
+
 > Thinking with Images for Multimodal Reasoning: Foundations, Methods, and Future Frontiers
+> - Stage1: Tool-Driven Visual ExplorationStage2: Programmatic Visual Manipulation
+Stage3: Intrinsic Visual Imagination
 
 
 Visual Planning: Let's Think Only with Images
@@ -519,6 +524,16 @@ Visual Planning: Let's Think Only with Images
 [![arXiv](https://img.shields.io/badge/arXiv-2505.11409-b31b1b?logo=arxiv)](https://arxiv.org/pdf/2505.11409)   [![GitHub stars](https://img.shields.io/github/stars/yix8/VisualPlanning?style=social&label=GitHub&logo=github)](https://github.com/yix8/VisualPlanning)
 
 ![Visual Planning](assets/visual-planning-teaser.png)
+
+
+T2I-R1: Reinforcing Image Generation with Collaborative Semantic-level and Token-level CoT
+[![Code](https://img.shields.io/github/stars/CaraJ7/T2I-R1?style=social&label=Code&logo=github)](https://github.com/CaraJ7/T2I-R1)
+https://arxiv.org/abs/2505.00703
+
+Highlight: 将 R1 式逐步推理/奖励思路引入文本到图像生成。
+
+
+![alt text](./assets/t2i-r1.png)
 
 GRIT: Teaching MLLMs to Think with Images
 
@@ -533,7 +548,6 @@ d1: Scaling Reasoning in Diffusion Large Language Models via Reinforcement Learn
 Highlight: 将强化学习用于扩散式大模型，提升复杂推理能力。
 
 
-
 **DanceGRPO (Text-to-Image)**
 [![Code](https://img.shields.io/github/stars/XueZeyue/DanceGRPO?style=social&label=Code&logo=github)](https://github.com/XueZeyue/DanceGRPO)
 
@@ -545,32 +559,38 @@ Flow-GRPO (Text-to-Image)
 
 Highlight: 基于 Flow/扩散流程的 GRPO 训练范式与实践。
 
-T2I-R1 (Text-to-Image)
-[![Code](https://img.shields.io/github/stars/CaraJ7/T2I-R1?style=social&label=Code&logo=github)](https://github.com/CaraJ7/T2I-R1)
-
-Highlight: 将 R1 式逐步推理/奖励思路引入文本到图像生成。
 
 
-Interleaving Reasoning for Better Text-to-Image Generation
-**论文/项目标题**: IRG: 交错推理提升文本生成图像质量
-**Title**: Interleaving Reasoning for Better Text-to-Image Generation
-**主要内容**: 华东师大等提出IRG框架，通过多轮推理提升文本生成图像的细节和质量，代码已开源。
-**链接**: https://github.com/Osilly/Interleaving-Reasoning-Generation
+Interleaving Reasoning for Better Text-to-Image Generation (IRG)
+
+[![Code](https://img.shields.io/github/stars/Osilly/Interleaving-Reasoning-Generation?style=social&label=Code&logo=github)](https://github.com/Osilly/Interleaving-Reasoning-Generation)
+
+Highlight: 交错式推理提升文本生成图像的细节与一致性；提供可复现实验与开源代码。
 
 
-Draw-In-Mind: Learning Precise Image Editing via Chain-of-Thought Imagination
-**论文/项目标题**: Draw-In-Mind: 链式思维驱动的精确图像编辑
-**Title**: Draw-In-Mind: Learning Precise Image Editing via Chain-of-Thought Imagination
-**主要内容**: 新加坡国大等提出DIM数据集和模型，显著提升复杂指令下的图像编辑精度，代码已开源。
-**链接**: https://github.com/showlab/DIM
+Draw-In-Mind: Learning Precise Image Editing via Chain-of-Thought Imagination (DIM)
+
+[![Code](https://img.shields.io/github/stars/showlab/DIM?style=social&label=Code&logo=github)](https://github.com/showlab/DIM)
+
+Highlight: 链式思维驱动的精确图像编辑与专用数据集，显著提升复杂指令下的编辑精度。
+
+
+
+PromptEnhancer: 思维链重写 Prompt 提升文生图
+
+[![arXiv](https://img.shields.io/badge/arXiv-2509.04545-b31b1b?logo=arxiv)](https://arxiv.org/abs/2509.04545)
+[![Code](https://img.shields.io/github/stars/Hunyuan-PromptEnhancer/PromptEnhancer?style=social&label=Code&logo=github)](https://github.com/Hunyuan-PromptEnhancer/PromptEnhancer)
+[![Project](https://img.shields.io/badge/Project-Website-0a84ff?logo=safari)](https://hunyuan-promptenhancer.github.io/)
+
+Highlight: 利用思维链对提示语进行重写，改善文本到图像的生成质量与对齐程度。
 
 
 ### GUI 代理与屏幕操作
 
 信息空间交互，迈向具身智能
 
-- UI-R1 — 图形界面智能体动作预测 [项目](https://github.com/vivo-ai-lab/UI-R1)
-- Qwen-Agent — 工具增强与GUI自动化生态 [项目](https://github.com/QwenLM/Qwen-Agent/tree/main)
+UI-R1 — 图形界面智能体动作预测 [项目](https://github.com/vivo-ai-lab/UI-R1)
+Qwen-Agent — 工具增强与GUI自动化生态 [项目](https://github.com/QwenLM/Qwen-Agent/tree/main)
 
 
 Mobile-Agent-v3: Fundamental Agents for GUI Automation
@@ -581,16 +601,15 @@ https://github.com/X-PLUG/MobileAgent
 
 
 Learning Active Perception via Self-Evolving Preference Optimization for GUI Grounding
-- **作者**：Wanfu Wang, Qipeng Huang, Guangquan Xue, 等
-- **主要内容**：提出LASER框架，提升VLM在GUI理解任务中的主动感知与多步推理能力。
-- **链接**：[https://github.com/wwfnb/Laser](https://github.com/wwfnb/Laser)
+**主要内容**：提出LASER框架，提升VLM在GUI理解任务中的主动感知与多步推理能力。
+**链接**：[https://github.com/wwfnb/Laser](https://github.com/wwfnb/Laser)
 
 
 
 
 ## 🤖 Thinking with Embodiment
 
-### VLA is all you need
+### VLA is All You Need ！
 
 F1: A Vision-Language-Action Model Bridging Understanding and Generation to Actions
 
@@ -796,6 +815,7 @@ Explain Before You Answer: A Survey on Compositional Visual Reasoning
 
 论文：A Survey of Reinforcement Learning for Large Reasoning Models
 地址：https://arxiv.org/pdf/2509.08827
+周伯文老师团队
 
 ![aaa](./assets/survey_rl4lrm.png)
 
