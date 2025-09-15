@@ -11,7 +11,7 @@
   <a href="htt北大等提出的多模态检索增强生成框架，采用RL优化多模态输入输出，提升推理能力和效率。
 
 
-> **VLM-FO1: A New Object Detection Method for Vision-Language Models**
+**VLM-FO1: A New Object Detection Method for Vision-Language Models**
 
 介绍VLM-FO1模型，通过"画框"方式提升视觉语言模型的目标检测精度。hub.com/2-mo/Awesome-Thinking-with-PI/issues"><img src="https://img.shields.io/badge/Issues-Track-orange" alt="Issues"></a>
   <a href="https://github.com/2-mo/Awesome-Thinking-with-PI/pulls"><img src="https://img.shields.io/badge/Pull%20Requests-Welcome-brightgreen" alt="Pull Requests"></a>
@@ -134,23 +134,23 @@ Zhao Andrew et al., ExpeL: LLM Agents Are Experiential Learners, AAAI 2024.
 
 ### 语言作为显式思维
 
-> **Let’s Verify Step by Step** (process supervision/PRM, OpenAI): [![arXiv](https://img.shields.io/badge/arXiv-2305.20050-b31b1b?logo=arxiv)](https://arxiv.org/abs/2305.20050)
+**Let’s Verify Step by Step** (process supervision/PRM, OpenAI): [![arXiv](https://img.shields.io/badge/arXiv-2305.20050-b31b1b?logo=arxiv)](https://arxiv.org/abs/2305.20050)
 过程奖励
 
 
-> **Chain-of-Thought Prompting Elicits Reasoning in Large Language Models** [![arXiv](https://img.shields.io/badge/arXiv-2201.11903-b31b1b?logo=arxiv)](https://arxiv.org/abs/2201.11903)
+**Chain-of-Thought Prompting Elicits Reasoning in Large Language Models** [![arXiv](https://img.shields.io/badge/arXiv-2201.11903-b31b1b?logo=arxiv)](https://arxiv.org/abs/2201.11903)
 
-> **Tree of Thoughts: Deliberate Problem Solving with Large Language Models** [![arXiv](https://img.shields.io/badge/arXiv-2305.10601-b31b1b?logo=arxiv)](https://arxiv.org/abs/2305.10601)
+**Tree of Thoughts: Deliberate Problem Solving with Large Language Models** [![arXiv](https://img.shields.io/badge/arXiv-2305.10601-b31b1b?logo=arxiv)](https://arxiv.org/abs/2305.10601)
 
-> **Graph of Thoughts: Solving Elaborate Problems with Large Language Models** [![arXiv](https://img.shields.io/badge/arXiv-2308.09687-b31b1b?logo=arxiv)](https://arxiv.org/abs/2308.09687)
+**Graph of Thoughts: Solving Elaborate Problems with Large Language Models** [![arXiv](https://img.shields.io/badge/arXiv-2308.09687-b31b1b?logo=arxiv)](https://arxiv.org/abs/2308.09687)
 
-> **Automatic Chain of Thought Prompting in Large Language Models (ICLR 2023)** [![arXiv](https://img.shields.io/badge/arXiv-2210.03493-b31b1b?logo=arxiv)](https://arxiv.org/abs/2210.03493)
+**Automatic Chain of Thought Prompting in Large Language Models (ICLR 2023)** [![arXiv](https://img.shields.io/badge/arXiv-2210.03493-b31b1b?logo=arxiv)](https://arxiv.org/abs/2210.03493)
 
-> **Self-Consistency Improves Chain of Thought Reasoning in Language Models (ICLR 2023)** 
+**Self-Consistency Improves Chain of Thought Reasoning in Language Models (ICLR 2023)** 
 [![arXiv](https://img.shields.io/badge/arXiv-2203.11171-b31b1b?logo=arxiv)](https://arxiv.org/abs/2203.11171)
 多样化思路投票
 
-> **Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena (NeurIPS 2023 Datasets and Benchmarks Track)** 
+**Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena (NeurIPS 2023 Datasets and Benchmarks Track)** 
 [![arXiv](https://img.shields.io/badge/arXiv-2306.05685-b31b1b?logo=arxiv)](https://arxiv.org/abs/2306.05685)
 
 Wang Yifei et al., A Theoretical Understanding of Self-Correction through In-context Alignment, NeurIPS 2024.
@@ -236,12 +236,12 @@ MM-Eureka / MM-Eureka-Zero — 留一法与RLOO强化样式 [示例](https://git
 
 
 
-> **Vision-SR1: Self-Rewarded Vision-Language Model via Reasoning Decomposition**
+**Vision-SR1: Self-Rewarded Vision-Language Model via Reasoning Decomposition**
 腾讯AI Lab等提出自我奖励方法，分阶段提升VLM推理能力，代码已开源。
 
 
 
-> **LLaVA-Critic-R1: Your Critic Model is Secretly a Strong Policy Model**
+**LLaVA-Critic-R1: Your Critic Model is Secretly a Strong Policy Model**
 **arXiv**：[arXiv:2509.00676](https://arxiv.org/abs/2509.00676)
 **主要内容**：分析生成式奖励模型在视觉-语言任务中的表现，提出LLaVA-Critic-R1。
 
@@ -381,7 +381,7 @@ Boltzmann Attention Sampling for Image Analysis with Small Objects (CVPR 2025) [
 
 ### Image Manipulation
 
-> **Number it: Temporal Grounding Videos like Flipping Manga**
+**Number it: Temporal Grounding Videos like Flipping Manga**
 [![arXiv](https://img.shields.io/badge/arXiv-2411.10332-b31b1b?logo=arxiv)](https://arxiv.org/abs/2411.10332)
 
 
@@ -407,7 +407,7 @@ Number it: Temporal Grounding Videos like Flipping Manga (CVPR 2025) [![arXiv](h
 
 ### 基于图像交互的理解/推理
 
-> **Simple o3: Towards Interleaved Vision-Language Reasoning**
+**Simple o3: Towards Interleaved Vision-Language Reasoning**
 [![arXiv](https://img.shields.io/badge/arXiv-2508.12109-b31b1b?logo=arxiv)](https://arxiv.org/abs/2508.12109)
 
 Interleaved Reasoning, Tool-Use, Visual Planning
@@ -415,7 +415,7 @@ Interleaved Reasoning, Tool-Use, Visual Planning
 亮点：面向“图文交错推理”的端到端方法，结合可执行视觉操作（裁剪/放大/复用图像）与语言推理，强化长链多模态推理与细粒度理解。
 
 
-> **Mini-o3: Scaling Up Reasoning Patterns and Interaction for Visual Search**
+**Mini-o3: Scaling Up Reasoning Patterns and Interaction for Visual Search**
 
 字节跳动等提出Mini-o3系统，通过多步交互和深度推理提升视觉搜索任务表现。
 
@@ -432,12 +432,12 @@ https://zhuanlan.zhihu.com/p/1949143503058760011
 
 
 
-> **Thyme: Think Beyond Images**
+**Thyme: Think Beyond Images**
 开源多模态大模型Thyme，支持主动调用工具进行复杂图像处理和数学计算，具备高度自主性。
 
 
-> **OCR Comparison: Expert Models vs. Vision-Language Models**
-介绍通义团队提出的点金OCR-R1，及其与主流视觉语言模型在复杂文档解析任务中的对比表现。
+**OCR Comparison: Expert Models vs. Vision-Language Models**
+> 介绍通义团队提出的点金OCR-R1，及其与主流视觉语言模型在复杂文档解析任务中的对比表现。
 
 
 **Vision-G1: Towards General Vision Language Reasoning with Multi-Domain Data Curation**
@@ -445,41 +445,41 @@ https://zhuanlan.zhihu.com/p/1949143503058760011
 > 链接: arXiv:2508.12680
 
 
-> **PyVision: Enabling Fast, Interactive Visual Programming with AI**
+**PyVision: Enabling Fast, Interactive Visual Programming with AI**
 [![PyVision arXiv](https://img.shields.io/badge/PyVision-arXiv-ff69b4?logo=arxiv)](https://arxiv.org/pdf/2507.07998) [![PyVision Project](https://img.shields.io/badge/Project-blue?logo=safari)](https://agent-x.space/pyvision/)
 
-![PyVision overview](./assets/pyvision-overview.png)
+> ![PyVision overview](./assets/pyvision-overview.png)
 
 
-> **DeepEyes: Incentivizing "Thinking with Images" via Reinforcement Learning**
+**DeepEyes: Incentivizing "Thinking with Images" via Reinforcement Learning**
 [![arXiv](https://img.shields.io/badge/arXiv-2505.14362-b31b1b?logo=arxiv)](https://arxiv.org/abs/2505.14362)
 
 ![deepeyes-overview](./assets/deepeyes-overview.png)
 
 
-> **VisualToolAgent (VisTA): A Reinforcement Learning Framework for Visual Tool Selection**
+**VisualToolAgent (VisTA): A Reinforcement Learning Framework for Visual Tool Selection**
 
 ![VisTA overview](./assets/vista-overview.png)
 
 
-> **REVPT: Reinforced Visual Perception with Tools**
+**REVPT: Reinforced Visual Perception with Tools**
 [![GitHub stars](https://img.shields.io/github/stars/Is-kelvin/REVPT?style=social&label=GitHub&logo=github)](https://github.com/Is-kelvin/REVPT) [![arXiv](https://img.shields.io/badge/arXiv-2509.01656-b31b1b?logo=arxiv)](https://arxiv.org/abs/2509.01656)
 
 提出REVPT方法，通过RL训练多模态大模型使用视觉工具，提升感知-推理能力。
 
 
-> **VLM-R3: Region Recognition, Reasoning, and Refinement for Enhanced Multimodal Chain-of-Thought**
+**VLM-R3: Region Recognition, Reasoning, and Refinement for Enhanced Multimodal Chain-of-Thought**
 [![arXiv](https://img.shields.io/badge/arXiv-2505.16192-b31b1b?logo=arxiv)](https://arxiv.org/abs/2505.16192)
 
 提出VLM-R3框架，强化MLLM在视觉区域识别与推理能力，提升多模态链式推理表现。
 
 
-> **Ego-R1: Chain-of-Tool-Thought for Ultra-Long Egocentric Video Reasoning**
+**Ego-R1: Chain-of-Tool-Thought for Ultra-Long Egocentric Video Reasoning**
 
 提出Ego-R1智能体，采用Chain-of-Tool-Thought方法，支持超长自中心视频推理。
 
 
-> **M2IO-R1: An Efficient RL-Enhanced Reasoning Framework for Multimodal Retrieval Augmented Multimodal Generation**
+**M2IO-R1: An Efficient RL-Enhanced Reasoning Framework for Multimodal Retrieval Augmented Multimodal Generation**
 [![arXiv](https://img.shields.io/badge/arXiv-2508.06328-b31b1b?logo=arxiv)](https://arxiv.org/abs/2508.06328)
 
 北大等提出的多模态检索增强生成框架，采用RL优化多模态输入输出，提升推理能力和效率。
@@ -493,20 +493,20 @@ https://zhuanlan.zhihu.com/p/1949143503058760011
 
 #### 视频理解
 
-> **VideoChat-A1: Thinking with Long Videos by Chain-of-Shot Reasoning**
+**VideoChat-A1: Thinking with Long Videos by Chain-of-Shot Reasoning**
 [![arXiv](https://img.shields.io/badge/arXiv-2506.06097-b31b1b?logo=arxiv)](https://arxiv.org/abs/2506.06097)
 
 王利民老师团队，乔宇老师
 
 ![VideoChat-A1](./assets/videochat-a1.png)
 
-> **RynnEC: Bringing MLLMs into Embodied World**
+**RynnEC: Bringing MLLMs into Embodied World**
 [![GitHub stars](https://img.shields.io/github/stars/alibaba-damo-academy/RynnEC?style=social&label=GitHub&logo=github)](https://github.com/alibaba-damo-academy/RynnEC)
 
 阿里达摩院提出RynnEC视频多模态大模型，支持区域级视频交互，提升具身智能任务表现。
 
 
-> **ReasonAct: Progressive Training for Fine-Grained Video Reasoning in Small Models**
+**ReasonAct: Progressive Training for Fine-Grained Video Reasoning in Small Models**
 
 提出三阶段渐进式训练范式，提升小型多模态模型在复杂视频推理任务上的表现。
 
