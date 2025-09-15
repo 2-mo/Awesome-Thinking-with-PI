@@ -8,12 +8,9 @@
 <!-- Top badges -->
 <p align="center">
   <a href="https://github.com/2-mo/Awesome-Thinking-with-PI/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-blueviolet" alt="License: MIT"></a>
-  <a href="htt北大等提出的多模态检索增强生成框架，采用RL优化多模态输入输出，提升推理能力和效率。
-
-
-<img src="https://img.shields.io/badge/Issues-Track-orange" alt="Issues"></a>
-  <a href="https://github.com/2-mo/Awesome-Thinking-with-PI/pulls"><img src="https://img.shields.io/badge/Pull%20Requests-Welcome-brightgreen" alt="Pull Requests"></a>
-  <a href="https://github.com/2-mo/Awesome-Thinking-with-PI/commits/main"><img src="https://img.shields.io/badge/Commits-Main-blue" alt="Commits: main"></a>
+  <a href="https://github.com/2-mo/Awesome-Thinking-with-PI/issues"><img src="https://img.shields.io/badge/Issues-Track-orange" alt="Issues"></a>
+<a href="https://github.com/2-mo/Awesome-Thinking-with-PI/pulls"><img src="https://img.shields.io/badge/Pull%20Requests-Welcome-brightgreen" alt="Pull Requests"></a>
+<a href="https://github.com/2-mo/Awesome-Thinking-with-PI/commits/main"><img src="https://img.shields.io/badge/Commits-Main-blue" alt="Commits: main"></a>
 </p>
 
 <!-- [![repo](https://img.shields.io/badge/GitHub-2--mo%2FAwesome--Thinking--with--PI-black?logo=github)](https://github.com/2-mo/Awesome-Thinking-with-PI) -->
@@ -22,50 +19,70 @@
 
 ## 📚 Contents
 
-- 🤔 [Why We Need Thinking?](#why-we-need-thinking)
-- 💭 [Thinking with Language](#thinking-with-language)
-  - CoT / MCTS / RLHF
-  - r1-like models
-  - multimodal reasoning 
-- 🔍 [Thinking with Images](#thinking-with-images)
-  - GUI interaction / screen control / visual grounding
-- 🤖 [Thinking with Embodiment](#thinking-with-embodiment)
-  - Robotics / embodied navigation / manipulation
-- 🛠️ [Tutorials and Tooling](#tutorials-and-tooling)
-- 📖 [Related Collections](#related-collections)
+- 🤔 [1. Why We Need Thinking?](#1-why-we-need-thinking)
+  - [1.1 理论基础](#11-理论基础) - 人类视觉启示 / 多模态挑战 / 视频异常检测
+  - [1.2 核心理念与方法](#12-核心理念与方法) - OpenAI思想 / 观点文章
+  - [1.3 可信视觉智能](#13-可信视觉智能) - 发展趋势
+  - [1.4 应用案例与工作](#14-应用案例与工作) - 代表性工作 / 最新观点
+  - [1.5 理论研究](#15-理论研究) - 学术论文
+- 💭 [2. Thinking with Language](#2-thinking-with-language)
+  - [2.1 Language as Explicit Thought](#21-language-as-explicit-thought) - CoT / 基础推理
+  - [2.2 MCTS](#22-mcts-monte-carlo-tree-search) - 蒙特卡洛树搜索
+  - [2.3 R1-Style Models](#23-r1-style-models-overview截至-3-月) - r1-like models
+  - [2.4 Text-Space Multimodal Reasoning](#24-text-space-multimodal-reasoning) - 文本空间多模态推理
+  - [2.5 Tool-Augmented Reasoning](#25-tool-augmented-reasoning工具增强推理) - 工具使用与增强
+- 🔍 [3. Thinking with Images](#3-thinking-with-images)
+  - [3.1 Region-Focus](#31-region-focus-non-rlhf) - 区域聚焦
+  - [3.2 Image Manipulation](#32-image-manipulation) - 图像操作
+  - [3.3 基于图像交互的理解/推理](#33-基于图像交互的理解推理) - 交互式理解
+  - [3.4 图像生成](#34-图像生成) - 生成与想象
+  - [3.5 GUI 代理与屏幕操作](#35-gui-代理与屏幕操作) - 界面交互
+- 🤖 [4. Thinking with Embodiment](#4-thinking-with-embodiment)
+  - [4.1 VLA](#41-vla-is-all-you-need-) - 视觉语言动作模型
+  - [4.2 具身导航](#42-具身导航无人机) - 导航与操作
+- 🛠️ [5. Tutorials and Tooling](#5-tutorials-and-tooling)
+  - [5.1 强化学习框架](#51-强化学习框架) - RL 框架
+  - [5.2 强化学习算法](#52-强化学习算法) - 算法与优化
+  - [5.3 操作实现](#53-操作实现) - 实现工具
+- 📖 [6. Related Collections](#6-related-collections)
+  - [6.1 综述文章](#61-综述文章) - 相关综述
 
 ---
 
-## 🤔 Why We Need Thinking?
+## 1. 🤔 Why We Need Thinking?
 
 无论在人类视觉还是多模态模型里，感知给出的观测往往不完全、含噪且多解，可靠决策必须依赖跨时整合与假设检验——这就是“思考”。
 
 [![Wiki](https://img.shields.io/badge/Wiki-Thinking%2C%20Fast%20and%20Slow-blue?logo=wikipedia)](https://en.wikipedia.org/wiki/Thinking,_Fast,_and_Slow)
 
-**人类视觉的启示**
+### 1.1 理论基础
+
+#### 人类视觉的启示
 
 - **输入不完整**：瞬时感知零碎，二维到三维存在天然歧义，仅靠直接感知容易被错觉与遮挡误导。
 - **预测—校正循环**：视觉依赖自上而下与自下而上的互动，通过假设生成、误差修正来抵御歧义。
 - **跨时与主动控制**：稳健行为依赖跨时因果追踪、速度–准确性权衡，以及目标驱动的注意与资源分配。
 
-**对应到多模态大模型**
+#### 多模态模型的挑战
 
 - **多模态输入同样不全**：图像可能遮挡，语音含噪，文本歧义，模态间还可能互相冲突。
 - **单次反应易偏差**：只依赖“快感知”容易被局部或错误线索牵引。
 - **思考才能稳健**：跨模态/跨时间整合，假设比较与检验，风险下自适应调控，才能将嘈杂不全的感知转化为可靠决策。
 
-**对应到视频异常检测:**
+#### 视频异常检测的启示
 > 参见 [[LLM4VAD · Video Anomaly Detection]](./llm4vad/README.md)
 
+### 1.2 核心理念与方法
 
-#### OpenAI 观点文章
+#### OpenAI的思考方法
+
 AI之所以会产生幻觉，是因为我们训练它的方式，从一开始，就在系统性地奖励这种瞎蒙的行为。
-https://openai.com/zh-Hans-CN/index/why-language-models-hallucinate/
+[![OpenAI](https://img.shields.io/badge/OpenAI-Why%20LMs%20Hallucinate-9cf?logo=openai)](https://openai.com/zh-Hans-CN/index/why-language-models-hallucinate/)
 
 AI里最大的Bug，却也是人类文明最伟大的起点。
-https://mp.weixin.qq.com/s/brNtm8QLR3V9LHGznu9E2A
+[![WeChat](https://img.shields.io/badge/WeChat-Article-07C160?logo=wechat)](https://mp.weixin.qq.com/s/brNtm8QLR3V9LHGznu9E2A)
 
-### 可信视觉智能
+### 1.3 可信视觉智能
 
 可信并非仅来自“可解释性”，而是来自长期训练与真实世界的稳定表现（参见一次演讲中的比喻：我们信任陌生司机，多因可靠经验而非完全可解释的大脑机理）。
 
@@ -73,64 +90,68 @@ https://mp.weixin.qq.com/s/brNtm8QLR3V9LHGznu9E2A
 
 
 
-#### 趋势
+#### 趋势与发展方向
 当前多模态模型在静态图像基础任务（如简单物体识别、清晰OCR、画面描述）已趋近饱和，Benchmark价值减弱。但动态视频交互、高分辨率复杂场景（如手机拍摄的倾斜快递面单、强光干扰下的局部信息捕捉）及深度逻辑推理能力仍存显著短板。未来核心方向聚焦动态建模强化、长尾场景泛化性提升，并推进电商等垂直领域实用化落地（如商品属性自动审核）。
 动态多模态在真实环境适应性上的突破尤为关键，尤其在弱光或非理想构图下。
 
-#### 基本概念
+#### OpenAI的核心思想
 
 Similar to how a human may think for a long time before responding to a difficult question, o1 uses a chain of thought when attempting to solve a problem. Through reinforcement learning, o1 learns to hone its chain of thought and refine the strategies it uses. It learns to recognize and correct its mistakes. It learns to break down tricky steps into simpler ones. It learns to try a different approach when the current one isn’t working. This process dramatically improves the model’s ability to reason.
 与人类在回答难题之前可能会思考很长时间类似，o1 在尝试解决问题时也会使用思维链。通过强化学习，o1 可以学会磨练自己的思维链，并完善自己使用的策略。它学会识别和纠正错误。它学会把棘手的步骤分解成更简单的步骤。它学会在当前方法无效时尝试不同的方法。这一过程极大地提高了模型的推理能力。
 
-利用 LLM 學習推理 — [OpenAI: Learning to Reason with LLMs](https://openai.com/zh-Hant/index/learning-to-reason-with-llms/)
+[![OpenAI Learning](https://img.shields.io/badge/OpenAI-Learning%20to%20Reason-9cf?logo=openai)](https://openai.com/zh-Hant/index/learning-to-reason-with-llms/)
+[![OpenAI Thinking](https://img.shields.io/badge/OpenAI-Thinking%20with%20Images-9cf?logo=openai)](https://openai.com/index/thinking-with-images/)
+[![Wiki](https://img.shields.io/badge/Wiki-Visual%20Thinking-blue?logo=wikipedia)](https://en.wikipedia.org/wiki/Visual_thinking)
 
-Thinking with Images — [OpenAI](https://openai.com/index/thinking-with-images/)
 
+### 1.4 应用案例与工作
 
-### 代表性工作
+#### 代表性工作
 
 [![OpenAI o1](https://img.shields.io/badge/OpenAI-ChatGPT--o1-9cf?logo=openai)](https://openai.com/o1/)
 [![DeepSeek-R1](https://img.shields.io/github/stars/deepseek-ai/DeepSeek-R1?style=social&label=DeepSeek-R1&logo=github)](https://github.com/deepseek-ai/DeepSeek-R1)
-<!-- TODO removed to streamline headings -->
 
----
-
-### 观点文章
+#### 最新观点
 
 为何GRPO大放异彩DPO销声匿迹？
-[WeChat article](https://mp.weixin.qq.com/s/b4OkzqfRcpFhPzTocwJatw)
+[![WeChat](https://img.shields.io/badge/WeChat-GRPO%20vs%20DPO-07C160?logo=wechat)](https://mp.weixin.qq.com/s/b4OkzqfRcpFhPzTocwJatw)
 
+### 1.5 理论研究
 
+从语言空间到像素空间的思考有效性：
 
-### 理论部分
-从语言空间到像素空间
+**High-level visual representations in the human brain are aligned with large language models**
+[![Nature Machine Intelligence](https://img.shields.io/badge/Nature%20Machine%20Intelligence-2025-darkgreen?logo=nature)](https://www.nature.com/articles/s42256-025-01072-0)
 
+> 研究发现人类大脑高层视觉表征与大语言模型存在显著对齐，为AI系统的视觉-语言理解提供了神经科学基础。该研究表明LLM嵌入能够成功表征大脑从自然场景中提取的复杂视觉信息，支持了多模态"思考"的生物学合理性。
 
-思考的有效性
-
-[A] Wang Yifei et al., A Theoretical Understanding of Self-Correction through In-context Alignment, in NeurIPS, 2024.
+**A Theoretical Understanding of Self-Correction through In-context Alignment** (NeurIPS 2024)
+Wang Yifei et al.
 
 ![Self-Correction In-Context Alignment](./assets/self-correction-incontext-alignment.png)
 
-Zhao Andrew et al., ExpeL: LLM Agents Are Experiential Learners, AAAI 2024.
-
-
-
-
-### 为什么要用工具
-
-[![Wiki](https://img.shields.io/badge/Wiki-Visual%20Thinking-blue?logo=wikipedia)](https://en.wikipedia.org/wiki/Visual_thinking)
-[![OpenAI](https://img.shields.io/badge/OpenAI-Thinking%20with%20Images-9cf?logo=openai)](https://openai.com/index/thinking-with-images/)
-
-
+**ExpeL: LLM Agents Are Experiential Learners** (AAAI 2024)
+Zhao Andrew et al.
 
 ---
 
-## 💭 Thinking with Language
+理解了“思考”的必要性之后，我们首先探索如何让模型实现这一过程。在当前的技术范式中，语言是最直接、最核心的思维载体。本章节将聚焦于模型如何利用语言构建显式的推理链条，从简单的“思维链”（Chain-of-Thought）逐步演进到更复杂的搜索与强化学习策略。
+
+## 2. 💭 Thinking with Language
 
 > CoT -> GoT -> MCTS -> RL
 
-### 语言作为显式思维
+Chain-of-Thought (基础) 
+    ↓
+Tree/Graph of Thoughts (结构化)
+    ↓  
+MCTS (搜索优化)
+    ↓
+GRPO/RLHF (强化学习)
+    ↓
+R1-Style Models (现代实现)
+
+### 2.1 Language as Explicit Thought
 
 **Let’s Verify Step by Step** (process supervision/PRM, OpenAI): [![arXiv](https://img.shields.io/badge/arXiv-2305.20050-b31b1b?logo=arxiv)](https://arxiv.org/abs/2305.20050) -- 过程奖励
 
@@ -151,7 +172,7 @@ Zhao Andrew et al., ExpeL: LLM Agents Are Experiential Learners, AAAI 2024.
 
 Wang Yifei et al., A Theoretical Understanding of Self-Correction through In-context Alignment, NeurIPS 2024.
 
-### MCTS（Monte Carlo Tree Search，蒙特卡洛树搜索）
+### 2.2 MCTS (Monte Carlo Tree Search)
 
 这个是一个过渡，o1刚出的时候没有技术报告，社区猜测的实现方式，在deepseek-r1之后，大家都是grpo了～
 
@@ -176,12 +197,10 @@ LLaVA-CoT — 逐步思维链用于多模态过程监督 [![arXiv](https://img.s
 [A] Xu Guowei et al., LLaVA-CoT: Let Vision Language Models Reason Step-by-Step, in arXiv, 2024.
 
 
-### R1-Style Models Overview（截至 3 月）
+### 2.3 R1-Style Models Overview（截至 3 月）
 
-Note: The following table compiles notable r1-style models and resources.
-这里只列三月份的，基本都是相对领域的首次工作，后续的比较多，代表性工作以卡片形式呈现。
-
-<!-- table begins -->
+<details>
+<summary>Click to expand: R1-Style Models Overview (as of March)</summary>
 
 | Model | Foundational LLMs | Time | Institution | Task | Feature |
 |-------|------------------|------|-------------|------|---------|
@@ -218,9 +237,9 @@ Note: A small GitHub badge next to a model name links to its confirmed repositor
 
 <!-- table ends -->
 
+</details>
 
-
-### Text-Space Multimodal Reasoning
+### 2.4 Text-Space Multimodal Reasoning
 
 定义：r1‑like 的跨模态设定，推理链（CoT）主要在文本空间进行；多模态信号（图像/视频/音频/图表等）作为条件、奖励或评估信号参与训练与生成，输出可为多模态，但中间不产生视觉类中间表征。
 
@@ -321,49 +340,39 @@ TinyLLaVA-Video-R1: Towards Smaller LMMs for Video Reasoning
 > 小结：多模态“思维—搜索—验证”闭环正在标准化，核心在于过程监督（PRM）、行为奖励与环境校验相结合。
 
 
-### Tool-Augmented Reasoning（工具增强推理）
+### 2.5 Tool-Augmented Reasoning（工具增强推理）
 
 **思维+行动的交替（检索/工具使用）(2023)**
 
-ReAct: Synergizing Reasoning and Acting in Language Models 
-<sup><kbd>ICLR 2023</kbd></sup> [![arXiv](https://img.shields.io/badge/arXiv-2210.03629-b31b1b?logo=arxiv)](https://arxiv.org/pdf/2210.03629)
+**ReAct: Synergizing Reasoning and Acting in Language Models** <sup><kbd>ICLR 2023</kbd></sup> [![arXiv](https://img.shields.io/badge/arXiv-2210.03629-b31b1b?logo=arxiv)](https://arxiv.org/pdf/2210.03629)
+> **Core Idea**: Proposes a paradigm that interleaves `thought` (reasoning) and `action` (tool use) to solve complex tasks.
 
-Program of Thoughts Prompting: Disentangling Computation from Reasoning for Numerical Reasoning Tasks (TMLR 2023) [![arXiv](https://img.shields.io/badge/arXiv-2211.12588-b31b1b?logo=arxiv)](https://arxiv.org/abs/2211.12588)
+**Program of Thoughts Prompting: Disentangling Computation from Reasoning** (TMLR 2023) [![arXiv](https://img.shields.io/badge/arXiv-2211.12588-b31b1b?logo=arxiv)](https://arxiv.org/abs/2211.12588)
+> **Core Idea**: Offloads calculation steps to an external interpreter (e.g., Python), allowing the LLM to focus on reasoning.
 
-Toolformer: Language Models Can Teach Themselves to Use Tools [![arXiv](https://img.shields.io/badge/arXiv-2302.04761-b31b1b?logo=arxiv)](https://arxiv.org/abs/2302.04761)
-自动学习何时用工具
+**Toolformer: Language Models Can Teach Themselves to Use Tools** (arXiv 2023) [![arXiv](https://img.shields.io/badge/arXiv-2302.04761-b31b1b?logo=arxiv)](https://arxiv.org/abs/2302.04761)
+> **Core Idea**: A method for teaching LLMs to decide when and how to use external tools through simple API calls, and to incorporate the results.
 
-TOOLLLM: Facilitating Large Language Models to Master 16000+ Real-World APIs 
-<sup><kbd>ICLR 2024</kbd></sup> [![OpenReview](https://img.shields.io/badge/OpenReview-Link-green?logo=openreview)](https://openreview.net/forum?id=dHng2O0Jjr)
+**TOOLLLM: Facilitating Large Language Models to Master 16000+ Real-World APIs** <sup><kbd>ICLR 2024</kbd></sup> [![OpenReview](https://img.shields.io/badge/OpenReview-Link-green?logo=openreview)](https://openreview.net/forum?id=dHng2O0Jjr)
+> **Core Idea**: A framework and dataset for training and evaluating LLMs on their ability to use a vast number of real-world APIs.
 
-DSPy/可编排思维：声明式地组合推理模块与检索/工具 — [![GitHub stars](https://img.shields.io/github/stars/stanfordnlp/dspy?style=social&label=GitHub&logo=github)](https://github.com/stanfordnlp/dspy)
+**DSPy: A framework for algorithmically optimizing LM prompts and weights** [![GitHub stars](https://img.shields.io/github/stars/stanfordnlp/dspy?style=social&label=GitHub&logo=github)](https://github.com/stanfordnlp/dspy)
+> **Core Idea**: A programmatic approach (`compiling` instead of `prompting`) that separates logic from prompts to build more reliable systems.
 
-
-START: Self-taught Reasoner with Tools
-
-
-AgenTracer: Who Is Inducing Failure in the LLM Agentic Systems? 颜水成老师团队
-
-**论文/项目标题**: AgenTracer: LLM多智能体系统失败归因
-**Title**: AgenTracer: Who Is Inducing Failure in the LLM Agentic Systems?
-**主要内容**: 提出AgenTracer自动化归因框架，提升多智能体系统故障诊断效率，代码和数据集已开源。
-**链接**: https://bingreeky.github.io/atracer/
+**AgenTracer: Who Is Inducing Failure in the LLM Agentic Systems?** [![Project](https://img.shields.io/badge/Project-Website-blue?logo=safari)](https://bingreeky.github.io/atracer/)
+> **Team**: Shuicheng Yan's team (颜水成老师团队)
+> **Core Idea**: An automated framework for attributing failures in multi-agent systems, improving debugging and diagnosis efficiency.
 
 
-## 🖼️ Thinking with Images 
+## 3. 🖼️ Thinking with Images 
 
-本节指图文交错的多模态推理：在推理过程中显式产生并使用视觉中间表征（如裁剪/放大、框选/标注、草图/中间可视化等）与文本思维链交替推进，类似 o3/Visual Planning 的“用图像思考”。不同于“Thinking across Modalities”（r1‑like，推理链主要在文本空间），这里强调视觉表征本身就是推理过程的一部分。
+从纯文本推理到与感知深度融合，本章将探讨一种更高级的范式：**图文交错的多模态推理** (Interleaved Vision-Language Reasoning)。
 
-可能的数据集
-Pixels, Patterns, but No Poetry: To See The World like Humans
-**论文/项目标题**: MLLM能像人类一样感知吗？
-**Title**: Pixels, Patterns, but No Poetry: To See The World like Humans
-**主要内容**: 中科院等提出Turing Eye Test基准，发现现有多模态大模型在感知任务上与人类差距明显。
-**链接**: https://TuringEyeTest.github.io
+> 这种范式与 r1-like 模型有着本质区别。r1-like 模型通常将图像作为一次性的初始输入，其后的推理链完全在文本空间展开。而在这里，**视觉表征本身就是推理过程的一部分**。模型会与视觉信息进行多轮交互，在推理过程中主动生成并利用新的视觉产物（如裁剪、标注、草图），实现“边看边想、边画边想”的深度融合。这与“Thinking across Modalities”中推理链主要局限于文本空间形成鲜明对比。
 
 
 
-### Region-Focus (Non-RLHF)
+### 3.1 Region-Focus (Non-RLHF)
 
 LSNet: See Large, Focus Small [![arXiv](https://img.shields.io/badge/arXiv-2503.23135-b31b1b?logo=arxiv)](https://arxiv.org/abs/2503.23135) [![GitHub stars](https://img.shields.io/github/stars/THU-MIG/lsnet?style=social&label=GitHub&logo=github)](https://github.com/THU-MIG/lsnet)
 
@@ -375,7 +384,7 @@ Boltzmann Attention Sampling for Image Analysis with Small Objects (CVPR 2025) [
 
 
 
-### Image Manipulation
+### 3.2 Image Manipulation
 
 **Number it: Temporal Grounding Videos like Flipping Manga**
 [![arXiv](https://img.shields.io/badge/arXiv-2411.10332-b31b1b?logo=arxiv)](https://arxiv.org/abs/2411.10332)
@@ -401,35 +410,40 @@ Number it: Temporal Grounding Videos like Flipping Manga (CVPR 2025) [![arXiv](h
 
 
 
-### 基于图像交互的理解/推理
+### 3.3 基于图像交互的理解/推理
 
 **Simple o3: Towards Interleaved Vision-Language Reasoning**
 [![arXiv](https://img.shields.io/badge/arXiv-2508.12109-b31b1b?logo=arxiv)](https://arxiv.org/abs/2508.12109)
 
-Interleaved Reasoning, Tool-Use, Visual Planning
-
-亮点：面向“图文交错推理”的端到端方法，结合可执行视觉操作（裁剪/放大/复用图像）与语言推理，强化长链多模态推理与细粒度理解。
+> Interleaved Reasoning, Tool-Use, Visual Planning
+> 面向“图文交错推理”的端到端方法，结合可执行视觉操作（裁剪/放大/复用图像）与语言推理，强化长链多模态推理与细粒度理解。
 
 
 **Mini-o3: Scaling Up Reasoning Patterns and Interaction for Visual Search**
 
-字节跳动等提出Mini-o3系统，通过多步交互和深度推理提升视觉搜索任务表现。
+[![arXiv](https://img.shields.io/badge/arXiv-2509.07969-b31b1b?logo=arxiv)](https://arxiv.org/abs/2509.07969)
+[![Project](https://img.shields.io/badge/Project-blue?logo=safari)](https://mini-o3.github.io/)
+[![GitHub stars](https://img.shields.io/github/stars/Mini-03/Mini-o3?style=social&label=GitHub&logo=github)](https://github.com/Mini-03/Mini-o3)
+[![Zhihu](https://img.shields.io/badge/Zhihu-Review-informational?logo=zhihu)](https://zhuanlan.zhihu.com/p/1949143503058760011)
 
-https://mini-o3.github.io/
-
-https://arxiv.org/abs/2509.07969
-
-[![GitHub stars](https://img.shields.io/github/stars/Mini-03/Mini-o3?style=social&label=GitHub&logo=github)](https://github.com/Mini-o3/Mini-o3)
-
-https://zhuanlan.zhihu.com/p/1949143503058760011
+> 字节跳动等提出Mini-o3系统，通过多步交互和深度推理提升视觉搜索任务表现。
+> 
+> ![alt text](./assets/mini-o3.png)
 
 
-![alt text](./assets/mini-o3.png)
+**Introducing Visual Perception Token into Multimodal Large Language Model**
+[![arXiv](https://img.shields.io/badge/arXiv-2502.17425-b31b1b?logo=arxiv)](https://arxiv.org/abs/2502.17425)
+[![GitHub stars](https://img.shields.io/github/stars/yu-rp/VisualPerceptionToken?style=social&label=GitHub&logo=github)](https://github.com/yu-rp/VisualPerceptionToken)
+
+> 提出视觉感知令牌概念，赋予MLLM自主控制视觉感知过程的能力。包括区域选择令牌和视觉重编码令牌两种类型，使模型能够自主识别需要进一步感知的特定区域或使用隐藏状态作为控制信号。
+> 
+> ![alt text](./assets/VisualPerceptionToken.png)
+> 视觉重编码（Vision Re-Encoding）进一步调用 DINO 特征，并利用语言模型隐藏状态控制特征选择，实现“粗看—再细看”的两步感知，更接近人类观察过程(专注地看)。
 
 
 
 **Thyme: Think Beyond Images**
-开源多模态大模型Thyme，支持主动调用工具进行复杂图像处理和数学计算，具备高度自主性。
+> 开源多模态大模型Thyme，支持主动调用工具进行复杂图像处理和数学计算，具备高度自主性。
 
 
 **OCR Comparison: Expert Models vs. Vision-Language Models**
@@ -445,7 +459,7 @@ https://zhuanlan.zhihu.com/p/1949143503058760011
 **PyVision: Enabling Fast, Interactive Visual Programming with AI**
 [![PyVision arXiv](https://img.shields.io/badge/PyVision-arXiv-ff69b4?logo=arxiv)](https://arxiv.org/pdf/2507.07998) [![PyVision Project](https://img.shields.io/badge/Project-blue?logo=safari)](https://agent-x.space/pyvision/)
 
-> ![PyVision overview](./assets/pyvision-overview.png)
+> <img src="./assets/pyvision-overview.png" alt="PyVision overview" width="60%" />
 
 
 **DeepEyes: Incentivizing "Thinking with Images" via Reinforcement Learning**
@@ -469,24 +483,22 @@ https://zhuanlan.zhihu.com/p/1949143503058760011
 **VLM-R3: Region Recognition, Reasoning, and Refinement for Enhanced Multimodal Chain-of-Thought**
 [![arXiv](https://img.shields.io/badge/arXiv-2505.16192-b31b1b?logo=arxiv)](https://arxiv.org/abs/2505.16192)
 
-提出VLM-R3框架，强化MLLM在视觉区域识别与推理能力，提升多模态链式推理表现。
+> 提出VLM-R3框架，强化MLLM在视觉区域识别与推理能力，提升多模态链式推理表现。
 
 
 **Ego-R1: Chain-of-Tool-Thought for Ultra-Long Egocentric Video Reasoning**
 
-提出Ego-R1智能体，采用Chain-of-Tool-Thought方法，支持超长自中心视频推理。
+> 提出Ego-R1智能体，采用Chain-of-Tool-Thought方法，支持超长自中心视频推理。
 
 
 **M2IO-R1: An Efficient RL-Enhanced Reasoning Framework for Multimodal Retrieval Augmented Multimodal Generation**
 [![arXiv](https://img.shields.io/badge/arXiv-2508.06328-b31b1b?logo=arxiv)](https://arxiv.org/abs/2508.06328)
 
-北大等提出的多模态检索增强生成框架，采用RL优化多模态输入输出，提升推理能力和效率。
-**链接**: arXiv:2508.06328
+> 北大等提出的多模态检索增强生成框架，采用RL优化多模态输入输出，提升推理能力和效率。
 
 
-**论文/项目标题**: VLM-FO1: 视觉语言模型目标检测新方法
-**Title**: VLM-FO1: A New Object Detection Method for Vision-Language Models
-**主要内容**: 介绍VLM-FO1模型，通过“画框”方式提升视觉语言模型的目标检测精度。
+**VLM-FO1: A New Object Detection Method for Vision-Language Models**
+> 介绍VLM-FO1模型，通过“画框”方式提升视觉语言模型的目标检测精度。
 
 
 
@@ -510,15 +522,18 @@ https://zhuanlan.zhihu.com/p/1949143503058760011
 提出三阶段渐进式训练范式，提升小型多模态模型在复杂视频推理任务上的表现。
 
 
-### 图像生成
+### 3.4 图像生成
 
 
 > Thinking with Images for Multimodal Reasoning: Foundations, Methods, and Future Frontiers
 
+
 <details>
-<summary>Stage1: Tool-Driven Visual Exploration
+<summary>
+Stage1: Tool-Driven Visual Exploration
 -> Stage2: Programmatic Visual Manipulation
--> Stage3: Intrinsic Visual Imagination</summary>
+-> Stage3: Intrinsic Visual Imagination
+</summary>
 
 **Visual Planning: Let's Think Only with Images**
 [![arXiv](https://img.shields.io/badge/arXiv-2505.11409-b31b1b?logo=arxiv)](https://arxiv.org/pdf/2505.11409)   [![GitHub stars](https://img.shields.io/github/stars/yix8/VisualPlanning?style=social&label=GitHub&logo=github)](https://github.com/yix8/VisualPlanning)
@@ -575,7 +590,7 @@ https://zhuanlan.zhihu.com/p/1949143503058760011
 
 </details>
 
-### GUI 代理与屏幕操作
+### 3.5 GUI 代理与屏幕操作
 
 信息空间交互，迈向具身智能
 
@@ -597,9 +612,13 @@ Learning Active Perception via Self-Evolving Preference Optimization for GUI Gro
 
 
 
-## 🤖 Thinking with Embodiment
+## 4. 🤖 Thinking with Embodiment
 
-### VLA is All You Need ！
+从语言思考到图文思考，我们逐步增强了模型在数字世界中的感知与推理能力。然而，要实现通用人工智能，模型必须能够与物理世界进行交互。本章将探讨“思考”的最终前沿：**具身智能（Embodied AI）**。
+
+在这里，“思考”不再仅仅是为了理解或生成内容，而是为了**指导行动**。模型需要将感知、推理与物理动作（如导航、抓取、操作）相结合，形成一个完整的“感知—思考—行动”闭环。我们将看到，视觉语言动作模型（VLA）如何成为连接数字智能与物理现实的关键桥梁。
+
+### 4.1 VLA is All You Need ！
 
 **Magma: A Foundation Model for Multimodal AI Agents (CVPR 2025)**
 [![arXiv](https://img.shields.io/badge/arXiv-2502.13130-b31b1b?logo=arxiv)](https://www.arxiv.org/pdf/2502.13130)
@@ -671,7 +690,7 @@ Think Small, Act Big: Primitive Prompt Learning for Lifelong Robot Manipulation
 
 ---
 
-### 具身导航（无人机）
+### 4.2 具身导航（无人机）
 OpenFly: A Versatile Toolchain and Large-scale Benchmark for Aerial Vision-Language Navigation
 
 [![Project](https://img.shields.io/badge/Project-blue?logo=safari)](https://shailab-ipec.github.io/openfly/)
@@ -693,15 +712,17 @@ AgentThink: A Unified Framework for Tool-Augmented Chain-of-Thought Reasoning in
 
 ---
 
-## 🛠️ Tutorials and Tooling
+前面我们探讨了“思考”在不同模态（语言、图像、具身）中的理论与应用。为了将这些前沿理念付诸实践，我们需要强大的工具和框架。本章节将聚焦于实现这些复杂系统所需的核心技术，特别是强化学习相关的框架与算法，并提供一系列可以直接上手的开源项目。
+
+## 5. 🛠️ Tutorials and Tooling
 
 
-### 强化学习框架
+### 5.1 强化学习框架
 
 微软研究院提出的零代码强化学习（RL）优化 AI Agent 的工业级方案。
 https://github.com/microsoft/agent-lightning
 
-### 强化学习算法
+### 5.2 强化学习算法
 
 **Title**: Part I: Tricks or Traps? A Deep Dive into RL for LLM Reasoning
 **主要内容**: 阿里团队关于RL4LLM领域的论文，分析PPO等RL方法在大模型推理中的应用与挑战。
@@ -747,7 +768,7 @@ PREF-GRPO: Pairwise Preference Reward-Based GRPO for Stable Text-to-Image Reinfo
 - **arXiv**：[arxiv.org/pdf/2508.20751](https://arxiv.org/pdf/2508.20751)
 
 ---
-### 操作实现
+### 5.3 操作实现
 
 
 [![EasyR1](https://img.shields.io/github/stars/hiyouga/EasyR1?style=social&label=EasyR1&logo=github)](https://github.com/hiyouga/EasyR1) — R1 训练与复现的简洁模板。
@@ -766,7 +787,7 @@ PREF-GRPO: Pairwise Preference Reward-Based GRPO for Stable Text-to-Image Reinfo
 [![Qwen-Agent](https://img.shields.io/badge/Industry-Qwen--Agent-blueviolet?logo=github)](https://github.com/QwenLM/Qwen-Agent/tree/main)
 
 
-## 📖 Related Collections
+## 6. 📖 Related Collections
 
 [![arXiv](https://img.shields.io/badge/arXiv-2508.17281-b31b1b?logo=arxiv)](https://arxiv.org/abs/2508.17281) — From Language to Action: A Review of Large Language Models as Autonomous Agents and Tool Users 
 
@@ -784,7 +805,7 @@ PREF-GRPO: Pairwise Preference Reward-Based GRPO for Stable Text-to-Image Reinfo
 [![Awesome-Self-Evolving-Agents](https://img.shields.io/github/stars/EvoAgentX/Awesome-Self-Evolving-Agents?style=flat&color=black&label=Awesome-Self-Evolving-Agents&logo=github&logoColor=white)](https://github.com/EvoAgentX/Awesome-Self-Evolving-Agents) — Self‑evolving agents (auto‑improvement, reflection, curricula).
 
 
-### 综述文章
+### 6.1 综述文章
 
 
 [![Awesome_Think_With_Images](https://img.shields.io/github/stars/zhaochen0110/Awesome_Think_With_Images?style=flat&color=black&label=Awesome_Think_With_Images&logo=github&logoColor=white)](https://github.com/zhaochen0110/Awesome_Think_With_Images) — Visual-only reasoning with images (papers + code).
@@ -814,12 +835,11 @@ Explain Before You Answer: A Survey on Compositional Visual Reasoning
 **The Landscape of Agentic Reinforcement Learning for LLMs: A Survey.**
 
 
-论文：A Survey of Reinforcement Learning for Large Reasoning Models
+**A Survey of Reinforcement Learning for Large Reasoning Models**
 地址：https://arxiv.org/pdf/2509.08827
 周伯文老师团队
 
 ![aaa](./assets/survey_rl4lrm.png)
-
 
 **主要内容**: 清华大学等团队系统梳理了RL+LLMs领域的最新进展，涵盖奖励设计、训练范式、多智能体、工具学习等多个方向。
 **链接**: https://github.com/TsinghuaC3I/Awesome-RL-for-LRMs
