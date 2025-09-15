@@ -134,9 +134,7 @@ Zhao Andrew et al., ExpeL: LLM Agents Are Experiential Learners, AAAI 2024.
 
 ### 语言作为显式思维
 
-**Let’s Verify Step by Step** (process supervision/PRM, OpenAI): [![arXiv](https://img.shields.io/badge/arXiv-2305.20050-b31b1b?logo=arxiv)](https://arxiv.org/abs/2305.20050)
-过程奖励
-
+**Let’s Verify Step by Step** (process supervision/PRM, OpenAI): [![arXiv](https://img.shields.io/badge/arXiv-2305.20050-b31b1b?logo=arxiv)](https://arxiv.org/abs/2305.20050) -- 过程奖励
 
 **Chain-of-Thought Prompting Elicits Reasoning in Large Language Models** [![arXiv](https://img.shields.io/badge/arXiv-2201.11903-b31b1b?logo=arxiv)](https://arxiv.org/abs/2201.11903)
 
@@ -294,13 +292,12 @@ Video-R1: Reinforcing Video Reasoning in MLLMs
 
 ![Video-R1](assets/video-r1-overview.png)
 
-VideoChat-R1: Enhancing Spatio-Temporal Perception via Reinforcement Fine-Tuning
+**VideoChat-R1: Enhancing Spatio-Temporal Perception via Reinforcement Fine-Tuning**
 [![arXiv](https://img.shields.io/badge/arXiv-2504.06958-b31b1b?logo=arxiv)](https://arxiv.org/pdf/2504.06958)
 [![Project](https://img.shields.io/badge/Project-blue?logo=safari)](https://github.com/OpenGVLab/VideoChat-R1)
 [![GitHub stars](https://img.shields.io/github/stars/OpenGVLab/VideoChat-R1?style=social&label=GitHub&logo=github)](https://github.com/OpenGVLab/VideoChat-R1)
 
-时空感知强化微调
-
+> 时空感知强化微调
 ![VideoChat-R1](assets/videochat-r1-overview.png)
 
 TinyLLaVA-Video-R1: Towards Smaller LMMs for Video Reasoning
@@ -441,8 +438,9 @@ https://zhuanlan.zhihu.com/p/1949143503058760011
 
 
 **Vision-G1: Towards General Vision Language Reasoning with Multi-Domain Data Curation**
+[![arXiv](https://img.shields.io/badge/arXiv-2508.12680-b31b1b?logo=arxiv)](https://arxiv.org/abs/2508.12680)
+
 > UCSD等提出多领域数据整理和多轮强化学习训练管道，提升视觉语言模型的广泛推理能力。
-> 链接: arXiv:2508.12680
 
 
 **PyVision: Enabling Fast, Interactive Visual Programming with AI**
@@ -454,7 +452,8 @@ https://zhuanlan.zhihu.com/p/1949143503058760011
 **DeepEyes: Incentivizing "Thinking with Images" via Reinforcement Learning**
 [![arXiv](https://img.shields.io/badge/arXiv-2505.14362-b31b1b?logo=arxiv)](https://arxiv.org/abs/2505.14362)
 
-![deepeyes-overview](./assets/deepeyes-overview.png)
+> ![deepeyes-overview](./assets/deepeyes-overview.png)
+
 
 
 **VisualToolAgent (VisTA): A Reinforcement Learning Framework for Visual Tool Selection**
