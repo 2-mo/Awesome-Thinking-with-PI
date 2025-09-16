@@ -15,7 +15,9 @@
 
 <!-- [![repo](https://img.shields.io/badge/GitHub-2--mo%2FAwesome--Thinking--with--PI-black?logo=github)](https://github.com/2-mo/Awesome-Thinking-with-PI) -->
 
-> 🚧 Status: Actively updated (WIP). Sections/tags may change. Contributions welcome via Issues/PRs.
+> 🚧 Status: Actively updated (WIP). </br>
+> 🚧 Sections/tags may change. </br>
+> 🚧 Contributions welcome via Issues/PRs.
 
 ## 📚 Contents
 
@@ -83,7 +85,7 @@
 AI之所以会产生幻觉，是因为我们训练它的方式，从一开始，就在系统性地奖励这种瞎蒙的行为。
 [![OpenAI](https://img.shields.io/badge/OpenAI-Why%20LMs%20Hallucinate-9cf?logo=openai)](https://openai.com/zh-Hans-CN/index/why-language-models-hallucinate/)
 
-AI里最大的Bug，却也是人类文明最伟大的起点。
+幻觉 —— AI里最大的Bug，却也是人类文明最伟大的起点。
 [![WeChat](https://img.shields.io/badge/WeChat-Article-07C160?logo=wechat)](https://mp.weixin.qq.com/s/brNtm8QLR3V9LHGznu9E2A)
 
 <a id="13-trustworthy-vision-intelligence"></a>
@@ -170,7 +172,7 @@ R1-Style Models (现代实现)
 
 **Prompting Foundations**（显式引导推理步骤）：
 **Chain-of-Thought Prompting Elicits Reasoning in Large Language Models** — 最早的 CoT 提示范式。[![arXiv](https://img.shields.io/badge/arXiv-2201.11903-b31b1b?logo=arxiv)](https://arxiv.org/abs/2201.11903)<br>
-**Tree of Thoughts: Deliberate Problem Solving with Large Language Models** — 引入分支搜索。[![arXiv](https://img.shields.io/badge/arXiv-2305.10601-b31b1b?logo=arxiv)](https://arxiv.org/abs/2305.10601)<br>
+**Tree of Thoughts: Deliberate Problem Solving with Large Language Models** — 引入分支搜索。(姚顺雨) [![arXiv](https://img.shields.io/badge/arXiv-2305.10601-b31b1b?logo=arxiv)](https://arxiv.org/abs/2305.10601)<br>
 **Graph of Thoughts: Solving Elaborate Problems with Large Language Models** — 图结构推理拓展。[![arXiv](https://img.shields.io/badge/arXiv-2308.09687-b31b1b?logo=arxiv)](https://arxiv.org/abs/2308.09687)<br>
 **Automatic Chain of Thought Prompting in Large Language Models (ICLR 2023)** — 自动化生成 CoT 提示。[![arXiv](https://img.shields.io/badge/arXiv-2210.03493-b31b1b?logo=arxiv)](https://arxiv.org/abs/2210.03493)
 
@@ -279,7 +281,7 @@ MM-Eureka / MM-Eureka-Zero — 留一法与RLOO强化样式 [示例](https://git
 
 #### 目标检测/分割
 
-https://github.com/om-ai-lab/VLM-R1
+[![GitHub stars](https://img.shields.io/github/stars/om-ai-lab/VLM-R1?style=social&label=VLM-R1&logo=github)](https://github.com/om-ai-lab/VLM-R1) — Vision‑language RL for detection/segmentation.
 
 
 🌟  **Visual-RFT: Visual Reinforcement Fine-Tuning (ICCV 2025)** 
@@ -361,7 +363,7 @@ TinyLLaVA-Video-R1: Towards Smaller LMMs for Video Reasoning
 **思维+行动的交替（检索/工具使用）(2023)**
 
 **ReAct: Synergizing Reasoning and Acting in Language Models** <sup><kbd>ICLR 2023</kbd></sup> [![arXiv](https://img.shields.io/badge/arXiv-2210.03629-b31b1b?logo=arxiv)](https://arxiv.org/pdf/2210.03629)
-> **Core Idea**: Proposes a paradigm that interleaves `thought` (reasoning) and `action` (tool use) to solve complex tasks.
+> **Core Idea**: Proposes a paradigm that interleaves `thought` (reasoning) and `action` (tool use) to solve complex tasks. (姚顺雨)
 
 **Program of Thoughts Prompting: Disentangling Computation from Reasoning** (TMLR 2023) [![arXiv](https://img.shields.io/badge/arXiv-2211.12588-b31b1b?logo=arxiv)](https://arxiv.org/abs/2211.12588)
 > **Core Idea**: Offloads calculation steps to an external interpreter (e.g., Python), allowing the LLM to focus on reasoning.
@@ -443,7 +445,7 @@ TinyLLaVA-Video-R1: Towards Smaller LMMs for Video Reasoning
 
 > 字节跳动等提出Mini-o3系统，通过多步交互和深度推理提升视觉搜索任务表现。
 > 
-> ![alt text](./assets/mini-o3.png)
+> ![Mini-o3 overview](./assets/mini-o3.png)
 
 
 **OPENTHINKIMG: Learning to Think with Images via Visual Tool Reinforcement Learning** — 通过视觉工具强化学习，逐步生成并评估中间图像操作，让多模态模型实现“边看边想”的自我改进。
@@ -465,7 +467,7 @@ TinyLLaVA-Video-R1: Towards Smaller LMMs for Video Reasoning
 
 > 提出视觉感知令牌概念，赋予MLLM自主控制视觉感知过程的能力。包括区域选择令牌和视觉重编码令牌两种类型，使模型能够自主识别需要进一步感知的特定区域或使用隐藏状态作为控制信号。
 > 
-> ![alt text](./assets/VisualPerceptionToken.png)
+> ![Visual Perception Token](./assets/VisualPerceptionToken.png)
 > 视觉重编码（Vision Re-Encoding）进一步调用 DINO 特征，并利用语言模型隐藏状态控制特征选择，实现“粗看—再细看”的两步感知，更接近人类观察过程(专注地看)。
 
 
@@ -576,7 +578,7 @@ Stage1: Tool-Driven Visual Exploration
 
 > Highlight: 将 R1 式逐步推理/奖励思路引入文本到图像生成。
 > 
-> ![alt text](./assets/t2i-r1.png)
+> ![T2I-R1 overview](./assets/t2i-r1.png)
 
 **GRIT: Teaching MLLMs to Think with Images**
 [![WeChat](https://img.shields.io/badge/WeChat-Explainer-07C160?logo=wechat)](https://mp.weixin.qq.com/s/I3bk4FGOwrj-tKl_IYRfKw)
@@ -619,8 +621,8 @@ Stage1: Tool-Driven Visual Exploration
 
 </details>
 
-<a id="35-gui-agents"></a>
-### 3.5 GUI Agents & Screen Control
+<a id="34-gui-agents"></a>
+### 3.4 GUI Agents & Screen Control
 
 信息空间交互，迈向具身智能
 
@@ -629,9 +631,9 @@ UI-R1 — 图形界面智能体动作预测 [项目](https://github.com/vivo-ai-
 Qwen-Agent — 工具增强与GUI自动化生态 [项目](https://github.com/QwenLM/Qwen-Agent/tree/main)
 
 
-Mobile-Agent-v3: Fundamental Agents for GUI Automation
-https://arxiv.org/pdf/2508.15144
-https://github.com/X-PLUG/MobileAgent
+Mobile-Agent-v3: Fundamental Agents for GUI Automation — End‑to‑end GUI automation agents and a large‑scale benchmark.
+[![arXiv](https://img.shields.io/badge/arXiv-2508.15144-b31b1b?logo=arxiv)](https://arxiv.org/abs/2508.15144)
+[![GitHub stars](https://img.shields.io/github/stars/X-PLUG/MobileAgent?style=social&label=MobileAgent&logo=github)](https://github.com/X-PLUG/MobileAgent)
 
 ![mobileagentv3_framework](./assets/mobileagentv3-framework.png)
 
@@ -641,7 +643,7 @@ Learning Active Perception via Self-Evolving Preference Optimization for GUI Gro
 **主要内容**：提出LASER框架，提升VLM在GUI理解任务中的主动感知与多步推理能力。
 **链接**：[https://github.com/wwfnb/Laser](https://github.com/wwfnb/Laser)
 
-https://mp.weixin.qq.com/s/bnnH2Ke85x5sZo1opugayA
+[![WeChat](https://img.shields.io/badge/WeChat-Article-07C160?logo=wechat)](https://mp.weixin.qq.com/s/bnnH2Ke85x5sZo1opugayA)
 
 
 ## 4. 🦾 Thinking with Embodiment
@@ -666,12 +668,12 @@ https://mp.weixin.qq.com/s/bnnH2Ke85x5sZo1opugayA
 
 Microsoft Research 高剑峰团队
 
-![alt text](./assets/magma-overview.png)
+![Magma overview](./assets/magma-overview.png)
 
 
 F1: A Vision-Language-Action Model Bridging Understanding and Generation to Actions
 
-![alt text](./assets/f1-paradigms-for-manipulation-policies.png)
+![F1 paradigms for manipulation policies](./assets/f1-paradigms-for-manipulation-policies.png)
 
 
 RoboPoint: A Vision-Language Model for Spatial Affordance Prediction for Robotics
@@ -727,6 +729,8 @@ Think Small, Act Big: Primitive Prompt Learning for Lifelong Robot Manipulation
 
 ![Think Small, Act Big](assets/think-small-act-big.png)
 
+
+
 ---
 
 <a id="42-embodied-navigation"></a>
@@ -739,6 +743,14 @@ OpenFly: A Versatile Toolchain and Large-scale Benchmark for Aerial Vision-Langu
 
 ---
 
+**Nav-R1: Reasoning and Navigation in Embodied Scenes**
+
+[![Project](https://img.shields.io/badge/Project-blue?logo=safari)](https://aigeeksgroup.github.io/Nav-R1/)
+[![arXiv](https://img.shields.io/badge/arXiv-2509.10884-b31b1b?logo=arxiv)](https://www.arxiv.org/abs/2509.10884)
+[![GitHub stars](https://img.shields.io/github/stars/AIGeeksGroup/Nav-R1?style=social&label=Nav-R1&logo=github)](https://github.com/AIGeeksGroup/Nav-R1)
+
+
+![Nav-R1](./assets/nav-r1.png)
 
 
 AgentThink: A Unified Framework for Tool-Augmented Chain-of-Thought Reasoning in Vision-Language Models for Autonomous Driving
@@ -758,15 +770,18 @@ AgentThink: A Unified Framework for Tool-Augmented Chain-of-Thought Reasoning in
 *（实践教程与工具）*
 
 
-可能可以用的数据集
-https://github.com/InternRobotics/InstructVLA
+### 可能可以用的数据集
+[![GitHub stars](https://img.shields.io/github/stars/InternRobotics/InstructVLA?style=social&label=InstructVLA&logo=github)](https://github.com/InternRobotics/InstructVLA) — 具身/机器人 VLA 指令数据集与工具链。
+
+
+论文题目：EO-1: A Unified Multimodal Transformer for Embodied Reasoning and Robot Control论文作者：Delin Qu, Haoming Song, Qizhi Chen, Zhaoqing Chen, Xianqiang Gao, Xinyi Ye, Qi Lv, Modi Shi, Guanghui Ren, Cheng Ruan, Maoqing Yao, Haoran Yang, Jiacheng Bao, Bin Zhao, Dong Wang论文地址：http://arxiv.org/abs/2508.21112项目地址：https://github.com/eo-robotics/EO-1Hugging Face：https://huggingface.co/IPEC-COMMUNITY
 
 
 <a id="51-rl-frameworks"></a>
 ### 5.1 Reinforcement Learning Frameworks
 
 微软研究院提出的零代码强化学习（RL）优化 AI Agent 的工业级方案。
-https://github.com/microsoft/agent-lightning
+[![GitHub stars](https://img.shields.io/github/stars/microsoft/agent-lightning?style=social&label=agent-lightning&logo=github)](https://github.com/microsoft/agent-lightning)
 
 <a id="52-rl-algorithms"></a>
 ### 5.2 Reinforcement Learning Algorithms
@@ -844,7 +859,7 @@ https://github.com/microsoft/agent-lightning
 **[Survey] Agent AI: Surveying the Horizons of Multimodal Interaction** — 多模态交互与智能体研究的全景综述，区分“AI agent（实现）/Agent AI（框架）”。
 [![arXiv](https://img.shields.io/badge/arXiv-2401.03568-b31b1b?logo=arxiv)](https://arxiv.org/abs/2401.03568)
 > （李飞飞团队；Jianfeng Gao 等）
-> ![alt text](./assets/paradigm-shift-in-multimodal-reasoning.png)
+> ![Paradigm shift in multimodal reasoning](./assets/paradigm-shift-in-multimodal-reasoning.png)
 > 人工智能社区正处于重大范式转变的风口浪尖：
 > - 过去：为被动的结构化任务创建人工智能模型
 > - 未来：能够在多样化和复杂的环境中承担动态代理角色的模型
@@ -861,7 +876,7 @@ https://github.com/microsoft/agent-lightning
 [![arXiv](https://img.shields.io/badge/arXiv-2509.02547-b31b1b?logo=arxiv)](https://arxiv.org/abs/2509.02547)
 [![GitHub stars](https://img.shields.io/github/stars/xhyumiracle/Awesome-AgenticLLM-RL-Papers?style=flat&color=black&label=Awesome-AgenticLLM-RL-Papers&logo=github&logoColor=white)](https://github.com/xhyumiracle/Awesome-AgenticLLM-RL-Papers)
 
-**[Survey] A Survey of Reinforcement Learning for Large Reasoning Models** — 梳理 RL × LRM 最新进展，覆盖奖励设计、训练范式、多智能体与工具学习等方向。
+**`Survey` A Survey of Reinforcement Learning for Large Reasoning Models** — 梳理 RL × LRM 最新进展，覆盖奖励设计、训练范式、多智能体与工具学习等方向。
 [![arXiv](https://img.shields.io/badge/arXiv-2509.08827-b31b1b?logo=arxiv)](https://arxiv.org/abs/2509.08827)
 [![GitHub stars](https://img.shields.io/github/stars/TsinghuaC3I/Awesome-RL-for-LRMs?style=flat&color=black&label=Awesome-RL-for-LRMs&logo=github&logoColor=white)](https://github.com/TsinghuaC3I/Awesome-RL-for-LRMs)
 > 周伯文团队
@@ -870,8 +885,13 @@ https://github.com/microsoft/agent-lightning
 
 ---
 
+## Contributing
 
-🙌 如果本仓库对你有帮助，请点个 Star 支持，也欢迎通过 PR/Issue 参与共建与纠错。
+🙌 If this repository is helpful, please give it a Star. Contributions via Issues/PRs are welcome.
+- Title — one‑sentence highlight (20–40 words; core contribution)
+- Links or badges (order): Project | arXiv | Code 
+- Optional image: one motivation/framework figure with semantic alt
+- Open a PR (title: `add: [Year] Title`) or file an Issue with links + highlight
 
 
 ```bibtex
