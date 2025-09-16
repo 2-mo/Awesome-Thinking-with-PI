@@ -15,6 +15,8 @@
 
 <!-- [![repo](https://img.shields.io/badge/GitHub-2--mo%2FAwesome--Thinking--with--PI-black?logo=github)](https://github.com/2-mo/Awesome-Thinking-with-PI) -->
 
+> 🚧 Status: Actively updated (WIP). Sections/tags may change. Contributions welcome via Issues/PRs.
+
 ## 📚 Contents
 
 - 🧠 [1. Why We Need Thinking?](#1-why-we-need-thinking)
@@ -147,6 +149,7 @@ Zhao Andrew et al.
 
 
 > Cognitive space — Use language to run internal search, structure hypotheses, plan and verify, preparing perception for interaction.
+> 
 > 认知空间：以语言进行内部搜索、假设构建与校验，承上启下。
 
 
@@ -279,7 +282,7 @@ MM-Eureka / MM-Eureka-Zero — 留一法与RLOO强化样式 [示例](https://git
 https://github.com/om-ai-lab/VLM-R1
 
 
-**Visual-RFT: Visual Reinforcement Fine-Tuning (ICCV 2025)**
+🌟  **Visual-RFT: Visual Reinforcement Fine-Tuning (ICCV 2025)** 
 
 [![arXiv](https://img.shields.io/badge/arXiv-2503.01785-b31b1b?logo=arxiv)](https://arxiv.org/pdf/2503.01785)
 [![GitHub stars](https://img.shields.io/github/stars/Liuziyu77/Visual-RFT?style=social&label=GitHub&logo=github)](https://github.com/Liuziyu77/Visual-RFT)
@@ -382,7 +385,8 @@ TinyLLaVA-Video-R1: Towards Smaller LMMs for Video Reasoning
 
 
 > Information space — Externalize working memory with images; operate on visual representations (crop, point, annotate, generate) to turn perception into actionable information.
-> 中文（可选）：信息空间：把图像作为外部工作记忆，操作表征，将感知转化为可用信息。
+> 
+> 信息空间：把图像作为外部工作记忆，操作表征，将感知转化为可用信息。
 
 
 从纯文本推理到与感知深度融合，本章将探讨一种更高级的范式：**图文交错的多模态推理** (Interleaved Vision-Language Reasoning)。
@@ -633,6 +637,7 @@ https://github.com/X-PLUG/MobileAgent
 
 
 Learning Active Perception via Self-Evolving Preference Optimization for GUI Grounding
+> 苏州大学OpenNLG团队
 **主要内容**：提出LASER框架，提升VLM在GUI理解任务中的主动感知与多步推理能力。
 **链接**：[https://github.com/wwfnb/Laser](https://github.com/wwfnb/Laser)
 
@@ -643,6 +648,7 @@ https://mp.weixin.qq.com/s/bnnH2Ke85x5sZo1opugayA
 *（具身智能与行动）*
 
 > Physical space — Act in the real world and close the perception–action loop; interaction and feedback update policies.
+> 
 > 物理空间：在真实环境行动，闭合感知—行动回路，以交互反馈更新策略。
 
 从语言思考到图文思考，我们逐步增强了模型在数字世界中的感知与推理能力。然而，要实现通用人工智能，模型必须能够与物理世界进行交互。本章将探讨“思考”的最终前沿：**具身智能（Embodied AI）**。
@@ -765,53 +771,31 @@ https://github.com/microsoft/agent-lightning
 <a id="52-rl-algorithms"></a>
 ### 5.2 Reinforcement Learning Algorithms
 
-**Title**: Part I: Tricks or Traps? A Deep Dive into RL for LLM Reasoning
-**主要内容**: 阿里团队关于RL4LLM领域的论文，分析PPO等RL方法在大模型推理中的应用与挑战。
 
-
-卡片化汇总主流/新近的对齐与策略优化方法，统一展示 arXiv / 官方链接 / 代码。
-
-DPO: Direct Preference Optimization (arXiv 2023)
+**DPO: Direct Preference Optimization** — 直接在偏好数据上拟合概率偏序，避免显式奖励建模。
 [![arXiv](https://img.shields.io/badge/arXiv-2305.18290-b31b1b?logo=arxiv)](https://arxiv.org/abs/2305.18290)
 
-Highlight: 直接在偏好数据上拟合概率偏序，避免显式奖励建模。
-
-Agentic Reinforced Policy Optimization (ARPO, arXiv 2025)
+**Agentic Reinforced Policy Optimization (ARPO)** — 面向智能体交互的强化对齐策略优化，聚焦多阶段推理质量。
 [![arXiv](https://img.shields.io/badge/arXiv-2507.19849-b31b1b?logo=arxiv)](https://arxiv.org/abs/2507.19849)
 
-Highlight: 面向智能体交互的强化对齐策略优化，聚焦多阶段推理质量。
-
-GAPO: Learning Preferential Prompt through Generative Adversarial Policy Optimization (ACL 2025)
+**GAPO: Generative Adversarial Policy Optimization** — 生成式对抗 + 偏好信号联合，提升提示学习与策略稳定性。
 [![ACL](https://img.shields.io/badge/ACL-2025-1877F2)](https://aclanthology.org/2025.acl-long.13/) [![Code](https://img.shields.io/github/stars/MikeGu721/GAPO?style=social&label=Code&logo=github)](https://github.com/MikeGu721/GAPO)
 
-Highlight: 生成式对抗 + 偏好信号联合，提升提示学习与策略稳定性。
-
-PAPO: Perception-Aware Policy Optimization for Multimodal Reasoning
+**PAPO: Perception-Aware Policy Optimization for Multimodal Reasoning** — 面向多模态推理的感知感知策略优化，改进 GRPO 的稳定性与收敛效率。
 [![Code](https://img.shields.io/github/stars/MikeWangWZHL/PAPO?style=social&label=Code&logo=github)](https://github.com/MikeWangWZHL/PAPO)
 
-Highlight: 针对 GRPO 的改进方法（稳定性 / 收敛效率）。
-
-TreePO: Bridging Policy Optimization and Inference Efficiency (arXiv 2025)
+**TreePO: Bridging Policy Optimization and Inference Efficiency** — 融合树式启发，兼顾对齐效果与推理效率。
 [![arXiv](https://img.shields.io/badge/arXiv-2508.17445-b31b1b?logo=arxiv)](https://arxiv.org/abs/2508.17445)
 
-Highlight: 引入树式启发结构，兼顾对齐效果与推理效率。
-
-RuleReasoner: Reinforced Rule-based Reasoning via Domain-aware Dynamic Sampling (arXiv 2025)
+**RuleReasoner: Reinforced Rule-based Reasoning via Domain-aware Dynamic Sampling** — 结合领域规则的动态采样与强化优化，提升结构化推理的质量与可控性。
 [![arXiv](https://img.shields.io/badge/arXiv-2509.06461v1-b31b1b?logo=arxiv)](https://arxiv.org/abs/2509.06461v1) [![Code](https://img.shields.io/github/stars/bigai-nlco/RuleReasoner?style=social&label=Code&logo=github)](https://github.com/bigai-nlco/RuleReasoner)
 
-Highlight: 结合领域规则动态采样与强化优化，提高结构化推理质量与可控性。
-
-
-PREF-GRPO: Pairwise Preference Reward-Based GRPO for Stable Text-to-Image Reinforcement Learning
-- **作者**：Yibin Wang, Zhimin Li, Yuhang Zang, 等
-- **主要内容**：提出首个基于成对偏好奖励的GRPO方法，提升文本生成图像的稳定性，缓解reward hacking问题。
-- **链接**：[codegoat24.github.io/UnifiedReward/Pref-GRPO](https://codegoat24.github.io/UnifiedReward/Pref-GRPO)
-- **arXiv**：[arxiv.org/pdf/2508.20751](https://arxiv.org/pdf/2508.20751)
+**PREF-GRPO: Pairwise Preference Reward-Based GRPO for Stable Text-to-Image RL** — 成对偏好奖励驱动的 GRPO，提升 T2I 稳定性并缓解 reward hacking。
+[![Project](https://img.shields.io/badge/Project-Website-blue?logo=safari)](https://codegoat24.github.io/UnifiedReward/Pref-GRPO) [![arXiv](https://img.shields.io/badge/arXiv-2508.20751-b31b1b?logo=arxiv)](https://arxiv.org/pdf/2508.20751)
 
 ---
 <a id="53-practical-implementations"></a>
 ### 5.3 Practical Implementations
-
 
 [![EasyR1](https://img.shields.io/github/stars/hiyouga/EasyR1?style=social&label=EasyR1&logo=github)](https://github.com/hiyouga/EasyR1) — R1 训练与复现的简洁模板。
 
@@ -864,6 +848,11 @@ PREF-GRPO: Pairwise Preference Reward-Based GRPO for Stable Text-to-Image Reinfo
 > 人工智能社区正处于重大范式转变的风口浪尖：
 > - 过去：为被动的结构化任务创建人工智能模型
 > - 未来：能够在多样化和复杂的环境中承担动态代理角色的模型
+
+
+**Part I: Tricks or Traps? A Deep Dive into RL for LLM Reasoning** — 分析 RL 在 LLM 推理中的适配要点与常见误区，讨论 PPO 等方法的优势/局限。（Alibaba）
+[![arXiv](https://img.shields.io/badge/arXiv-2508.08221-b31b1b?logo=arxiv)](https://arxiv.org/abs/2508.08221)
+
 
 **[Survey] Explain Before You Answer: A Survey on Compositional Visual Reasoning** — 综述 2023–2025 年组合式视觉推理（CVR），系统梳理 260+ 论文，强调“先解释后作答”范式。
 [![arXiv](https://img.shields.io/badge/arXiv-2508.17298-b31b1b?logo=arxiv)](https://arxiv.org/abs/2508.17298)
