@@ -199,6 +199,13 @@ Highlight: Adapts CLIP-style vision–language alignment to weakly supervised VA
 
 ---
 
+### EventVAD: Training-Free Event-Aware Video Anomaly Detection （ACM MM 2025）
+
+https://arxiv.org/abs/2504.13092
+
+![alt text](./assets/eventvad-acmmm25.png)
+
+
 ### Harnessing Large Language Models for Training-free Video Anomaly Detection (CVPR 2024)
 
 [![CVPR](https://img.shields.io/badge/CVPR-2024-1E90FF)](https://openaccess.thecvf.com/content/CVPR2024/papers/Zanella_Harnessing_Large_Language_Models_for_Training-free_Video_Anomaly_Detection_CVPR_2024_paper.pdf)

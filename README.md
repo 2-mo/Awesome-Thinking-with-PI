@@ -431,6 +431,14 @@ Number it: Temporal Grounding Videos like Flipping Manga (CVPR 2025) [![arXiv](h
 > ![alt text](./assets/mini-o3.png)
 
 
+**LaV-CoT: Language-Aware Visual CoT with Multi-Aspect Reward Optimization for Real-World Multilingual VQA**
+Ant Group & Nanyang Technological University
+https://arxiv.org/abs/2509.10026
+https://github.com/HJNVR/LaV-CoT
+
+![alt text](./assets/lav-cot.png)
+
+
 **Introducing Visual Perception Token into Multimodal Large Language Model**
 [![arXiv](https://img.shields.io/badge/arXiv-2502.17425-b31b1b?logo=arxiv)](https://arxiv.org/abs/2502.17425)
 [![GitHub stars](https://img.shields.io/github/stars/yu-rp/VisualPerceptionToken?style=social&label=GitHub&logo=github)](https://github.com/yu-rp/VisualPerceptionToken)
