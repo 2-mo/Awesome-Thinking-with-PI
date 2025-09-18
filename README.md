@@ -124,6 +124,11 @@ Similar to how a human may think for a long time before responding to a difficul
 为何GRPO大放异彩DPO销声匿迹？
 [![WeChat](https://img.shields.io/badge/WeChat-GRPO%20vs%20DPO-07C160?logo=wechat)](https://mp.weixin.qq.com/s/b4OkzqfRcpFhPzTocwJatw)
 
+RL为什么比SFT遗忘的更少？
+论文名称：RL’s Razor: Why Online Reinforcement Learning Forgets Less
+论文链接：https://arxiv.org/pdf/2509.04259
+机构：MIT Improbable AI Lab
+
 <a id="15-theoretical-research"></a>
 ### 1.5 Theoretical Research
 
@@ -174,6 +179,12 @@ R1-Style Models (现代实现)
 **Chain-of-Thought Prompting Elicits Reasoning in Large Language Models** — 最早的 CoT 提示范式。[![arXiv](https://img.shields.io/badge/arXiv-2201.11903-b31b1b?logo=arxiv)](https://arxiv.org/abs/2201.11903)<br>
 **Tree of Thoughts: Deliberate Problem Solving with Large Language Models** — 引入分支搜索。(姚顺雨) [![arXiv](https://img.shields.io/badge/arXiv-2305.10601-b31b1b?logo=arxiv)](https://arxiv.org/abs/2305.10601)<br>
 **Graph of Thoughts: Solving Elaborate Problems with Large Language Models** — 图结构推理拓展。[![arXiv](https://img.shields.io/badge/arXiv-2308.09687-b31b1b?logo=arxiv)](https://arxiv.org/abs/2308.09687)<br>
+
+HyperTree Planning: Enhancing LLM Reasoning via Hierarchical Thinking
+> 论文链接：https://arxiv.org/abs/2505.02322项目网站：https://aintdoin.github.io/hypertree-planning.github.io/代码链接：https://github.com/aintdoin/hypertreeplanning
+> 来自中国科学技术大学与华为诺亚方舟实验室的团队给出了答案——他们提出的 HyperTree Planning（HTP，超树规划）范式，让 LLM 首次具备了基于超树结构的层级化推理能力，在多个复杂规划基准测试中实现性能与效率的双重突破，相关研究已被 ICML 2025 收录。
+
+
 **Automatic Chain of Thought Prompting in Large Language Models (ICLR 2023)** — 自动化生成 CoT 提示。[![arXiv](https://img.shields.io/badge/arXiv-2210.03493-b31b1b?logo=arxiv)](https://arxiv.org/abs/2210.03493)
 
 **Process Supervision & Self-Correction**（提升过程质量）：
@@ -344,6 +355,12 @@ TinyLLaVA-Video-R1: Towards Smaller LMMs for Video Reasoning
 ![TinyLLaVA-Video-R1](assets/tinyllava-video-r1-overview.png)
 
 
+**ReasonAct: Progressive Training for Fine-Grained Video Reasoning in Small Models**
+
+提出三阶段渐进式训练范式，提升小型多模态模型在复杂视频推理任务上的表现。
+![alt text](./assets/reasonact-framework.png)
+
+
 #### Extended Vision Modalities
 其他模态（事件相机,3D,红外）
 
@@ -470,6 +487,13 @@ TinyLLaVA-Video-R1: Towards Smaller LMMs for Video Reasoning
 > ![Visual Perception Token](./assets/VisualPerceptionToken.png)
 > 视觉重编码（Vision Re-Encoding）进一步调用 DINO 特征，并利用语言模型隐藏状态控制特征选择，实现“粗看—再细看”的两步感知，更接近人类观察过程(专注地看)。
 
+**VisionThink: Smart and Efficient Vision Language Model via Reinforcement Learning** — 香港大学贾佳亚团队通过强化学习动态选择多分辨率视觉输入，在 OCR 任务中兼顾识别精度与推理效率。
+[![arXiv](https://img.shields.io/badge/arXiv-2507.13348-b31b1b?logo=arxiv)](https://arxiv.org/abs/2507.13348)
+[![GitHub stars](https://img.shields.io/github/stars/dvlab-research/VisionThink?style=social&label=VisionThink&logo=github)](https://github.com/dvlab-research/VisionThink)
+
+**VLM-RL: A Unified Vision Language Models and Reinforcement Learning Framework for Safe Autonomous Driving** — 提出用于安全自动驾驶的视觉语言模型与强化学习统一框架，将场景理解与策略决策端到端耦合。
+[![arXiv](https://img.shields.io/badge/arXiv-2412.15544-b31b1b?logo=arxiv)](https://arxiv.org/abs/2412.15544)
+[![GitHub stars](https://img.shields.io/github/stars/zihaosheng/VLM-RL?style=social&label=VLM-RL&logo=github)](https://github.com/zihaosheng/VLM-RL)
 
 
 **Thyme: Think Beyond Images**
@@ -547,9 +571,16 @@ TinyLLaVA-Video-R1: Towards Smaller LMMs for Video Reasoning
 阿里达摩院提出RynnEC视频多模态大模型，支持区域级视频交互，提升具身智能任务表现。
 
 
-**ReasonAct: Progressive Training for Fine-Grained Video Reasoning in Small Models**
 
-提出三阶段渐进式训练范式，提升小型多模态模型在复杂视频推理任务上的表现。
+Thinking With Videos: Multimodal Tool-Augmented Reinforcement Learning for
+Long Video Reasoning
+https://arxiv.org/abs/2508.04416
+
+
+AdsQA: Towards Advertisement Video Understanding
+https://arxiv.org/abs/2509.08621
+Project page: https://github.com/TsinghuaC3I/AdsQA
+MARS2 workshop & challenge: https://mars2workshop.github.io/iccv2025/
 
 
 <a id="33-image-generation"></a>
@@ -670,13 +701,18 @@ Microsoft Research 高剑峰团队
 
 ![Magma overview](./assets/magma-overview.png)
 
+---
+OmniActor: A Generalist GUI and Embodied Agent for 2D&3D Worlds
+https://arxiv.org/abs/2509.02322
 
-F1: A Vision-Language-Action Model Bridging Understanding and Generation to Actions
+---
+
+**F1: A Vision-Language-Action Model Bridging Understanding and Generation to Actions**
 
 ![F1 paradigms for manipulation policies](./assets/f1-paradigms-for-manipulation-policies.png)
 
 
-RoboPoint: A Vision-Language Model for Spatial Affordance Prediction for Robotics
+**RoboPoint: A Vision-Language Model for Spatial Affordance Prediction for Robotics**
 
 [![Project](https://img.shields.io/badge/Project-blue?logo=safari)](https://robo-point.github.io/)
 [![GitHub stars](https://img.shields.io/github/stars/wentaoyuan/RoboPoint?style=social&label=GitHub&logo=github)](https://github.com/wentaoyuan/RoboPoint)
@@ -773,6 +809,16 @@ AgentThink: A Unified Framework for Tool-Augmented Chain-of-Thought Reasoning in
 ### 可能可以用的数据集
 [![GitHub stars](https://img.shields.io/github/stars/InternRobotics/InstructVLA?style=social&label=InstructVLA&logo=github)](https://github.com/InternRobotics/InstructVLA) — 具身/机器人 VLA 指令数据集与工具链。
 
+| Dataset           | Abbr.            | Download Link                                                     |
+|-------------------|------------------|-------------------------------------------------------------------|
+| Charades-STA      | charades         | https://github.com/jiyanggao/TALL                                 |
+| ActivityNet-MR    | actnet           | https://cs.stanford.edu/people/ranjaykrishna/densevid/            |
+| VidChapters-7M    | vidchapters      | https://github.com/antoyang/VidChapters                           |
+| Video-R1          | Video-R1         | https://huggingface.co/datasets/Video-R1/Video-R1-data            |
+| LongVideo-Reason  | longvideo-reason | https://github.com/NVlabs/Long-RL/tree/main/longvideo-reason      |
+| NExT-GQA          | nextgqa          | https://github.com/doc-doc/NExT-GQA                                |
+| ReXTime           | rextime          | https://huggingface.co/datasets/ReXTime/ReXTime                   |
+
 
 论文题目：EO-1: A Unified Multimodal Transformer for Embodied Reasoning and Robot Control论文作者：Delin Qu, Haoming Song, Qizhi Chen, Zhaoqing Chen, Xianqiang Gao, Xinyi Ye, Qi Lv, Modi Shi, Guanghui Ren, Cheng Ruan, Maoqing Yao, Haoran Yang, Jiacheng Bao, Bin Zhao, Dong Wang论文地址：http://arxiv.org/abs/2508.21112项目地址：https://github.com/eo-robotics/EO-1Hugging Face：https://huggingface.co/IPEC-COMMUNITY
 
@@ -808,9 +854,24 @@ AgentThink: A Unified Framework for Tool-Augmented Chain-of-Thought Reasoning in
 **PREF-GRPO: Pairwise Preference Reward-Based GRPO for Stable Text-to-Image RL** — 成对偏好奖励驱动的 GRPO，提升 T2I 稳定性并缓解 reward hacking。
 [![Project](https://img.shields.io/badge/Project-Website-blue?logo=safari)](https://codegoat24.github.io/UnifiedReward/Pref-GRPO) [![arXiv](https://img.shields.io/badge/arXiv-2508.20751-b31b1b?logo=arxiv)](https://arxiv.org/pdf/2508.20751)
 
+**Single-stream Policy Optimization**
+Tencent
+https://arxiv.org/abs/2509.13232v1
+
+
+
+**Inpainting-Guided Policy Optimization for Diffusion Large Language Models**
+https://arxiv.org/abs/2509.10396
+
+
 ---
 <a id="53-practical-implementations"></a>
 ### 5.3 Practical Implementations
+
+https://docs.unsloth.ai/new/vision-reinforcement-learning-vlm-rl
+
+
+[![Qwen-Agent](https://img.shields.io/badge/Industry-Qwen--Agent-blueviolet?logo=github)](https://github.com/QwenLM/Qwen-Agent/tree/main)
 
 [![EasyR1](https://img.shields.io/github/stars/hiyouga/EasyR1?style=social&label=EasyR1&logo=github)](https://github.com/hiyouga/EasyR1) — R1 训练与复现的简洁模板。
 
@@ -825,7 +886,7 @@ AgentThink: A Unified Framework for Tool-Augmented Chain-of-Thought Reasoning in
 
 [![RLFactory-Agent](https://img.shields.io/github/stars/Simple-Efficient/RL-Factory?style=social&label=RLFactory-Agent&logo=github)](https://github.com/Simple-Efficient/RL-Factory) — RL 工具与代理训练框架。
 
-[![Qwen-Agent](https://img.shields.io/badge/Industry-Qwen--Agent-blueviolet?logo=github)](https://github.com/QwenLM/Qwen-Agent/tree/main)
+
 
 
 ## 6. 🗂️ Related Collections
@@ -882,6 +943,12 @@ AgentThink: A Unified Framework for Tool-Augmented Chain-of-Thought Reasoning in
 > 周伯文团队
 > 
 > ![RL-for-LRMs overview](./assets/survey_rl4lrm.png)
+
+
+Perception, Reason, Think, and Plan:
+A Survey on Large Multimodal Reasoning Models
+
+https://github.com/HITsz-TMG/Awesome-Large-Multimodal-Reasoning-Models
 
 ---
 
