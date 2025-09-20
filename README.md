@@ -266,6 +266,11 @@ Note: A small GitHub badge next to a model name links to its confirmed repositor
 
 </details>
 
+**WebDancer: Towards Autonomous Information Seeking Agency**
+https://arxiv.org/pdf/2505.22648
+https://github.com/Alibaba-NLP/DeepResearch
+
+
 <a id="24-text-space-multimodal-reasoning"></a>
 ### 2.4 Text-Space Multimodal Reasoning
 
@@ -325,6 +330,7 @@ SAM-R1: Leveraging SAM for Reward Feedback in Multimodal Segmentation via RL
 ![SAM-R1](assets/sam-r1-framework.png)
 
 ---
+
 
 #### 视频理解 
 
@@ -553,6 +559,25 @@ TinyLLaVA-Video-R1: Towards Smaller LMMs for Video Reasoning
 
 **VLM-FO1: A New Object Detection Method for Vision-Language Models**
 > 介绍VLM-FO1模型，通过“画框”方式提升视觉语言模型的目标检测精度。
+
+
+**VL-Rethinker: Incentivizing Self-Reflection of Vision-Language Models with Reinforcement Learning** `NeurIPS 2025(spotlight)`
+https://arxiv.org/abs/2504.08837
+https://tiger-ai-lab.github.io/VL-Rethinker/
+
+
+**General-Reasoner: Advancing LLM Reasoning Across All Domains**
+https://arxiv.org/pdf/2505.14652
+https://tiger-ai-lab.github.io/General-Reasoner/
+
+
+**Pixel Reasoner: Incentivizing Pixel Space Reasoning via Reinforcement Learning**
+https://arxiv.org/abs/2505.15966
+https://github.com/TIGER-AI-Lab/Pixel-Reasoner
+
+
+**AdaThinkDrive: Adaptive Thinking via Reinforcement Learning for Autonomous Driving**
+https://arxiv.org/abs/2509.13769
 
 
 
@@ -949,6 +974,9 @@ Perception, Reason, Think, and Plan:
 A Survey on Large Multimodal Reasoning Models
 
 https://github.com/HITsz-TMG/Awesome-Large-Multimodal-Reasoning-Models
+
+
+![alt text](./assets/perception_reason_think_and_plan.png)
 
 ---
 
