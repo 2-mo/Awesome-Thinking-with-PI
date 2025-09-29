@@ -75,7 +75,7 @@
 - **思考才能稳健**：跨模态/跨时间整合，假设比较与检验，风险下自适应调控，才能将嘈杂不全的感知转化为可靠决策。
 
 #### 视频异常检测的启示
-> 参见 [[LLM4VAD · Video Anomaly Detection]](./llm4vad/README.md)
+> 参见 [[LLM4VAD · Video Anomaly Detection]](https://github.com/2-mo/Awesome-Thinking-with-VAD)
 
 <a id="12-core-ideas-methods"></a>
 ### 1.2 Core Ideas & Methods
