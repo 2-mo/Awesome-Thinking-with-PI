@@ -1,7 +1,7 @@
 <h1 align="center">Awesome Thinking with PI (<u>P</u>erception & <u>I</u>nteraction)</h1>
 
 <p align="center">
-  <b>A curated list of resources on visual reasoning, video understanding, embodied AI, robot action, and perception-driven interaction.</b>
+  <b>A curated list of resources on visual reasoning and perception-driven interaction.</b>
 </p>
 
 
@@ -180,6 +180,11 @@ R1-Style Models (现代实现)
 **Tree of Thoughts: Deliberate Problem Solving with Large Language Models** — 引入分支搜索。(姚顺雨) [![arXiv](https://img.shields.io/badge/arXiv-2305.10601-b31b1b?logo=arxiv)](https://arxiv.org/abs/2305.10601)<br>
 **Graph of Thoughts: Solving Elaborate Problems with Large Language Models** — 图结构推理拓展。[![arXiv](https://img.shields.io/badge/arXiv-2308.09687-b31b1b?logo=arxiv)](https://arxiv.org/abs/2308.09687)<br>
 
+Visualization-of-Thought Elicits Spatial Reasoning in Large Language Models
+https://arxiv.org/abs/2404.03622
+https://github.com/sitloboi2012/Visualization-of-Thought
+
+
 HyperTree Planning: Enhancing LLM Reasoning via Hierarchical Thinking
 > 论文链接：https://arxiv.org/abs/2505.02322项目网站：https://aintdoin.github.io/hypertree-planning.github.io/代码链接：https://github.com/aintdoin/hypertreeplanning
 > 来自中国科学技术大学与华为诺亚方舟实验室的团队给出了答案——他们提出的 HyperTree Planning（HTP，超树规划）范式，让 LLM 首次具备了基于超树结构的层级化推理能力，在多个复杂规划基准测试中实现性能与效率的双重突破，相关研究已被 ICML 2025 收录。
@@ -334,6 +339,11 @@ SAM-R1: Leveraging SAM for Reward Feedback in Multimodal Segmentation via RL
 
 #### 视频理解 
 
+**Time-R1: Post-Training Large Vision Language Model for Temporal Video Grounding** `NeurIPS 2025`
+https://github.com/xiaomi-research/time-r1
+https://arxiv.org/pdf/2503.13377v2
+
+
 Video-R1: Reinforcing Video Reasoning in MLLMs
 强化视频时空推理 
 [![arXiv](https://img.shields.io/badge/arXiv-2503.21776-b31?logo=arxiv)](https://arxiv.org/pdf/2503.21776)
@@ -359,6 +369,11 @@ TinyLLaVA-Video-R1: Towards Smaller LMMs for Video Reasoning
 [![GitHub stars](https://img.shields.io/github/stars/ZhangXJ199/TinyLLaVA-Video-R1?style=social&label=GitHub&logo=github)](https://github.com/ZhangXJ199/TinyLLaVA-Video-R1)
 
 ![TinyLLaVA-Video-R1](assets/tinyllava-video-r1-overview.png)
+
+
+
+DeepVideo-R1: Video Reinforcement Fine-Tuning via Difficulty-aware Regressive GRPO
+https://neurips.cc/virtual/2025/poster/120134
 
 
 **ReasonAct: Progressive Training for Fine-Grained Video Reasoning in Small Models**
